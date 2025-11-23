@@ -226,7 +226,7 @@ main.wrap > hr {
     flex-direction: column;
     justify-content: center;
     padding: 24px;
-    transition: flex 0.5s ease-in-out, width 0.5s ease-in-out;
+    transition: flex 0.5s ease-in-out, width 0.5s ease-in-out, padding 0.5s ease-in-out;
 }
 
 .name {
