@@ -1,0 +1,324 @@
+:root {
+    --bg: #f3f3f3;
+    --panel: #e6e6e6;
+    --muted: #9a9a9a;
+    --accent: #6b6b6b;
+    --text: #222;
+    --glass: rgba(255, 255, 255, 0.7);
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    color: var(--text);
+    background: linear-gradient(180deg, var(--bg), #e9e9e9);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Top bar */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 999;
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.hamburger {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: var(--glass);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.lines span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: var(--text);
+    margin: 3px 0;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -320px;
+    top: 0;
+    width: 320px;
+    height: 100%;
+    background: var(--panel);
+    transition: .3s;
+    padding: 28px;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.12);
+    z-index: 1000;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.close-btn {
+    font-size: 28px;
+    cursor: pointer;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav a {
+    padding: 10px 14px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: 0.2s;
+}
+
+.nav a:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+.lang {
+    margin-top: 30px;
+}
+
+.centered-lang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lang label {
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.lang select {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--muted);
+    font-size: 14px;
+}
+
+/* Wrap */
+.wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 70px;
+}
+
+/* Strona tytułowa */
+.home-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    height: calc(100vh - 70px);
+}
+
+.visual {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+}
+
+.name {
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.desc {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.cta-row .btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background: transparent;
+}
+
+.cta-row .btn.primary {
+    background: var(--accent);
+    color: white;
+}
+
+/* Sekcja Szlaki */
+.trails-preview {
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+.trails-preview h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.trails-preview p {
+    font-size: 18px;
+}
+
+/* Galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Lightbox */
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1002;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#lightbox-img {
+    max-width: 90%;
+    max-height: 70%;
+    border-radius: 16px;
+}
+
+#lightbox-caption {
+    margin-top: 16px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+#close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Animacja */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RWD */
+@media(max-width:768px) {
+    .home-card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .visual {
+        order: 1;
+        width: 100%;
+        height: 300px;
+        flex: unset;
+    }
+
+    .info {
+        order: 2;
+        width: 100%;
+        flex: unset;
+        padding: 16px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}

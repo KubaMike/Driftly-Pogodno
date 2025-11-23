@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driftly-Pogodno</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" id="close-btn">✕</div>
+        <h3 data-i18n="sidebar_title">Menu</h3>
+        <div class="nav">
+            <a href="gallery.html" data-i18n="nav_gallery">Galeria</a>
+            <a href="#" id="map-link" data-i18n="nav_map">Mapy (wkrótce)</a>
+        </div>
+        <div class="lang centered-lang">
+            <label data-i18n="lang_label">Wybierz język</label>
+            <select id="lang-select">
+                <option value="pl">Polski</option>
+                <option value="de">Deutsch</option>
+                <option value="en">English</option>
+                <option value="ua">Українська</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="top-bar">
+        <div class="menu-logo">
+            <div class="hamburger" id="hamburger">
+                <div class="lines"><span></span><span></span><span></span></div>
+            </div>
+            <a href="index.html" class="brand-logo">Driftly</a>
+        </div>
+    </div>
+
+    <main class="wrap">
+        <section class="card home-card">
+            <div class="visual">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80" alt="hero"
+                    class="hero-img">
+            </div>
+            <div class="info">
+                <div class="name" data-i18n="site_name">Driftly-Pogodno</div>
+                <p class="desc" data-i18n="intro">Witamy na Driftly-Pogodno — krótki opis projektu.</p>
+                <div class="cta-row">
+                    <a class="btn primary" href="gallery.html" data-i18n="btn_explore">Zobacz galerię</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja Szlaki -->
+        <section class="trails-preview">
+            <h2 data-i18n="tab_trails">Szlaki</h2>
+            <p data-i18n="trails_info">Wkrótce pojawią się nasze trasy — zapraszamy do śledzenia!</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
