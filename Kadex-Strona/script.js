@@ -74,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeBtn = document.getElementById('close-btn');
     const langSelect = document.getElementById('lang-select');
     const mapLink = document.getElementById('map-link');
+    const mapLinkTop = document.getElementById('map-link-top');
 
     // Sidebar toggle
     hamburger.onclick = () => sidebar.classList.toggle('open');
@@ -83,10 +84,13 @@ document.addEventListener('DOMContentLoaded', () => {
     langSelect.onchange = e => setLanguage(e.target.value);
 
     // Mapy alert (Fixed corrupted text)
-    mapLink?.addEventListener('click', e => {
+    const mapAlert = e => {
         e.preventDefault();
         alert('Mapy w budowie');
-    });
+    };
+
+    if (mapLink) mapLink.addEventListener('click', mapAlert);
+    if (mapLinkTop) mapLinkTop.addEventListener('click', mapAlert);
 
     // Galeria - Lightbox
     const galleryItems = document.querySelectorAll('.gallery-item');

@@ -34,11 +34,17 @@ a {
     height: 70px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 20px;
     z-index: 999;
     background: var(--glass);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow);
+}
+
+.top-bar-nav a {
+    color: var(--accent);
+    font-weight: 600;
 }
 
 .menu-logo {
@@ -58,7 +64,6 @@ a {
     width: 56px;
     height: 56px;
     border-radius: 12px;
-    background: var(--glass);
     display: flex;
     align-items: center;
     justify-content: center;
