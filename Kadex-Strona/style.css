@@ -102,7 +102,7 @@ a {
     width: 320px;
     height: 100%;
     background: var(--panel);
-    transition: .3s;
+    transition: left 0.3s ease-in-out;
     padding: 20px 28px;
     box-shadow: 10px 0 30px rgba(0, 0, 0, 0.12);
     z-index: 1000;
@@ -140,7 +140,7 @@ a {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: 0.2s;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
     font-size: 16px;
 }
 
@@ -183,7 +183,6 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 70px;
 }
 
 main.wrap > hr {
@@ -200,8 +199,9 @@ main.wrap > hr {
     width: 100%;
     max-width: 1400px;
     margin: auto;
-    height: calc(100vh - 70px);
-    transition: all 0.5s ease;
+    height: 100vh;
+    transition: height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    padding-top: 70px;
 }
 
 .visual {
@@ -210,7 +210,7 @@ main.wrap > hr {
     justify-content: center;
     align-items: center;
     padding: 16px;
-    transition: all 0.5s ease;
+    transition: flex 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 
 .hero-img {
@@ -226,7 +226,7 @@ main.wrap > hr {
     flex-direction: column;
     justify-content: center;
     padding: 24px;
-    transition: all 0.5s ease;
+    transition: flex 0.5s ease-in-out, width 0.5s ease-in-out;
 }
 
 .name {
@@ -275,8 +275,8 @@ main.wrap > hr {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
-    padding: 20px;
-    transition: all 0.5s ease;
+    padding: 90px 20px 20px;
+    transition: padding 0.5s ease-in-out;
 }
 
 .gallery-item {
@@ -292,7 +292,7 @@ main.wrap > hr {
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 16px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 .gallery-item:hover img {
