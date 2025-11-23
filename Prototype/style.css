@@ -1,11 +1,14 @@
 /* --- Zmienne i Reset --- */
 :root {
-    --color-primary: #5c5c5c; /* Ciemna szarość */
-    --color-secondary: #a0a0a0; /* Jasna szarość */
-    --color-background: #e8e8e8; /* Bardzo jasna szarość/off-white */
-    --color-text: #333333; /* Ciemny tekst */
-    --color-accent: #7a7a7a; /* Szary akcent/hover */
-    --font-serif: 'Times New Roman', serif; /* Stary klimat */
+    /* Paleta szarości inspirowana modernizmem i starymi dokumentami */
+    --color-primary: #333333; /* Ciemny węgiel (nagłówki, kontury) */
+    --color-secondary: #777777; /* Szary akcent (linie, tło menu) */
+    --color-background: #f7f7f7; /* Jasne, neutralne tło */
+    --color-text: #222222; /* Bardzo ciemny tekst */
+    --color-accent: #b3b3b3; /* Jasnoszary hover */
+    
+    /* Czcionka nawiązująca do Modernizmu/Bauhausu - prosta, geometryczna */
+    --font-sans: 'Helvetica Neue', Arial, sans-serif; 
 }
 
 * {
@@ -15,13 +18,14 @@
 }
 
 body {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     background-color: var(--color-background);
     color: var(--color-text);
-    line-height: 1.6;
+    line-height: 1.5;
     transition: margin-left 0.3s ease;
 }
 
+/* Usuwamy kropki i podkreślenia z linków */
 a {
     color: var(--color-text);
     text-decoration: none;
@@ -29,120 +33,99 @@ a {
 }
 
 a:hover {
-    color: var(--color-accent);
+    color: var(--color-primary);
+    text-decoration: underline;
 }
 
-/* --- Sekcja Tytułowa (Hero) --- */
+/* --- Sekcja Tytułowa (Hero) - Układ w dwóch kolumnach --- */
 .hero-section {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    background-color: var(--color-secondary);
-    border-bottom: 5px solid var(--color-primary);
-    animation: fadeIn 1.5s ease-out; /* Animacja ładowania strony */
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    padding: 0;
+    background-color: var(--color-background);
 }
 
 .hero-content {
-    display: flex;
+    display: grid;
+    /* Dwie równe kolumny */
+    grid-template-columns: 1fr 1fr; 
     width: 100%;
-    max-width: 1200px;
-    background: var(--color-background);
-    box-shadow: 10px 10px 0px var(--color-primary); /* Efekt starych ramek/cienia */
-    border: 3px solid var(--color-primary);
+    max-width: 1600px;
 }
 
-.hero-image-container, .hero-text-container {
-    flex: 1;
-    min-height: 400px;
+.hero-image-container {
+    /* Lewa strona - Zdjęcie */
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-}
-
-.hero-image-container {
-    padding: 20px;
+    background-color: var(--color-accent);
 }
 
 .hero-image {
     width: 100%;
-    height: 100%;
+    height: 100vh; /* Ważne, aby zajęło całą wysokość, jeśli jest to tylko strona tytułowa */
     object-fit: cover;
-    border: 1px solid var(--color-primary);
-    filter: grayscale(80%); /* Stary, szary klimat */
-    transition: filter 0.5s ease;
+    filter: grayscale(100%) contrast(110%); /* Mocny czarno-biały, "stary" efekt */
+    transition: all 1s ease-out;
 }
 
 .hero-image:hover {
-    filter: grayscale(0%); /* Lekka animacja po najechaniu */
+    filter: grayscale(0%) contrast(100%); /* Subtelna animacja po najechaniu */
 }
 
 .hero-text-container {
+    /* Prawa strona - Tekst */
     background-color: var(--color-primary);
     color: var(--color-background);
     text-align: right;
-    padding: 40px;
+    padding: 60px 80px;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    animation: slideInRight 1.5s ease-out; /* Animacja wejścia tekstu */
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
 .site-name {
-    font-size: 3.5rem;
-    margin-bottom: 10px;
-    border-bottom: 2px solid var(--color-background);
-    display: inline-block;
-    padding-bottom: 5px;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    line-height: 1;
+    font-weight: 300; /* Lżejsza czcionka, typowa dla Modernizmu */
     text-transform: uppercase;
 }
 
 .site-tagline {
-    font-size: 1.5rem;
-    font-style: italic;
-}
-
-/* --- Sekcja Szlaki i Ogólna --- */
-.main-section, .gallery-main-content {
-    max-width: 1000px;
-    margin: 60px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.main-section h2, .gallery-main-content h1 {
-    font-size: 2.5rem;
-    color: var(--color-primary);
-    margin-bottom: 30px;
-    border-bottom: 2px solid var(--color-secondary);
-    display: inline-block;
-    padding-bottom: 10px;
-    transform: translateY(20px);
-    opacity: 0;
-    transition: all 0.5s ease;
-}
-
-.main-section p, .gallery-main-content p {
-    font-size: 1.1rem;
-    color: var(--color-text);
+    font-size: 1.8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    border-top: 1px solid var(--color-background);
+    padding-top: 20px;
 }
 
 /* --- Menu Boczne (Sidebar) --- */
 #menu-toggle {
+    /* Ustawienie hamburgera nad resztą */
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 30px;
+    left: 30px;
     width: 40px;
     height: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    z-index: 100;
+    z-index: 101; 
+    /* Kolor tła, aby był widoczny na białym/czarnym tle */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
 }
 
 #menu-toggle span {
@@ -174,12 +157,12 @@ a:hover {
     left: 0;
     height: 100%;
     width: 250px;
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     padding-top: 80px;
     transform: translateX(-250px);
     transition: transform 0.3s ease-in-out;
     z-index: 99;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
 }
 
 #sidebar.open {
@@ -196,12 +179,12 @@ a:hover {
     padding: 15px 20px;
     color: var(--color-background);
     font-size: 1.2rem;
-    border-bottom: 1px solid var(--color-secondary);
+    border-bottom: 1px dashed var(--color-accent); /* Stylizowane na starą dokumentację */
     transition: background-color 0.2s ease, padding-left 0.2s ease;
 }
 
 #menu-items li a:hover {
-    background-color: var(--color-accent);
+    background-color: var(--color-primary);
     padding-left: 30px;
 }
 
@@ -227,12 +210,45 @@ a:hover {
     border: 1px solid var(--color-secondary);
     background-color: var(--color-background);
     color: var(--color-text);
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
+}
+
+/* --- Sekcja Szlaki i Ogólna --- */
+.main-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-top: 1px solid var(--color-secondary);
+}
+
+.main-section h2, .gallery-main-content h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--color-primary);
+    border-bottom: 3px solid var(--color-secondary);
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.main-section p, .gallery-main-content p {
+    font-size: 1.1rem;
+    color: var(--color-text);
 }
 
 /* --- Galeria --- */
 .gallery-main-content {
-    padding-top: 80px; /* Miejsce na nagłówek, żeby nie kolidował z menu */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px 100px 20px;
+    text-align: center;
 }
 
 .image-grid {
@@ -244,17 +260,19 @@ a:hover {
 
 .image-item {
     overflow: hidden;
-    border: 3px solid var(--color-primary);
-    box-shadow: 5px 5px 0px var(--color-accent);
+    border: none;
+    box-shadow: 0 0 0 1px var(--color-secondary); /* Bardzo cienka ramka */
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: all 0.5s ease;
     filter: grayscale(100%);
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 .image-item:hover {
-    transform: scale(1.05);
-    filter: grayscale(0%);
-    box-shadow: 10px 10px 0px var(--color-primary);
+    transform: none; /* Usuwamy powiększenie, aby było bardziej minimalistycznie */
+    filter: grayscale(0%) brightness(110%);
+    box-shadow: 0 0 0 5px var(--color-primary); /* Grubsza ramka przy hoverze */
 }
 
 .image-item img {
@@ -266,45 +284,52 @@ a:hover {
 
 /* --- Responsive Web Design (RWD) --- */
 
-/* Dla tabletów (szerokość do 768px) */
-@media (max-width: 768px) {
+/* Dla tabletów i telefonów (szerokość do 992px) */
+@media (max-width: 992px) {
     .hero-content {
-        flex-direction: column; /* Ułożenie w kolumnie */
-        box-shadow: 5px 5px 0px var(--color-primary);
+        grid-template-columns: 1fr; /* Ułożenie w kolumnie poniżej 992px */
     }
     
-    .hero-image-container, .hero-text-container {
-        width: 100%;
-        min-height: 300px;
+    .hero-image-container {
+        grid-row: 1; /* Obrazek na górze */
     }
 
     .hero-text-container {
+        min-height: auto;
+        padding: 50px;
         text-align: center;
-        padding: 30px;
     }
 
     .site-name {
-        font-size: 2.5rem;
+        font-size: 3rem;
+    }
+    
+    .site-tagline {
+        font-size: 1.4rem;
     }
 
-    .site-tagline {
-        font-size: 1.2rem;
+    .hero-image {
+        height: 60vh; /* Mniejsza wysokość dla telefonu */
     }
 
     #sidebar {
-        width: 200px; /* Węższe menu */
+        width: 200px;
         transform: translateX(-200px);
     }
     
     #sidebar.open {
         transform: translateX(0);
     }
+    
+    .gallery-main-content {
+        padding-top: 50px;
+    }
 }
 
 /* Dla telefonów (szerokość do 480px) */
 @media (max-width: 480px) {
     .site-name {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     
     .main-section h2, .gallery-main-content h1 {
