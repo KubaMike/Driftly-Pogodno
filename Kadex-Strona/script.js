@@ -107,6 +107,13 @@ document.addEventListener('DOMContentLoaded', () => {
     closeLightbox.onclick = () => lightbox.style.display = 'none';
     lightbox.onclick = e => { if (e.target === lightbox) lightbox.style.display = 'none'; };
 
+    // Close lightbox with Escape key
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+            lightbox.style.display = 'none';
+        }
+    });
+
     // Domyślny język
     const storedLang = localStorage.getItem('driftly_lang') || 'pl';
     langSelect.value = storedLang;
