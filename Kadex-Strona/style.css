@@ -103,9 +103,11 @@ a {
     height: 100%;
     background: var(--panel);
     transition: .3s;
-    padding: 28px;
+    padding: 20px 28px;
     box-shadow: 10px 0 30px rgba(0, 0, 0, 0.12);
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar.open {
@@ -116,17 +118,21 @@ a {
     font-size: 26px;
     cursor: pointer;
     text-align: right;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .sidebar h3 {
     font-size: 42px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 .nav {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    flex-grow: 1;
 }
 
 .nav a {
@@ -143,18 +149,25 @@ a {
     color: #fff;
 }
 
+.menu-separator {
+    border-top: 1px solid var(--muted);
+    width: 80%;
+    margin: 20px auto;
+}
+
 .lang {
-    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .centered-lang {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .lang label {
-    margin-bottom: 6px;
     font-weight: 500;
 }
 
