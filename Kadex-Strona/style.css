@@ -47,6 +47,16 @@ a {
     font-weight: 600;
 }
 
+.top-bar-nav a .fas {
+    font-size: 28px;
+    vertical-align: middle;
+}
+
+.sidebar .nav a .fas {
+    margin-right: 10px;
+}
+
+
 .menu-logo {
     display: flex;
     align-items: center;
@@ -55,7 +65,7 @@ a {
 
 .brand-logo {
     font-family: 'Playfair Display', serif;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 700;
     color: var(--accent);
 }
