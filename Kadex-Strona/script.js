@@ -64,25 +64,254 @@ const translations = {
 };
 
 // Funkcja ustawiająca język
+
 function setLanguage(lang) {
+
     const dict = translations[lang];
+
     document.querySelectorAll('[data-i18n]').forEach(el => {
+
         if (dict[el.dataset.i18n]) el.textContent = dict[el.dataset.i18n];
+
     });
+
+
 
     // FIX: Correctly constructs the property name for reading data-caption-XX attributes
+
     document.querySelectorAll('.gallery-item').forEach(item => {
+
         // Example: 'pl' -> 'Pl'
+
         const capitalizedLang = lang.charAt(0).toUpperCase() + lang.slice(1);
+
         // Example: 'captionPl'. This matches item.dataset property for data-caption-pl
+
         const propertyName = 'caption' + capitalizedLang;
 
+
+
         // Sets the current caption for the lightbox to use
+
         item.dataset.currentCaption = item.dataset[propertyName] || '';
+
     });
 
+    populateGalleryImages();
+
+
+
     localStorage.setItem('driftly_lang', lang);
+
 }
+
+
+
+let galleryImages = [];
+
+
+
+let currentImageIndex = 0;
+
+
+
+
+
+
+
+let lightbox;
+
+
+
+let lightboxImg;
+
+
+
+let lightboxCaption;
+
+
+
+let closeLightbox;
+
+
+
+let prevButton;
+
+
+
+let nextButton;
+
+
+
+
+
+
+
+function populateGalleryImages() {
+
+
+
+    console.log('populateGalleryImages called');
+
+
+
+    const galleryItems = document.querySelectorAll('.gallery-item'); // Re-query galleryItems here
+
+
+
+    galleryImages = []; // Clear existing images
+
+
+
+    galleryItems.forEach((item, index) => {
+
+
+
+        galleryImages.push({
+
+
+
+            src: item.querySelector('img').src,
+
+
+
+            caption: item.dataset.currentCaption || ''
+
+
+
+        });
+
+
+
+
+
+
+
+        // Re-attaching the onclick handler
+
+
+
+        item.onclick = () => {
+
+
+
+            console.log('Gallery item clicked:', index);
+
+
+
+            currentImageIndex = index;
+
+
+
+            showImage(currentImageIndex);
+
+
+
+            lightbox.style.display = 'flex';
+
+
+
+        };
+
+
+
+    });
+
+
+
+}
+
+
+
+
+
+
+
+
+
+function showImage(index) {
+
+
+
+
+
+    if (index < 0) {
+
+
+
+
+
+        currentImageIndex = galleryImages.length - 1;
+
+
+
+
+
+    } else if (index >= galleryImages.length) {
+
+
+
+
+
+        currentImageIndex = 0;
+
+
+
+
+
+    } else {
+
+
+
+
+
+        currentImageIndex = index;
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    lightboxImg.src = galleryImages[currentImageIndex].src;
+
+
+
+
+
+    lightboxCaption.textContent = galleryImages[currentImageIndex].caption;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.getElementById('sidebar');
@@ -109,43 +338,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mapLinkTop) mapLinkTop.addEventListener('click', mapAlert);
 
     // Galeria - Lightbox
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const lightboxCaption = document.getElementById('caption'); // Corrected from lightbox-caption
-    const closeLightbox = document.querySelector('.close-button'); // Corrected from close-lightbox
+    lightbox = document.getElementById('lightbox');
+    lightboxImg = document.getElementById('lightbox-img');
+    lightboxCaption = document.getElementById('caption');
+    closeLightbox = document.querySelector('.close-button');
 
-    const prevButton = document.getElementById('prevButton');
-    const nextButton = document.getElementById('nextButton');
-    let galleryImages = [];
-    let currentImageIndex = 0;
-
-    // Populate galleryImages array
-    galleryItems.forEach((item, index) => {
-        galleryImages.push({
-            src: item.querySelector('img').src,
-            caption: item.dataset.currentCaption || ''
-        });
-
-        item.onclick = () => {
-            currentImageIndex = index;
-            showImage(currentImageIndex);
-            lightbox.style.display = 'flex';
-        };
-    });
-
-    function showImage(index) {
-        if (index < 0) {
-            currentImageIndex = galleryImages.length - 1;
-        } else if (index >= galleryImages.length) {
-            currentImageIndex = 0;
-        } else {
-            currentImageIndex = index;
-        }
-
-        lightboxImg.src = galleryImages[currentImageIndex].src;
-        lightboxCaption.textContent = galleryImages[currentImageIndex].caption;
-    }
+    prevButton = document.getElementById('prevButton');
+    nextButton = document.getElementById('nextButton');
 
     // Navigation buttons
     if (prevButton) { // Check if buttons exist (important if not on gallery.html)
