@@ -12,15 +12,12 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%; /* Ensure html and body take full height */
-}
-
 body {
     margin: 0;
     font-family: Inter, sans-serif;
     color: var(--text);
     background: linear-gradient(180deg, var(--bg), #e9e9e9);
+    min-height: 100vh;
 }
 
 a {
@@ -186,12 +183,6 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: calc(100vh - 70px); /* Account for fixed top bar */
-    margin-top: 70px; /* Push content below fixed top bar */
-}
-
-main.wrap {
-    flex-grow: 1; /* Allow main to grow and fill available space */
 }
 
 main.wrap > hr {
