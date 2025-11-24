@@ -66,250 +66,88 @@ const translations = {
 // Funkcja ustawiająca język
 
 function setLanguage(lang) {
-
+    console.log('setLanguage called with:', lang);
     const dict = translations[lang];
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
-
-        if (dict[el.dataset.i18n]) el.textContent = dict[el.dataset.i18n];
-
+        if (dict[el.dataset.i18n]) {
+            el.textContent = dict[el.dataset.i18n];
+            console.log(`Translated element ${el.dataset.i18n} to ${dict[el.dataset.i18n]}`);
+        } else {
+            console.warn(`Translation missing for key: ${el.dataset.i18n} in language: ${lang}`);
+        }
     });
 
-
-
     // FIX: Correctly constructs the property name for reading data-caption-XX attributes
-
     document.querySelectorAll('.gallery-item').forEach(item => {
-
         // Example: 'pl' -> 'Pl'
-
         const capitalizedLang = lang.charAt(0).toUpperCase() + lang.slice(1);
-
         // Example: 'captionPl'. This matches item.dataset property for data-caption-pl
-
         const propertyName = 'caption' + capitalizedLang;
 
-
-
         // Sets the current caption for the lightbox to use
-
         item.dataset.currentCaption = item.dataset[propertyName] || '';
-
+        console.log(`Gallery item caption set for ${item.dataset.currentCaption}`);
     });
 
     populateGalleryImages();
-
     localStorage.setItem('driftly_lang', lang);
-
+    console.log('Language stored in localStorage:', lang);
 }
-
-
 
 let galleryImages = [];
 
-
-
 let currentImageIndex = 0;
-
-
-
-
-
-
 
 let lightbox;
 
-
-
 let lightboxImg;
-
-
 
 let lightboxCaption;
 
-
-
 let closeLightbox;
-
-
 
 let prevButton;
 
-
-
 let nextButton;
 
-
-
-
-
-
-
 function populateGalleryImages() {
-
-
-
     console.log('populateGalleryImages called');
-
-
 
     const galleryItems = document.querySelectorAll('.gallery-item'); // Re-query galleryItems here
 
-
-
     galleryImages = []; // Clear existing images
 
-
-
     galleryItems.forEach((item, index) => {
-
-
-
         galleryImages.push({
-
-
-
             src: item.querySelector('img').src,
-
-
-
             caption: item.dataset.currentCaption || ''
-
-
-
         });
 
-
-
-
-
-
-
         // Re-attaching the onclick handler
-
-
-
         item.onclick = () => {
-
-
-
             console.log('Gallery item clicked:', index);
-
-
-
             currentImageIndex = index;
-
-
-
             showImage(currentImageIndex);
-
-
-
             lightbox.style.display = 'flex';
-
-
-
         };
-
-
-
     });
-
-
-
+    console.log('Gallery images populated.');
 }
-
-
-
-
-
-
-
-
 
 function showImage(index) {
-
-
-
-
-
     if (index < 0) {
-
-
-
-
-
         currentImageIndex = galleryImages.length - 1;
-
-
-
-
-
     } else if (index >= galleryImages.length) {
-
-
-
-
-
         currentImageIndex = 0;
-
-
-
-
-
     } else {
-
-
-
-
-
         currentImageIndex = index;
-
-
-
-
-
     }
 
-
-
-
-
-
-
-
-
-
-
     lightboxImg.src = galleryImages[currentImageIndex].src;
-
-
-
-
-
     lightboxCaption.textContent = galleryImages[currentImageIndex].caption;
-
-
-
-
-
+    console.log(`Showing image ${currentImageIndex} with caption: ${lightboxCaption.textContent}`);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.getElementById('sidebar');
@@ -324,7 +162,12 @@ document.addEventListener('DOMContentLoaded', () => {
     closeBtn.onclick = () => sidebar.classList.remove('open');
 
     // Zmiana języka
-    langSelect.onchange = e => setLanguage(e.target.value);
+    if (langSelect) { // Ensure langSelect exists on the page
+        langSelect.onchange = e => {
+            console.log('Language selector changed to:', e.target.value);
+            setLanguage(e.target.value);
+        };
+    }
 
     // Galeria - Lightbox
     if (document.getElementById('lightbox')) {
@@ -367,7 +210,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Domyślny język
     const storedLang = localStorage.getItem('driftly_lang') || 'pl';
-    langSelect.value = storedLang;
+    if (langSelect) {
+        langSelect.value = storedLang;
+        console.log('Language selector set to storedLang:', storedLang);
+    }
     setLanguage(storedLang);
 
     // Map initialization for map.html
