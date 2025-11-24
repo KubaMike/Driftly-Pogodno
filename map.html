@@ -10,6 +10,12 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght=300;400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoMdT9TjJ9fO3x9xQc1zC+V/sO9fNf1z1G/D2Y0="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/4K9+sSLHVQuyqfzEcQF8="
+     crossorigin=""></script>
 </head>
 
 <body>
@@ -46,7 +52,7 @@
     </div>
 
     <main class="wrap">
-        <img src="https://via.placeholder.com/1200x800?text=Map+Coming+Soon" alt="Map Placeholder" style="width:100%; height:auto; display:block;">
+        <div id="map" style="height: 100vh; width: 100%;"></div>
     </main>
 
     <script src="script.js"></script>
