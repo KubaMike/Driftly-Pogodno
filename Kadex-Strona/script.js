@@ -6,7 +6,7 @@ const translations = {
         tab_trails: 'Szlaki',
         trails_info: 'Wkrótce pojawią się nasze trasy — zapraszamy do śledzenia!',
         nav_gallery: 'Galeria',
-        nav_map: 'Mapy (wkrótce)',
+        nav_map: 'Mapy', // Corrected (wkrótce removed)
         btn_explore: 'Zobacz galerię',
         sidebar_title: 'Menu',
         lang_label: 'Wybierz język',
@@ -21,7 +21,7 @@ const translations = {
         tab_trails: 'Wege',
         trails_info: 'Bald werden unsere Routen verfügbar sein — bleiben Sie dran!',
         nav_gallery: 'Galerie',
-        nav_map: 'Karten (bald)',
+        nav_map: 'Karten', // Corrected (bald removed)
         btn_explore: 'Galerie ansehen',
         sidebar_title: 'Menü',
         lang_label: 'Sprache wählen',
@@ -36,7 +36,7 @@ const translations = {
         tab_trails: 'Trails',
         trails_info: 'Our trails will be available soon — stay tuned!',
         nav_gallery: 'Gallery',
-        nav_map: 'Maps (coming soon)',
+        nav_map: 'Maps', // Corrected (coming soon removed)
         btn_explore: 'View gallery',
         sidebar_title: 'Menu',
         lang_label: 'Choose language',
@@ -52,7 +52,7 @@ const translations = {
         tab_trails: 'Стежки',
         trails_info: 'Наші маршрути незабаром будуть доступні — слідкуйте за оновленнями!',
         nav_gallery: 'Галерея',
-        nav_map: 'Карти (незабаром)',
+        nav_map: 'Карти', // Corrected (незабаром removed)
         btn_explore: 'Переглянути галерею',
         sidebar_title: 'Меню',
         lang_label: 'Виберіть мову',
@@ -325,15 +325,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Zmiana języka
     langSelect.onchange = e => setLanguage(e.target.value);
-
-    // Mapy alert (Fixed corrupted text)
-    const mapAlert = e => {
-        e.preventDefault();
-        alert('Mapy w budowie');
-    };
-
-    if (mapLink) mapLink.addEventListener('click', mapAlert);
-    if (mapLinkTop) mapLinkTop.addEventListener('click', mapAlert);
 
     // Galeria - Lightbox
     lightbox = document.getElementById('lightbox');

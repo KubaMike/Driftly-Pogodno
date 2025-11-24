@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driftly-Pogodno - Mapa</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght=300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" id="close-btn">✕</div>
+        <h3 data-i18n="sidebar_title">Menu</h3>
+        <div class="menu-separator"></div>
+                <div class="nav">
+                    <a href="gallery.html" data-i18n="nav_gallery">Galeria</a>
+                    <a href="map.html" id="map-link"><i class="fas fa-map-marker-alt"></i> <span data-i18n="nav_map">Mapy</span></a>
+                </div>
+                <div class="lang centered-lang">
+        <label data-i18n="lang_label">Wybierz język</label>
+        <select id="lang-select">
+            <option value="pl">Polski</option>
+            <option value="de">Deutsch</option>
+            <option value="en">English</option>
+            <option value="ua">Українська</option>
+        </select>
+    </div>
+</div>
+
+    <div class="top-bar">
+        <div class="menu-logo">
+            <div class="hamburger" id="hamburger">
+                <div class="lines"><span></span><span></span><span></span></div>
+            </div>
+            <a href="index.html" class="brand-logo">Driftly</a>
+        </div>
+        <div class="top-bar-nav">
+            <a href="map.html" id="map-link-top"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+    </div>
+
+    <main class="wrap">
+        <img src="https://via.placeholder.com/1200x800?text=Map+Coming+Soon" alt="Map Placeholder" style="width:100%; height:auto; display:block;">
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
