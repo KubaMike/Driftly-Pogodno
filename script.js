@@ -13,7 +13,11 @@ const translations = {
         gallery_caption_1: 'Opis 1',
         gallery_caption_2: 'Opis 2',
         gallery_caption_3: 'Opis 3',
-        gallery_caption_4: 'Opis 4'
+        gallery_caption_4: 'Opis 4',
+        map_point_A_title: 'Punkt A',
+        map_point_B_title: 'Punkt B',
+        map_point_C_title: 'Punkt C',
+        map_link_text: 'Link do strony'
     },
     de: {
         site_name: 'Driftly-Pogodno',
@@ -28,7 +32,11 @@ const translations = {
         gallery_caption_1: 'Beschreibung 1',
         gallery_caption_2: 'Beschreibung 2',
         gallery_caption_3: 'Beschreibung 3',
-        gallery_caption_4: 'Beschreibung 4'
+        gallery_caption_4: 'Beschreibung 4',
+        map_point_A_title: 'Punkt A (DE)',
+        map_point_B_title: 'Punkt B (DE)',
+        map_point_C_title: 'Punkt C (DE)',
+        map_link_text: 'Link zur Seite'
     },
     en: {
         site_name: 'Driftly-Pogodno',
@@ -43,7 +51,11 @@ const translations = {
         gallery_caption_1: 'Caption 1',
         gallery_caption_2: 'Caption 2',
         gallery_caption_3: 'Caption 3',
-        gallery_caption_4: 'Caption 4'
+        gallery_caption_4: 'Caption 4',
+        map_point_A_title: 'Point A',
+        map_point_B_title: 'Point B',
+        map_point_C_title: 'Point C',
+        map_link_text: 'Link to page'
     },
     // Fixed corrupted characters
     ua: {
@@ -59,7 +71,11 @@ const translations = {
         gallery_caption_1: 'Підпис 1',
         gallery_caption_2: 'Підпис 2',
         gallery_caption_3: 'Підпис 3',
-        gallery_caption_4: 'Підпис 4'
+        gallery_caption_4: 'Підпис 4',
+        map_point_A_title: 'Пункт A',
+        map_point_B_title: 'Пункт B',
+        map_point_C_title: 'Пункт C',
+        map_link_text: 'Посилання на сторінку'
     }
 };
 
@@ -231,24 +247,30 @@ document.addEventListener('DOMContentLoaded', () => {
         const dropPoints = [
             {
                 coords: [53.447, 14.536],
-                title: 'Punkt A',
+                titleKey: 'map_point_A_title',
                 url: 'gallery.html'
             },
             {
                 coords: [53.450, 14.540],
-                title: 'Punkt B',
+                titleKey: 'map_point_B_title',
                 url: 'index.html'
             },
             {
                 coords: [53.440, 14.530],
-                title: 'Punkt C',
+                titleKey: 'map_point_C_title',
                 url: 'gallery.html'
             }
         ];
 
+        // Retrieve the current language dictionary to translate popup content
+        const currentLangDict = translations[storedLang];
+
         dropPoints.forEach(point => {
             const marker = L.marker(point.coords).addTo(map);
-            marker.bindPopup(`<b>${point.title}</b><br><a href="${point.url}">Link do strony</a>`);
+            const popupTitle = currentLangDict[point.titleKey] || point.titleKey; // Fallback to key if translation missing
+            const popupLinkText = currentLangDict['map_link_text'] || 'Link'; // Fallback to 'Link'
+
+            marker.bindPopup(`<b>${popupTitle}</b><br><a href="${point.url}">${popupLinkText}</a>`);
         });
         console.log('DropPoints added.');
     } else {
