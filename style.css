@@ -237,6 +237,10 @@ main.wrap > hr {
     margin-bottom: 20px;
 }
 
+.name strong {
+    font-weight: 700; /* Explicitly set bold for content within strong tags inside .name */
+}
+
 .desc {
     font-size: 18px;
     margin-bottom: 24px;
