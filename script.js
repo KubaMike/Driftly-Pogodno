@@ -367,36 +367,4 @@ document.addEventListener('DOMContentLoaded', () => {
     const storedLang = localStorage.getItem('driftly_lang') || 'pl';
     langSelect.value = storedLang;
     setLanguage(storedLang);
-
-    // Map initialization for map.html
-    if (document.getElementById('map')) {
-        const map = L.map('map').setView([53.447, 14.536], 13); // Centered around Szczecin/Pogodno
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        const dropPoints = [
-            {
-                coords: [53.447, 14.536],
-                title: 'Punkt A',
-                url: 'gallery.html'
-            },
-            {
-                coords: [53.450, 14.540],
-                title: 'Punkt B',
-                url: 'index.html'
-            },
-            {
-                coords: [53.440, 14.530],
-                title: 'Punkt C',
-                url: 'gallery.html'
-            }
-        ];
-
-        dropPoints.forEach(point => {
-            const marker = L.marker(point.coords).addTo(map);
-            marker.bindPopup(`<b>${point.title}</b><br><a href="${point.url}">Link do strony</a>`);
-        });
-    }
 });
