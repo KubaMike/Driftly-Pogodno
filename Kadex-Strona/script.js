@@ -9,7 +9,11 @@ const translations = {
         nav_map: 'Mapy (wkrótce)',
         btn_explore: 'Zobacz galerię',
         sidebar_title: 'Menu',
-        lang_label: 'Wybierz język'
+        lang_label: 'Wybierz język',
+        gallery_caption_1: 'Opis 1',
+        gallery_caption_2: 'Opis 2',
+        gallery_caption_3: 'Opis 3',
+        gallery_caption_4: 'Opis 4'
     },
     de: {
         site_name: 'Driftly-Pogodno',
@@ -20,7 +24,11 @@ const translations = {
         nav_map: 'Karten (bald)',
         btn_explore: 'Galerie ansehen',
         sidebar_title: 'Menü',
-        lang_label: 'Sprache wählen'
+        lang_label: 'Sprache wählen',
+        gallery_caption_1: 'Beschreibung 1',
+        gallery_caption_2: 'Beschreibung 2',
+        gallery_caption_3: 'Beschreibung 3',
+        gallery_caption_4: 'Beschreibung 4'
     },
     en: {
         site_name: 'Driftly-Pogodno',
@@ -31,7 +39,11 @@ const translations = {
         nav_map: 'Maps (coming soon)',
         btn_explore: 'View gallery',
         sidebar_title: 'Menu',
-        lang_label: 'Choose language'
+        lang_label: 'Choose language',
+        gallery_caption_1: 'Caption 1',
+        gallery_caption_2: 'Caption 2',
+        gallery_caption_3: 'Caption 3',
+        gallery_caption_4: 'Caption 4'
     },
     // Fixed corrupted characters
     ua: {
@@ -43,7 +55,11 @@ const translations = {
         nav_map: 'Карти (незабаром)',
         btn_explore: 'Переглянути галерею',
         sidebar_title: 'Меню',
-        lang_label: 'Виберіть мову'
+        lang_label: 'Виберіть мову',
+        gallery_caption_1: 'Підпис 1',
+        gallery_caption_2: 'Підпис 2',
+        gallery_caption_3: 'Підпис 3',
+        gallery_caption_4: 'Підпис 4'
     }
 };
 
