@@ -237,60 +237,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('map')) {
         console.log('Map element found. Initializing map...');
 
-        const dropPoints = [
-            {
-                coords: [53.447, 14.536],
-                titleKey: 'map_point_A_title',
-                url: 'gallery.html'
-            },
-            {
-                coords: [53.450, 14.540],
-                titleKey: 'map_point_B_title',
-                url: 'index.html'
-            },
-            {
-                coords: [53.440, 14.530],
-                titleKey: 'map_point_C_title',
-                url: 'gallery.html'
-            }
+        // Define approximate bounding box for Szczecin (Pogodno, Zawadzkiego, Niebuszewo-Bolinko)
+        // Southwest corner (lat, lng), Northeast corner (lat, lng)
+        const szczecinBounds = [
+            [53.36, 14.40], // Roughly southwest of Szczecin
+            [53.50, 14.65]  // Roughly northeast of Szczecin
         ];
 
-        // Dynamic bounds calculation
-        let dynamicBounds = L.latLngBounds([]);
-        dropPoints.forEach(point => {
-            dynamicBounds.extend(point.coords);
-        });
-        const paddedBounds = dynamicBounds.pad(0.1); // Add 10% padding
-
         const map = L.map('map', {
-            // All interactive features initially disabled for custom control
-            dragging: false,
-            touchZoom: false,
-            scrollWheelZoom: false,
-            doubleClickZoom: false,
-            boxZoom: false,
-            maxZoom: 18, // Allow zooming in up to level 18
+            center: [53.447, 14.536], // Centered around Szczecin/Pogodno
+            zoom: 13,
+            maxBounds: szczecinBounds, // Limit panning
+            minZoom: 12, // Optional: prevent zooming too far out
+            maxZoom: 16, // Optional: prevent zooming too far in
             zoomControl: false // Disable default zoom control
-        });
-
-        // After map container is rendered
-        L.Util.requestAnimFrame(function() {
-            // Set initial view to fit paddedBounds
-            const initialZoom = map.getBoundsZoom(paddedBounds, true);
-            map.setView(paddedBounds.getCenter(), initialZoom, { animate: false });
-
-            // Lock this initial zoom as the absolute minimum
-            map.setMinZoom(initialZoom);
-
-            // Set maxBounds to strictly enforce panning limits
-            map.setMaxBounds(paddedBounds);
-
-            // Re-enable interactions after initial setup
-            map.dragging.enable();
-            map.touchZoom.enable();
-            map.scrollWheelZoom.enable();
-            map.doubleClickZoom.enable();
-            map.boxZoom.enable();
         });
         console.log('Map object created:', map);
 
