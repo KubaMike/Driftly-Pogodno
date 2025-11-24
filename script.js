@@ -237,6 +237,34 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('map')) {
         console.log('Map element found. Initializing map...');
 
+        // Define approximate bounding box for Szczecin (Pogodno, Zawadzkiego, Niebuszewo-Bolinko)
+        // Southwest corner (lat, lng), Northeast corner (lat, lng)
+        const szczecinBounds = [
+            [53.36, 14.40], // Roughly southwest of Szczecin
+            [53.50, 14.65]  // Roughly northeast of Szczecin
+        ];
+
+        const map = L.map('map', {
+            center: [53.447, 14.536], // Centered around Szczecin/Pogodno
+            zoom: 13,
+            maxBounds: szczecinBounds, // Limit panning
+            minZoom: 12, // Optional: prevent zooming too far out
+            maxZoom: 16, // Optional: prevent zooming too far in
+            zoomControl: false // Disable default zoom control
+        });
+        console.log('Map object created:', map);
+
+        // Add custom zoom control to bottomright
+        L.control.zoom({
+            position: 'bottomright'
+        }).addTo(map);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            maxBounds: szczecinBounds // Apply maxBounds to tile layer as well for consistency
+        }).addTo(map);
+        console.log('Tile layer added.');
+
         const dropPoints = [
             {
                 coords: [53.447, 14.536],
@@ -254,45 +282,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 url: 'gallery.html'
             }
         ];
-
-        // Dynamic bounds calculation
-        let dynamicBounds = L.latLngBounds([]);
-        dropPoints.forEach(point => {
-            dynamicBounds.extend(point.coords);
-        });
-        const paddedBounds = dynamicBounds.pad(0.1); // Add 10% padding
-
-        const map = L.map('map', {
-            // No initial center or zoom, fitBounds will set it
-            minZoom: 0, // Temporarily set a very low minZoom for initialization
-            maxZoom: 18, // Allow zooming in up to level 18
-            zoomControl: false // Disable default zoom control
-        });
-
-        // Calculate the actual minZoom after the map container is rendered
-        // This ensures getBoundsZoom calculates correctly based on the actual map size
-        L.Util.requestAnimFrame(function() {
-            // Fit the map to the defined bounds
-            map.fitBounds(paddedBounds, { animate: false });
-            // Now that the map is fitted, set its current zoom as the absolute minimum
-            map.setMinZoom(map.getZoom());
-            // Set maxBounds to strictly enforce boundaries
-            map.setMaxBounds(paddedBounds);
-            // Ensure firm stop at boundaries
-            map.options.maxBoundsViscosity = 1.0;
-        });
-        console.log('Map object created:', map);
-
-        // Add custom zoom control to bottomright
-        L.control.zoom({
-            position: 'bottomright'
-        }).addTo(map);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-            maxBounds: paddedBounds // Apply maxBounds to tile layer as well for consistency
-        }).addTo(map);
-        console.log('Tile layer added.');
 
         // Retrieve the current language dictionary to translate popup content
         const currentLangDict = translations[storedLang];
