@@ -236,11 +236,32 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Checking for map element...');
     if (document.getElementById('map')) {
         console.log('Map element found. Initializing map...');
-        const map = L.map('map').setView([53.447, 14.536], 13); // Centered around Szczecin/Pogodno
+
+        // Define approximate bounding box for Szczecin (Pogodno, Zawadzkiego, Niebuszewo-Bolinko)
+        // Southwest corner (lat, lng), Northeast corner (lat, lng)
+        const szczecinBounds = [
+            [53.36, 14.40], // Roughly southwest of Szczecin
+            [53.50, 14.65]  // Roughly northeast of Szczecin
+        ];
+
+        const map = L.map('map', {
+            center: [53.447, 14.536], // Centered around Szczecin/Pogodno
+            zoom: 13,
+            maxBounds: szczecinBounds, // Limit panning
+            minZoom: 12, // Optional: prevent zooming too far out
+            maxZoom: 16, // Optional: prevent zooming too far in
+            zoomControl: false // Disable default zoom control
+        });
         console.log('Map object created:', map);
 
+        // Add custom zoom control to bottomright
+        L.control.zoom({
+            position: 'bottomright'
+        }).addTo(map);
+
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            maxBounds: szczecinBounds // Apply maxBounds to tile layer as well for consistency
         }).addTo(map);
         console.log('Tile layer added.');
 
