@@ -16,11 +16,14 @@
         html, body {
             height: 100%;
             margin: 0;
-            overflow: hidden; /* Prevent scrolling if map is exactly 100% */
+            overflow: hidden; /* Prevent scrolling */
         }
         main.wrap {
-            height: calc(100vh - 70px); /* Adjust for top-bar height */
-            margin-top: 70px; /* Push content below the top-bar */
+            position: absolute; /* Position relative to the viewport */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             padding: 0; /* Remove any default padding */
             display: flex; /* Ensure flex behavior for inner elements */
             flex-direction: column; /* Stack children vertically */
@@ -28,6 +31,7 @@
         #map {
             flex-grow: 1; /* Allow map to take all available space */
             width: 100%;
+            height: 100%; /* Make map fill its parent (main.wrap) */
         }
     </style>
 </head>
