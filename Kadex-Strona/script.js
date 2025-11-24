@@ -99,8 +99,6 @@ function setLanguage(lang) {
 
     populateGalleryImages();
 
-
-
     localStorage.setItem('driftly_lang', lang);
 
 }

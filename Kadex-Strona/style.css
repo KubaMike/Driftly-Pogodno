@@ -227,6 +227,7 @@ main.wrap > hr {
     justify-content: center;
     padding: 24px;
     transition: flex 0.5s ease-in-out, width 0.5s ease-in-out, padding 0.5s ease-in-out;
+    text-align: center;
 }
 
 .name {
@@ -241,17 +242,32 @@ main.wrap > hr {
     margin-bottom: 24px;
 }
 
+.cta-row {
+    text-align: center;
+}
+
 .cta-row .btn {
-    padding: 12px 20px;
+    padding: 14px 24px;
     border-radius: 10px;
     border: 1px solid #ddd;
     cursor: pointer;
     background: transparent;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .cta-row .btn.primary {
     background: var(--accent);
     color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-row .btn.primary:hover {
+    background: #555;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Sekcja Szlaki */
