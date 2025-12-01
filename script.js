@@ -324,7 +324,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (userMarker) {
                             userMarker.setLatLng([lat, lng]);
                         } else {
-                            userMarker = L.marker([lat, lng]).addTo(map)
+                            userMarker = L.circleMarker([lat, lng], {
+                                radius: 8,
+                                fillColor: '#3388ff',
+                                color: '#fff',
+                                weight: 2,
+                                opacity: 1,
+                                fillOpacity: 0.8
+                            }).addTo(map)
                                 .bindPopup('Your location');
                         }
                         map.setView([lat, lng], 15);
