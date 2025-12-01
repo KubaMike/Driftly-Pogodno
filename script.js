@@ -298,20 +298,45 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('DropPoints added.');
 
         const geolocateBtn = document.getElementById('geolocate-btn');
+        let watchId = null;
+        let userMarker = null;
+
         if (geolocateBtn) {
             geolocateBtn.addEventListener('click', (e) => {
                 e.preventDefault();
+
+                if (watchId) { // If already watching, stop watching
+                    navigator.geolocation.clearWatch(watchId);
+                    watchId = null;
+                    if (userMarker) {
+                        map.removeLayer(userMarker);
+                        userMarker = null;
+                    }
+                    // Maybe change button appearance to indicate it's off
+                    return;
+                }
+
                 if ('geolocation' in navigator) {
-                    navigator.geolocation.getCurrentPosition(position => {
+                    watchId = navigator.geolocation.watchPosition(position => {
                         const lat = position.coords.latitude;
                         const lng = position.coords.longitude;
+
+                        if (userMarker) {
+                            userMarker.setLatLng([lat, lng]);
+                        } else {
+                            userMarker = L.marker([lat, lng]).addTo(map)
+                                .bindPopup('Your location');
+                        }
                         map.setView([lat, lng], 15);
-                        L.marker([lat, lng]).addTo(map)
-                            .bindPopup('Your location')
-                            .openPopup();
+                        userMarker.openPopup();
+
                     }, error => {
                         console.error('Error getting location:', error);
                         alert('Could not get your location.');
+                    }, {
+                        enableHighAccuracy: true,
+                        timeout: 5000,
+                        maximumAge: 0
                     });
                 } else {
                     alert('Geolocation is not supported by your browser.');
