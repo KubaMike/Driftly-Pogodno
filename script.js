@@ -305,17 +305,16 @@ document.addEventListener('DOMContentLoaded', () => {
             geolocateBtn.addEventListener('click', (e) => {
                 e.preventDefault();
 
-                if (watchId) { // If already watching, stop watching
-                    navigator.geolocation.clearWatch(watchId);
-                    watchId = null;
-                    if (userMarker) {
-                        map.removeLayer(userMarker);
-                        userMarker = null;
-                    }
-                    // Maybe change button appearance to indicate it's off
+                if (watchId && userMarker) { // If already watching and location is known, re-center
+                    map.setView(userMarker.getLatLng(), 15);
                     return;
                 }
 
+                if (watchId) { // If watching but no marker yet, do nothing (wait for first position)
+                    return;
+                }
+
+                // If not watching, start watching
                 if ('geolocation' in navigator) {
                     watchId = navigator.geolocation.watchPosition(position => {
                         const lat = position.coords.latitude;
@@ -338,6 +337,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     }, error => {
                         console.error('Error getting location:', error);
                         alert('Could not get your location.');
+                        // Stop watching if an error occurs
+                        if (watchId) {
+                            navigator.geolocation.clearWatch(watchId);
+                            watchId = null;
+                            if (userMarker) {
+                                map.removeLayer(userMarker);
+                                userMarker = null;
+                            }
+                        }
                     }, {
                         enableHighAccuracy: true,
                         timeout: 5000,
