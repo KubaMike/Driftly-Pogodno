@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lightbox.onclick = e => { if (e.target === lightbox) lightbox.style.display = 'none'; };
 
         // Close lightbox with Escape key and navigate with arrow keys
-        document.addEventListener('keydown', e => {.
+        document.addEventListener('keydown', e => {
             if (lightbox.style.display === 'flex') { // Only navigate if lightbox is open
                 if (e.key === 'Escape') {
                     lightbox.style.display = 'none';
