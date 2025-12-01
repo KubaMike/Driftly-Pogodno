@@ -235,6 +235,7 @@ main.wrap > hr {
     font-size: 44px;
     color: var(--accent);
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .name strong {

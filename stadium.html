@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Driftly-Pogodno</title>
+    <title data-i18n="stadium_title">Stadion</title>
     <link rel="stylesheet" href="style.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght=300;400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -15,14 +15,14 @@
 <body>
 
     <div class="sidebar" id="sidebar">
-            <div class="close-btn" id="close-btn">✕</div>
-            <h3 data-i18n="sidebar_title">Menu</h3>
-            <div class="menu-separator"></div>
-                    <div class="nav">
-                        <a href="gallery.html" data-i18n="nav_gallery">Galeria</a>
-                        <a href="map.html" id="map-link"><i class="fas fa-map-marker-alt"></i> <span data-i18n="nav_map">Mapy</span></a>
-                    </div>
-                    <div class="lang centered-lang">
+        <div class="close-btn" id="close-btn">✕</div>
+        <h3 data-i18n="sidebar_title">Menu</h3>
+        <div class="menu-separator"></div>
+        <div class="nav">
+            <a href="gallery.html" data-i18n="nav_gallery">Galeria</a>
+            <a href="map.html" id="map-link"><i class="fas fa-map-marker-alt"></i> <span data-i18n="nav_map">Mapy</span></a>
+        </div>
+        <div class="lang centered-lang">
             <label data-i18n="lang_label">Wybierz język</label>
             <select id="lang-select">
                 <option value="pl">Polski</option>
@@ -48,24 +48,12 @@
     <main class="wrap">
         <section class="card home-card">
             <div class="visual">
-                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80" alt="hero"
-                    class="hero-img">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Szczecin_Stadion_Miejski_dron_%281%29.jpg" alt="Stadium drone view" class="hero-img">
             </div>
             <div class="info">
-                <div class="name" data-i18n="site_name">Driftly-Pogodno</div>
-                <p class="desc" data-i18n="intro">Witamy na Driftly-Pogodno — krótki opis projektu.</p>
-                <div class="cta-row">
-                    <a class="btn primary" href="gallery.html" data-i18n="btn_explore">Zobacz galerię</a>
-                </div>
+                <div class="name" data-i18n="stadium_title">Stadion</div>
+                <p class="desc" data-i18n="stadium_intro">Informacje o stadionie i szlakach.</p>
             </div>
-        </section>
-
-        <hr>
-
-        <!-- Sekcja Szlaki -->
-        <section class="trails-preview">
-            <h2 data-i18n="tab_trails">Szlaki</h2>
-            <p data-i18n="trails_info">Wkrótce pojawią się nasze trasy — zapraszamy do śledzenia!</p></p>
         </section>
     </main>
 

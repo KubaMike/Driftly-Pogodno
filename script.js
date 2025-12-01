@@ -1,96 +1,14 @@
-const translations = {
-    // Fixed corrupted characters
-    pl: {
-        site_name: 'Driftly-Pogodno',
-        intro: 'Witamy na Driftly-Pogodno — krótki opis projektu.',
-        tab_trails: 'Szlaki',
-        trails_info: 'Wkrótce pojawią się nasze trasy — zapraszamy do śledzenia!',
-        nav_gallery: 'Galeria',
-        nav_map: 'Mapy', // Corrected (wkrótce removed)
-        btn_explore: 'Zobacz galerię',
-        sidebar_title: 'Menu',
-        lang_label: 'Wybierz język',
-        gallery_caption_1: 'Opis 1',
-        gallery_caption_2: 'Opis 2',
-        gallery_caption_3: 'Opis 3',
-        gallery_caption_4: 'Opis 4',
-        map_point_A_title: 'Punkt A',
-        map_point_B_title: 'Punkt B',
-        map_point_C_title: 'Punkt C',
-        map_link_text: 'Link do strony'
-    },
-    de: {
-        site_name: 'Driftly-Pogodno',
-        intro: 'Willkommen bei Driftly-Pogodno — kurzer Projekttext.',
-        tab_trails: 'Wege',
-        trails_info: 'Bald werden unsere Routen verfügbar sein — bleiben Sie dran!',
-        nav_gallery: 'Galerie',
-        nav_map: 'Karten', // Corrected (bald removed)
-        btn_explore: 'Galerie ansehen',
-        sidebar_title: 'Menü',
-        lang_label: 'Sprache wählen',
-        gallery_caption_1: 'Beschreibung 1',
-        gallery_caption_2: 'Beschreibung 2',
-        gallery_caption_3: 'Beschreibung 3',
-        gallery_caption_4: 'Beschreibung 4',
-        map_point_A_title: 'Punkt A (DE)',
-        map_point_B_title: 'Punkt B (DE)',
-        map_point_C_title: 'Punkt C (DE)',
-        map_link_text: 'Link zur Seite'
-    },
-    en: {
-        site_name: 'Driftly-Pogodno',
-        intro: 'Welcome to Driftly-Pogodno — short project description.',
-        tab_trails: 'Trails',
-        trails_info: 'Our trails will be available soon — stay tuned!',
-        nav_gallery: 'Gallery',
-        nav_map: 'Maps', // Corrected (coming soon removed)
-        btn_explore: 'View gallery',
-        sidebar_title: 'Menu',
-        lang_label: 'Choose language',
-        gallery_caption_1: 'Caption 1',
-        gallery_caption_2: 'Caption 2',
-        gallery_caption_3: 'Caption 3',
-        gallery_caption_4: 'Caption 4',
-        map_point_A_title: 'Point A',
-        map_point_B_title: 'Point B',
-        map_point_C_title: 'Point C',
-        map_link_text: 'Link to page'
-    },
-    // Fixed corrupted characters
-    ua: {
-        site_name: 'Driftly-Pogodno',
-        intro: 'Ласкаво просимо до Driftly-Pogodno — короткий опис проекту.',
-        tab_trails: 'Стежки',
-        trails_info: 'Наші маршрути незабаром будуть доступні — слідкуйте за оновленнями!',
-        nav_gallery: 'Галерея',
-        nav_map: 'Карти', // Corrected (незабаром removed)
-        btn_explore: 'Переглянути галерею',
-        sidebar_title: 'Меню',
-        lang_label: 'Виберіть мову',
-        gallery_caption_1: 'Підпис 1',
-        gallery_caption_2: 'Підпис 2',
-        gallery_caption_3: 'Підпис 3',
-        gallery_caption_4: 'Підпис 4',
-        map_point_A_title: 'Пункт A',
-        map_point_B_title: 'Пункт B',
-        map_point_C_title: 'Пункт C',
-        map_link_text: 'Посилання на сторінку'
-    }
-};
-
 let map; // Declare map globally
 
 // Funkcja ustawiająca język
 
 function setLanguage(lang) {
     console.log('setLanguage called with:', lang);
-    const dict = translations[lang];
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
-        if (dict[el.dataset.i18n]) {
-            el.textContent = dict[el.dataset.i18n];
-            console.log(`Translated element ${el.dataset.i18n} to ${dict[el.dataset.i18n]}`);
+        if (translations[el.dataset.i18n] && translations[el.dataset.i18n][lang]) {
+            el.textContent = translations[el.dataset.i18n][lang];
+            console.log(`Translated element ${el.dataset.i18n} to ${translations[el.dataset.i18n][lang]}`);
         } else {
             console.warn(`Translation missing for key: ${el.dataset.i18n} in language: ${lang}`);
         }
@@ -167,100 +85,7 @@ function showImage(index) {
     console.log(`Showing image ${currentImageIndex} with caption: ${lightboxCaption.textContent}`);
 }
 
-// Define custom control for geolocation
-L.Control.Locate = L.Control.extend({
-    options: {
-        position: 'bottomright' // Default position
-    },
 
-    onAdd: function (map) {
-        this._map = map; // Store map instance
-        this._watchId = null;
-        this._userMarker = null;
-        this._button = null; // Initialize _button here
-
-        // Create the button container
-        const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
-        this._button = L.DomUtil.create('a', 'leaflet-bar-part', container);
-        this._button.href = '#';
-        this._button.title = 'Locate Me'; // Add a title for accessibility
-        this._button.innerHTML = '<i class="fas fa-crosshairs"></i>'; // Font Awesome icon
-
-        L.DomEvent.on(this._button, 'click', this._onButtonClick, this); // Attach click handler
-        L.DomEvent.disableClickPropagation(container); // Prevent map clicks from triggering
-
-        return container;
-    },
-
-    onRemove: function (map) {
-        L.DomEvent.off(this._button, 'click', this._onButtonClick, this);
-        if (this._watchId) {
-            navigator.geolocation.clearWatch(this._watchId);
-        }
-        if (this._userMarker) {
-            map.removeLayer(this._userMarker);
-        }
-    },
-
-    _onButtonClick: function (e) {
-        e.preventDefault();
-
-        if (this._watchId && this._userMarker) { // If already watching and location is known, re-center
-            this._map.setView(this._userMarker.getLatLng(), 15);
-            return;
-        }
-
-        if (this._watchId) { // If watching but no marker yet, do nothing (wait for first position)
-            return;
-        }
-
-        // If not watching, start watching
-        if ('geolocation' in navigator) {
-            this._watchId = navigator.geolocation.watchPosition(position => {
-                const lat = position.coords.latitude;
-                const lng = position.coords.longitude;
-
-                if (this._userMarker) {
-                    this._userMarker.setLatLng([lat, lng]);
-                } else {
-                    this._userMarker = L.circleMarker([lat, lng], {
-                        radius: 8,
-                        fillColor: '#3388ff',
-                        color: '#fff',
-                        weight: 2,
-                        opacity: 1,
-                        fillOpacity: 0.8
-                    }).addTo(this._map);
-                }
-                this._map.setView([lat, lng], 15);
-
-            }, error => {
-                console.error('Error getting location:', error);
-                alert('Could not get your location.');
-                // Stop watching if an error occurs
-                if (this._watchId) {
-                    navigator.geolocation.clearWatch(this._watchId);
-                    this._watchId = null;
-                    if (this._userMarker) {
-                        this._map.removeLayer(this._userMarker);
-                        this._userMarker = null;
-                    }
-                }
-            }, {
-                enableHighAccuracy: true,
-                timeout: 5000,
-                maximumAge: 0
-            });
-        } else {
-            alert('Geolocation is not supported by your browser.');
-        }
-    }
-});
-
-// Factory function for convenience
-L.control.locate = function (options) {
-    return new L.Control.Locate(options);
-};
 
 document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.getElementById('sidebar');
@@ -273,6 +98,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Sidebar toggle
     hamburger.onclick = () => sidebar.classList.toggle('open');
     closeBtn.onclick = () => sidebar.classList.remove('open');
+
+    // Close sidebar on click outside
+    document.addEventListener('click', e => {
+        if (!sidebar.contains(e.target) && !hamburger.contains(e.target) && sidebar.classList.contains('open')) {
+            sidebar.classList.remove('open');
+        }
+    });
+
+    // Close sidebar on Escape key
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && sidebar.classList.contains('open')) {
+            sidebar.classList.remove('open');
+        }
+    });
 
     // Zmiana języka
     if (langSelect) { // Ensure langSelect exists on the page
@@ -334,6 +173,100 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('map')) {
         console.log('Map element found. Initializing map...');
 
+        // Define custom control for geolocation
+        L.Control.Locate = L.Control.extend({
+            options: {
+                position: 'bottomright' // Default position
+            },
+
+            onAdd: function (map) {
+                this._map = map; // Store map instance
+                this._watchId = null;
+                this._userMarker = null;
+                this._button = null; // Initialize _button here
+
+                // Create the button container
+                const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+                this._button = L.DomUtil.create('a', 'leaflet-bar-part', container);
+                this._button.href = '#';
+                this._button.title = 'Locate Me'; // Add a title for accessibility
+                this._button.innerHTML = '<i class="fas fa-crosshairs"></i>'; // Font Awesome icon
+
+                L.DomEvent.on(this._button, 'click', this._onButtonClick, this); // Attach click handler
+                L.DomEvent.disableClickPropagation(container); // Prevent map clicks from triggering
+
+                return container;
+            },
+
+            onRemove: function (map) {
+                L.DomEvent.off(this._button, 'click', this._onButtonClick, this);
+                if (this._watchId) {
+                    navigator.geolocation.clearWatch(this._watchId);
+                }
+                if (this._userMarker) {
+                    map.removeLayer(this._userMarker);
+                }
+            },
+
+            _onButtonClick: function (e) {
+                e.preventDefault();
+
+                if (this._watchId && this._userMarker) { // If already watching and location is known, do nothing to allow free exploration
+                    return;
+                }
+
+                if (this._watchId) { // If watching but no marker yet, do nothing (wait for first position)
+                    return;
+                }
+
+                // If not watching, start watching
+                if ('geolocation' in navigator) {
+                    this._watchId = navigator.geolocation.watchPosition(position => {
+                        const lat = position.coords.latitude;
+                        const lng = position.coords.longitude;
+
+                        if (this._userMarker) {
+                            this._userMarker.setLatLng([lat, lng]);
+                } else {
+                    this._userMarker = L.circleMarker([lat, lng], {
+                        radius: 8,
+                        fillColor: '#3388ff',
+                        color: '#fff',
+                        weight: 2,
+                        opacity: 1,
+                        fillOpacity: 0.8
+                    }).addTo(this._map);
+                }
+                // Removed panTo to allow free exploration
+
+                    }, error => {
+                        console.error('Error getting location:', error);
+                        alert('Could not get your location.');
+                        // Stop watching if an error occurs
+                        if (this._watchId) {
+                            navigator.geolocation.clearWatch(this._watchId);
+                            this._watchId = null;
+                            if (this._userMarker) {
+                                this._map.removeLayer(this._userMarker);
+                                this._userMarker = null;
+                            }
+                        }
+                    }, {
+                        enableHighAccuracy: true,
+                        timeout: 5000,
+                        maximumAge: 0
+                    });
+                } else {
+                    alert('Geolocation is not supported by your browser.');
+                }
+            }
+        });
+
+        // Factory function for convenience
+        L.control.locate = function (options) {
+            return new L.Control.Locate(options);
+        };
+
         // Define approximate bounding box for Szczecin (Pogodno, Zawadzkiego, Niebuszewo-Bolinko)
         // Southwest corner (lat, lng), Northeast corner (lat, lng)
         const szczecinBounds = [
@@ -345,8 +278,6 @@ document.addEventListener('DOMContentLoaded', () => {
             center: [53.447, 14.536], // Centered around Szczecin/Pogodno
             zoom: 13,
             maxBounds: szczecinBounds, // Limit panning
-            minZoom: 12, // Optional: prevent zooming too far out
-            maxZoom: 16, // Optional: prevent zooming too far in
             zoomControl: false // Disable default zoom control
         });
         console.log('Map object created:', map);
@@ -380,15 +311,34 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         ];
 
-        // Retrieve the current language dictionary to translate popup content
-        const currentLangDict = translations[storedLang];
-
         dropPoints.forEach(point => {
-            const marker = L.marker(point.coords).addTo(map);
-            const popupTitle = currentLangDict[point.titleKey] || point.titleKey; // Fallback to key if translation missing
-            const popupLinkText = currentLangDict['map_link_text'] || 'Link'; // Fallback to 'Link'
+            let marker;
+            let popupTitle;
+            let popupLink;
+            let popupLinkText = (translations['map_link_text'] && translations['map_link_text'][storedLang]) || 'Link';
 
-            marker.bindPopup(`<b>${popupTitle}</b><br><a href="${point.url}">${popupLinkText}</a>`);
+            if (point.titleKey === 'map_point_A_title' && localStorage.getItem('stadium_unlocked') === 'true') {
+                marker = L.circleMarker(point.coords, {
+                    radius: 8,
+                    fillColor: '#32cd32',
+                    color: '#fff',
+                    weight: 2,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                }).addTo(map);
+                popupTitle = (translations[point.titleKey] && translations[point.titleKey][storedLang]) || point.titleKey;
+                popupLink = 'stadium.html';
+            } else if (point.titleKey === 'map_point_A_title') {
+                marker = L.marker(point.coords).addTo(map);
+                popupTitle = (translations['map_unlock_instructions'] && translations['map_unlock_instructions'][storedLang]) || 'Scan QR code to unlock stadium details';
+                popupLink = '';
+            } else {
+                marker = L.marker(point.coords).addTo(map);
+                popupTitle = (translations[point.titleKey] && translations[point.titleKey][storedLang]) || point.titleKey;
+                popupLink = point.url;
+            }
+
+            marker.bindPopup(`<b>${popupTitle}</b>${popupLink ? `<br><a href="${popupLink}">${popupLinkText}</a>` : ''}`);
         });
         console.log('DropPoints added.');
 
@@ -397,5 +347,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     } else {
         console.log('Map element not found.');
+    }
+
+    // Unlock check for stadium.html
+    if (window.location.pathname.includes('stadium.html') && !localStorage.getItem('stadium_unlocked')) {
+        localStorage.setItem('stadium_unlocked', 'true');
     }
 });
