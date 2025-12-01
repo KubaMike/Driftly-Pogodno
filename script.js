@@ -79,6 +79,8 @@ const translations = {
     }
 };
 
+let map; // Declare map globally
+
 // Funkcja ustawiająca język
 
 function setLanguage(lang) {
@@ -211,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lightbox.onclick = e => { if (e.target === lightbox) lightbox.style.display = 'none'; };
 
         // Close lightbox with Escape key and navigate with arrow keys
-        document.addEventListener('keydown', e => {
+        document.addEventListener('keydown', e => {.
             if (lightbox.style.display === 'flex') { // Only navigate if lightbox is open
                 if (e.key === 'Escape') {
                     lightbox.style.display = 'none';
@@ -244,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
             [53.50, 14.65]  // Roughly northeast of Szczecin
         ];
 
-        const map = L.map('map', {
+        map = L.map('map', {
             center: [53.447, 14.536], // Centered around Szczecin/Pogodno
             zoom: 13,
             maxBounds: szczecinBounds, // Limit panning
@@ -294,6 +296,28 @@ document.addEventListener('DOMContentLoaded', () => {
             marker.bindPopup(`<b>${popupTitle}</b><br><a href="${point.url}">${popupLinkText}</a>`);
         });
         console.log('DropPoints added.');
+
+        const geolocateBtn = document.getElementById('geolocate-btn');
+        if (geolocateBtn) {
+            geolocateBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                if ('geolocation' in navigator) {
+                    navigator.geolocation.getCurrentPosition(position => {
+                        const lat = position.coords.latitude;
+                        const lng = position.coords.longitude;
+                        map.setView([lat, lng], 15);
+                        L.marker([lat, lng]).addTo(map)
+                            .bindPopup('Your location')
+                            .openPopup();
+                    }, error => {
+                        console.error('Error getting location:', error);
+                        alert('Could not get your location.');
+                    });
+                } else {
+                    alert('Geolocation is not supported by your browser.');
+                }
+            });
+        }
     } else {
         console.log('Map element not found.');
     }
