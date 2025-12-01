@@ -293,7 +293,7 @@ main.wrap > hr {
 /* Galeria */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
     padding: 90px 20px 20px;
     transition: padding 0.5s ease-in-out;
