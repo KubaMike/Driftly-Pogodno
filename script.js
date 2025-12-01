@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let popupLink;
             let popupLinkText = (translations['map_link_text'] && translations['map_link_text'][storedLang]) || 'Link';
 
-            if (point.titleKey === 'map_point_A_title' && localStorage.getItem('stadium_unlocked') === 'true') {
+            if (point.titleKey === 'map_point_A_title' && localStorage.getItem('stadium.unlocked') === 'true') {
                 marker = L.circleMarker(point.coords, {
                     radius: 8,
                     fillColor: '#32cd32',
@@ -350,8 +350,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Unlock check for stadium.html
-    if (window.location.pathname.includes('stadium.html') && !localStorage.getItem('stadium_unlocked')) {
-        localStorage.setItem('stadium_unlocked', 'true');
+    if (window.location.pathname.includes('stadium.html') && !localStorage.getItem('stadium.unlocked')) {
+        localStorage.setItem('stadium.unlocked', 'true');
     }
     
 });
