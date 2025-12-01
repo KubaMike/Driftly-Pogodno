@@ -78,10 +78,10 @@ const translations = {
         ua: 'Підпис 4'
     },
     map_point_A_title: {
-        pl: 'Punkt A',
-        de: 'Punkt A (DE)',
-        en: 'Point A',
-        ua: 'Пункт A'
+        pl: 'Dawne baseny MKS Pogoń',
+        de: 'Ehemalige Pools MKS Pogoń',
+        en: 'Old pools of MKS Pogoń',
+        ua: 'Старі басейни MKS Pogoń'
     },
     map_point_B_title: {
         pl: 'Punkt B',
@@ -108,15 +108,15 @@ const translations = {
         ua: 'Скануйте QR-код, щоб розблокувати деталі стадіону'
     },
     stadium_title: {
-        pl: 'Stadion',
-        de: 'Stadion',
-        en: 'Stadium',
-        ua: 'Стадіон'
+        pl: 'Dawne baseny MKS Pogoń',
+        de: 'Ehemalige Pools MKS Pogoń',
+        en: 'Old pools of MKS Pogoń',
+        ua: 'Старі басейни MKS Pogoń'
     },
     stadium_intro: {
-        pl: 'Informacje o stadionie i szlakach.',
-        de: 'Informationen über das Stadion und die Wege.',
-        en: 'Information about the stadium and trails.',
-        ua: 'Інформація про стадіон та стежки.'
+        pl: 'Informacje o dawnych basenach MKS Pogoń.',
+        de: 'Informationen über die ehemaligen Pools von MKS Pogoń.',
+        en: 'Information about the old pools of MKS Pogoń.',
+        ua: 'Інформація про старі басейни MKS Pogoń.'
     }
 };
