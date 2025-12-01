@@ -353,4 +353,5 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.location.pathname.includes('stadium.html') && !localStorage.getItem('stadium_unlocked')) {
         localStorage.setItem('stadium_unlocked', 'true');
     }
+    
 });
