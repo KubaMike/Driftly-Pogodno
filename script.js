@@ -167,6 +167,101 @@ function showImage(index) {
     console.log(`Showing image ${currentImageIndex} with caption: ${lightboxCaption.textContent}`);
 }
 
+// Define custom control for geolocation
+L.Control.Locate = L.Control.extend({
+    options: {
+        position: 'bottomright' // Default position
+    },
+
+    onAdd: function (map) {
+        this._map = map; // Store map instance
+        this._watchId = null;
+        this._userMarker = null;
+        this._button = null; // Initialize _button here
+
+        // Create the button container
+        const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+        this._button = L.DomUtil.create('a', 'leaflet-bar-part', container);
+        this._button.href = '#';
+        this._button.title = 'Locate Me'; // Add a title for accessibility
+        this._button.innerHTML = '<i class="fas fa-crosshairs"></i>'; // Font Awesome icon
+
+        L.DomEvent.on(this._button, 'click', this._onButtonClick, this); // Attach click handler
+        L.DomEvent.disableClickPropagation(container); // Prevent map clicks from triggering
+
+        return container;
+    },
+
+    onRemove: function (map) {
+        L.DomEvent.off(this._button, 'click', this._onButtonClick, this);
+        if (this._watchId) {
+            navigator.geolocation.clearWatch(this._watchId);
+        }
+        if (this._userMarker) {
+            map.removeLayer(this._userMarker);
+        }
+    },
+
+    _onButtonClick: function (e) {
+        e.preventDefault();
+
+        if (this._watchId && this._userMarker) { // If already watching and location is known, re-center
+            this._map.setView(this._userMarker.getLatLng(), 15);
+            return;
+        }
+
+        if (this._watchId) { // If watching but no marker yet, do nothing (wait for first position)
+            return;
+        }
+
+        // If not watching, start watching
+        if ('geolocation' in navigator) {
+            this._watchId = navigator.geolocation.watchPosition(position => {
+                const lat = position.coords.latitude;
+                const lng = position.coords.longitude;
+
+                if (this._userMarker) {
+                    this._userMarker.setLatLng([lat, lng]);
+                } else {
+                    this._userMarker = L.circleMarker([lat, lng], {
+                        radius: 8,
+                        fillColor: '#3388ff',
+                        color: '#fff',
+                        weight: 2,
+                        opacity: 1,
+                        fillOpacity: 0.8
+                    }).addTo(this._map);
+                }
+                this._map.setView([lat, lng], 15);
+
+            }, error => {
+                console.error('Error getting location:', error);
+                alert('Could not get your location.');
+                // Stop watching if an error occurs
+                if (this._watchId) {
+                    navigator.geolocation.clearWatch(this._watchId);
+                    this._watchId = null;
+                    if (this._userMarker) {
+                        this._map.removeLayer(this._userMarker);
+                        this._userMarker = null;
+                    }
+                }
+            }, {
+                enableHighAccuracy: true,
+                timeout: 5000,
+                maximumAge: 0
+            });
+        } else {
+            alert('Geolocation is not supported by your browser.');
+        }
+    }
+});
+
+// Factory function for convenience
+L.control.locate = function (options) {
+    return new L.Control.Locate(options);
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.getElementById('sidebar');
     const hamburger = document.getElementById('hamburger');
@@ -297,65 +392,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         console.log('DropPoints added.');
 
-        const geolocateBtn = document.getElementById('geolocate-btn');
-        let watchId = null;
-        let userMarker = null;
+        // Add the custom locate control
+        L.control.locate({position: 'bottomright'}).addTo(map);
 
-        if (geolocateBtn) {
-            geolocateBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-
-                if (watchId && userMarker) { // If already watching and location is known, re-center
-                    map.setView(userMarker.getLatLng(), 15);
-                    return;
-                }
-
-                if (watchId) { // If watching but no marker yet, do nothing (wait for first position)
-                    return;
-                }
-
-                // If not watching, start watching
-                if ('geolocation' in navigator) {
-                    watchId = navigator.geolocation.watchPosition(position => {
-                        const lat = position.coords.latitude;
-                        const lng = position.coords.longitude;
-
-                        if (userMarker) {
-                            userMarker.setLatLng([lat, lng]);
-                        } else {
-                            userMarker = L.circleMarker([lat, lng], {
-                                radius: 8,
-                                fillColor: '#3388ff',
-                                color: '#fff',
-                                weight: 2,
-                                opacity: 1,
-                                fillOpacity: 0.8
-                            }).addTo(map);
-                        }
-                        map.setView([lat, lng], 15);
-
-                    }, error => {
-                        console.error('Error getting location:', error);
-                        alert('Could not get your location.');
-                        // Stop watching if an error occurs
-                        if (watchId) {
-                            navigator.geolocation.clearWatch(watchId);
-                            watchId = null;
-                            if (userMarker) {
-                                map.removeLayer(userMarker);
-                                userMarker = null;
-                            }
-                        }
-                    }, {
-                        enableHighAccuracy: true,
-                        timeout: 5000,
-                        maximumAge: 0
-                    });
-                } else {
-                    alert('Geolocation is not supported by your browser.');
-                }
-            });
-        }
     } else {
         console.log('Map element not found.');
     }
