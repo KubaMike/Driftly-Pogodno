@@ -331,11 +331,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 weight: 2,
                                 opacity: 1,
                                 fillOpacity: 0.8
-                            }).addTo(map)
-                                .bindPopup('Your location');
+                            }).addTo(map);
                         }
                         map.setView([lat, lng], 15);
-                        userMarker.openPopup();
 
                     }, error => {
                         console.error('Error getting location:', error);
