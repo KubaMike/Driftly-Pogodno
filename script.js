@@ -90,14 +90,27 @@ function showImage(index) {
 document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.getElementById('sidebar');
     const hamburger = document.getElementById('hamburger');
-    const closeBtn = document.getElementById('close-btn');
-    const langSelect = document.getElementById('lang-select');
-    const mapLink = document.getElementById('map-link');
-    const mapLinkTop = document.getElementById('map-link-top');
 
-    // Sidebar toggle
-    hamburger.onclick = () => sidebar.classList.toggle('open');
-    closeBtn.onclick = () => sidebar.classList.remove('open');
+    if (hamburger) {
+        console.log('Hamburger element found.');
+        hamburger.onclick = () => {
+            console.log('Hamburger clicked.');
+            sidebar.classList.toggle('open');
+        };
+    } else {
+        console.error('Hamburger element not found.');
+    }
+    const closeBtn = document.getElementById('close-btn');
+
+    if (closeBtn) {
+        console.log('Close button element found.');
+        closeBtn.onclick = () => {
+            console.log('Close button clicked.');
+            sidebar.classList.remove('open');
+        };
+    } else {
+        console.error('Close button element not found.');
+    }
 
     // Close sidebar on click outside
     document.addEventListener('click', e => {
