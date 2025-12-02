@@ -336,7 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let popupLink;
             let popupLinkText = (translations['map_link_text'] && translations['map_link_text'][storedLang]) || 'Link';
 
-            if (point.titleKey === 'map_point_A_title' && localStorage.getItem('stadium_unlocked') === 'true') {
+            if (point.titleKey === 'map_point_A_title' && localStorage.getItem('feature.unlocked') === 'true') {
                 marker = L.circleMarker(point.coords, {
                     radius: 8,
                     fillColor: '#32cd32',
@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     fillOpacity: 0.8
                 }).addTo(map);
                 popupTitle = (translations[point.titleKey] && translations[point.titleKey][storedLang]) || point.titleKey;
-                popupLink = 'stadium.html';
+                popupLink = 225e41a4ad.html;
             } else if (point.titleKey === 'map_point_A_title') {
                 marker = L.marker(point.coords).addTo(map);
                 popupTitle = (translations['map_unlock_instructions'] && translations['map_unlock_instructions'][storedLang]) || 'Scan QR code to unlock stadium details';
@@ -369,8 +369,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Unlock check for stadium.html
-    if (window.location.pathname.includes('stadium.html') && !localStorage.getItem('stadium_unlocked')) {
-        localStorage.setItem('stadium_unlocked', 'true');
+    if (window.location.pathname.includes(225e41a4ad.html) && !localStorage.getItem('feature.unlocked')) {
+        localStorage.setItem('feature.unlocked', 'true');
     }
     
 });
