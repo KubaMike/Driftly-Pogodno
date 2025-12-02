@@ -10,6 +10,18 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .subsite-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .subsite-gallery .gallery-item {
+            flex-basis: 300px;
+        }
+    </style>
 </head>
 
 <body>
@@ -49,17 +61,34 @@
     <main class="wrap">
         <section class="card home-card">
             <div class="visual">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Dawne_baseny_MKS_Pogo%C5%84_w_Szczecinie.jpg" alt="Old pools of MKS Pogoń" class="hero-img">
+                <img src="file:///home/kubamike/Driftly-Pogodno/Photos/basen_pogon_wejscie.jpg" alt="Old pools of MKS Pogoń" class="hero-img">
             </div>
             <div class="info">
                 <div class="name" data-i18n="stadium_title">Stadion</div>
-                <p class="desc" data-i18n="stadium_intro">Informacje o stadionie i szlakach.</p>
+                <p class="desc" data-i18n="stadium_intro">Informacje o dawnych basenach MKS Pogoń.</p>
             </div>
         </section>
+
+        <hr>
+
+        <div class="gallery subsite-gallery">
+            <div class="gallery-item">
+                <img src="file:///home/kubamike/Driftly-Pogodno/Photos/basen_pogon_szczecin.jpg" alt="Basen Pogoń Szczecin">
+            </div>
+            <div class="gallery-item">
+                <img src="file:///home/kubamike/Driftly-Pogodno/Photos/basen_pogon_ludzie.jpg" alt="Basen Pogoń Ludzie">
+            </div>
+            <div class="gallery-item">
+                <img src="file:///home/kubamike/Driftly-Pogodno/Photos/basen_pogon_60s.jpg" alt="Basen Pogoń 1960s">
+            </div>
+            <div class="gallery-item">
+                <img src="file:///home/kubamike/Driftly-Pogodno/Photos/basen_pogon_1965.jpg" alt="Basen Pogoń 1965">
+            </div>
+        </div>
     </main>
 
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
+    <script src="translations.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
