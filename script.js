@@ -126,6 +126,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    const langSelect = document.getElementById('lang-select');
+
     // Zmiana języka
     if (langSelect) { // Ensure langSelect exists on the page
         langSelect.onchange = e => {
