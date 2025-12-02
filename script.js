@@ -289,24 +289,28 @@ document.addEventListener('DOMContentLoaded', () => {
             [53.50, 14.65]  // Roughly northeast of Szczecin
         ];
 
-        map = L.map('map', {
-            center: [53.447, 14.536], // Centered around Szczecin/Pogodno
-            zoom: 13,
-            maxBounds: szczecinBounds, // Limit panning
-            zoomControl: false // Disable default zoom control
-        });
-        console.log('Map object created:', map);
+        try {
+            map = L.map('map', {
+                center: [53.447, 14.536], // Centered around Szczecin/Pogodno
+                zoom: 13,
+                maxBounds: szczecinBounds, // Limit panning
+                zoomControl: false // Disable default zoom control
+            });
+            console.log('Map object created:', map);
 
-        // Add custom zoom control to bottomright
-        L.control.zoom({
-            position: 'bottomright'
-        }).addTo(map);
+            // Add custom zoom control to bottomright
+            L.control.zoom({
+                position: 'bottomright'
+            }).addTo(map);
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-            maxBounds: szczecinBounds // Apply maxBounds to tile layer as well for consistency
-        }).addTo(map);
-        console.log('Tile layer added.');
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                maxBounds: szczecinBounds // Apply maxBounds to tile layer as well for consistency
+            }).addTo(map);
+            console.log('Tile layer added.');
+        } catch (error) {
+            console.error('Map initialization error:', error);
+        }
 
         const dropPoints = [
             {
