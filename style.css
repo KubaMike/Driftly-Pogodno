@@ -210,6 +210,12 @@ main.wrap > hr {
     padding-top: 70px;
 }
 
+@media (min-width: 1400px) {
+    .home-card {
+        max-width: 100%;
+    }
+}
+
 .visual {
     flex: 3;
     display: flex;
