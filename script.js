@@ -49,9 +49,9 @@ function createPointMarker(point, coords, titleKey, url, storedLang) {
 
 function initializeDropPoints(map, storedLang) {
     const dropPoints = [
-        { id: 0, coords: [53.447, 14.536], titleKey: 'map_point_A_title', url: '225e41a4ad.html' },
-        { id: 1, coords: [53.450, 14.540], titleKey: 'map_point_B_title', url: 'index.html' },
-        { id: 2, coords: [53.440, 14.530], titleKey: 'map_point_C_title', url: 'gallery.html' }
+        { id: 0, coords: [53.435, 14.520], titleKey: 'map_point_0_title', url: '225e41a4ad.html' },
+        // { id: 1, coords: [53.450, 14.540], titleKey: 'map_point_1_title', url: 'index.html' },
+        // { id: 2, coords: [53.440, 14.530], titleKey: 'map_point_2_title', url: 'gallery.html' }
     ];
 
     dropPoints.forEach(point => {

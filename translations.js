@@ -89,19 +89,19 @@ const translations = {
         en: 'Stadium in 2021',
         ua: 'Стадіон у 2021 році'
     },
-    map_point_A_title: {
+    map_point_0_title: {
         pl: 'Dawne baseny MKS Pogoń',
         de: 'Ehemalige Pools MKS Pogoń',
         en: 'Old pools of MKS Pogoń',
         ua: 'Старі басейни MKS Pogoń'
     },
-    map_point_B_title: {
+    map_point_1_title: {
         pl: 'Punkt B',
         de: 'Punkt B (DE)',
         en: 'Point B',
         ua: 'Пункт B'
     },
-    map_point_C_title: {
+    map_point_2_title: {
         pl: 'Punkt C',
         de: 'Punkt C (DE)',
         en: 'Point C',
