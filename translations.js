@@ -56,7 +56,7 @@ const translations = {
     gallery_caption_1: {
         pl: 'Widok z drona na stadion w Szczecinie',
         de: 'Drohnenansicht des Stadions in Szczecin',
-        en: 'Drone view of the stadium in Szczecin',
+        en: 'Drone view of the basenyPogoni in Szczecin',
         ua: 'Вид з дрона на стадіон у Щецині'
     },
     gallery_caption_2: {
@@ -116,16 +116,16 @@ const translations = {
     map_unlock_instructions: {
         pl: 'Zeskanuj kod QR, aby odblokować szczegóły stadionu',
         de: 'Scannen Sie den QR-Code, um Stadiondetails freizuschalten',
-        en: 'Scan QR code to unlock stadium details',
+        en: 'Scan QR code to unlock basenyPogoni details',
         ua: 'Скануйте QR-код, щоб розблокувати деталі стадіону'
     },
-    stadium_title: {
+    basenyPogoni_title: {
         pl: 'Dawne baseny MKS Pogoń',
         de: 'Ehemalige Pools MKS Pogoń',
         en: 'Old pools of MKS Pogoń',
         ua: 'Старі басейни MKS Pogoń'
     },
-    stadium_intro: {
+    basenyPogoni_intro: {
         pl: 'Informacje o dawnych basenach MKS Pogoń.',
         de: 'Informationen über die ehemaligen Pools von MKS Pogoń.',
         en: 'Information about the old pools of MKS Pogoń.',

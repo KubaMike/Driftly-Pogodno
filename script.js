@@ -2,6 +2,65 @@ let map; // Declare map globally
 
 // Funkcja ustawiająca język
 
+function isPointActive(point) {
+    return localStorage.getItem(`point_${point}`) === 'true';
+}
+
+function unlockPoint(point) {
+    localStorage.setItem(`point_${point}`, 'true');
+}
+
+function pointUnlock(point, subsiteLink) {
+    if (window.location.pathname.includes(subsiteLink) && !isPointActive(point)) {
+        unlockPoint(point);
+    }
+}
+
+function createPointMarker(point, coords, titleKey, url, storedLang) {
+    const popupLinkText = (translations['map_link_text'] && translations['map_link_text'][storedLang]) || 'Link';
+    let marker;
+    let popupTitle;
+    let popupLink;
+
+    if (point === 0 && isPointActive(point)) {
+        marker = L.circleMarker(coords, {
+            radius: 8,
+            fillColor: '#32cd32',
+            color: '#fff',
+            weight: 2,
+            opacity: 1,
+            fillOpacity: 0.8
+        });
+        popupTitle = (translations[titleKey] && translations[titleKey][storedLang]) || titleKey;
+        popupLink = url;
+    } else if (point === 0) {
+        marker = L.marker(coords);
+        popupTitle = (translations['map_unlock_instructions'] && translations['map_unlock_instructions'][storedLang]) || 'Scan QR code to unlock basenyPogoni details';
+        popupLink = '';
+    } else {
+        marker = L.marker(coords);
+        popupTitle = (translations[titleKey] && translations[titleKey][storedLang]) || titleKey;
+        popupLink = url;
+    }
+
+    marker.bindPopup(`<b>${popupTitle}</b>${popupLink ? `<br><a href="${popupLink}">${popupLinkText}</a>` : ''}`);
+    return marker;
+}
+
+function initializeDropPoints(map, storedLang) {
+    const dropPoints = [
+        { id: 0, coords: [53.447, 14.536], titleKey: 'map_point_A_title', url: '225e41a4ad.html' },
+        { id: 1, coords: [53.450, 14.540], titleKey: 'map_point_B_title', url: 'index.html' },
+        { id: 2, coords: [53.440, 14.530], titleKey: 'map_point_C_title', url: 'gallery.html' }
+    ];
+
+    dropPoints.forEach(point => {
+        const marker = createPointMarker(point.id, point.coords, point.titleKey, point.url, storedLang);
+        marker.addTo(map);
+    });
+    console.log('DropPoints added.');
+}
+
 function setLanguage(lang) {
     console.log('setLanguage called with:', lang);
 
@@ -312,54 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Map initialization error:', error);
         }
 
-        const dropPoints = [
-            {
-                coords: [53.447, 14.536],
-                titleKey: 'map_point_A_title',
-                url: 'gallery.html'
-            },
-            {
-                coords: [53.450, 14.540],
-                titleKey: 'map_point_B_title',
-                url: 'index.html'
-            },
-            {
-                coords: [53.440, 14.530],
-                titleKey: 'map_point_C_title',
-                url: 'gallery.html'
-            }
-        ];
-
-        dropPoints.forEach(point => {
-            let marker;
-            let popupTitle;
-            let popupLink;
-            let popupLinkText = (translations['map_link_text'] && translations['map_link_text'][storedLang]) || 'Link';
-
-            if (point.titleKey === 'map_point_A_title' && localStorage.getItem('feature.unlocked') === 'true') {
-                marker = L.circleMarker(point.coords, {
-                    radius: 8,
-                    fillColor: '#32cd32',
-                    color: '#fff',
-                    weight: 2,
-                    opacity: 1,
-                    fillOpacity: 0.8
-                }).addTo(map);
-                popupTitle = (translations[point.titleKey] && translations[point.titleKey][storedLang]) || point.titleKey;
-                popupLink = "225e41a4ad.html";
-            } else if (point.titleKey === 'map_point_A_title') {
-                marker = L.marker(point.coords).addTo(map);
-                popupTitle = (translations['map_unlock_instructions'] && translations['map_unlock_instructions'][storedLang]) || 'Scan QR code to unlock stadium details';
-                popupLink = '';
-            } else {
-                marker = L.marker(point.coords).addTo(map);
-                popupTitle = (translations[point.titleKey] && translations[point.titleKey][storedLang]) || point.titleKey;
-                popupLink = point.url;
-            }
-
-            marker.bindPopup(`<b>${popupTitle}</b>${popupLink ? `<br><a href="${popupLink}">${popupLinkText}</a>` : ''}`);
-        });
-        console.log('DropPoints added.');
+        initializeDropPoints(map, storedLang);
 
         // Add the custom locate control
         L.control.locate({position: 'bottomright'}).addTo(map);
@@ -368,9 +380,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Map element not found.');
     }
 
-    // Unlock check for stadium.html
-    if (window.location.pathname.includes("225e41a4ad.html") && !localStorage.getItem('feature.unlocked')) {
-        localStorage.setItem('feature.unlocked', 'true');
-    }
+    // Unlock checks
+    pointUnlock(0, "225e41a4ad.html");
     
 });
