@@ -310,8 +310,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         opacity: 1,
                         fillOpacity: 0.8
                     }).addTo(this._map);
+                    // Zoom to user's location on first locate
+                    this._map.setView([lat, lng], 15);
                 }
-                // Removed panTo to allow free exploration
 
                     }, error => {
                         console.error('Error getting location:', error);
