@@ -102,7 +102,7 @@ const translations = {
         ua: 'Посилання на сторінку'
     },
     map_unlock_instructions: {
-        pl: 'Zeskanuj kod QR, aby odblokować szczegóły stadionu',
+        pl: 'Zeskanuj kod QR, aby odblokować szczegóły',
         de: 'Scannen Sie den QR-Code, um Stadiondetails freizuschalten',
         en: 'Scan QR code to unlock stadium details',
         ua: 'Скануйте QR-код, щоб розблокувати деталі стадіону'

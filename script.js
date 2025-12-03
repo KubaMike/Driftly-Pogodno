@@ -315,7 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const dropPoints = [
             {
                 coords: [53.447, 14.536],
-                titleKey: 'map_point_A_title',
+                titleKey: 'map_point_A',
                 url: 'gallery.html'
             },
             {
@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 coords: [53.440, 14.530],
                 titleKey: 'map_point_C_title',
-                url: 'gallery.html'
+                url: '225e41a4ad.html'
             }
         ];
 
@@ -347,7 +347,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }).addTo(map);
                 popupTitle = (translations[point.titleKey] && translations[point.titleKey][storedLang]) || point.titleKey;
                 popupLink = "225e41a4ad.html";
-            } else if (point.titleKey === 'map_point_A_title') {
+            } else if (point.titleKey === 'map_point_A') {
                 marker = L.marker(point.coords).addTo(map);
                 popupTitle = (translations['map_unlock_instructions'] && translations['map_unlock_instructions'][storedLang]) || 'Scan QR code to unlock stadium details';
                 popupLink = '';
