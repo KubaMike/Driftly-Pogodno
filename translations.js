@@ -6,10 +6,10 @@ const translations = {
         ua: 'Driftly-Pogodno'
     },
     intro: {
-        pl: 'Witamy na Driftly-Pogodno — krótki opis projektu.',
-        de: 'Willkommen bei Driftly-Pogodno — kurzer Projekttext.',
-        en: 'Welcome to Driftly-Pogodno — short project description.',
-        ua: 'Ласкаво просимо до Driftly-Pogodno — короткий опис проекту.'
+        pl: 'Witamy na Driftly-Pogodno',
+        de: 'Willkommen bei Driftly-Pogodno',
+        en: 'Welcome to Driftly-Pogodno',
+        ua: 'Ласкаво просимо до Driftly-Pogodno'
     },
     tab_trails: {
         pl: 'Szlaki',
@@ -54,42 +54,54 @@ const translations = {
         ua: 'Виберіть мову'
     },
     gallery_caption_1: {
-        pl: 'Opis 1',
-        de: 'Beschreibung 1',
-        en: 'Caption 1',
-        ua: 'Підпис 1'
+        pl: 'Widok z drona na stadion w Szczecinie',
+        de: 'Drohnenansicht des Stadions in Szczecin',
+        en: 'Drone view of the basenyPogoni in Szczecin',
+        ua: 'Вид з дрона на стадіон у Щецині'
     },
     gallery_caption_2: {
-        pl: 'Opis 2',
-        de: 'Beschreibung 2',
-        en: 'Caption 2',
-        ua: 'Підпис 2'
+        pl: 'Panorama Pogodna',
+        de: 'Panorama von Pogodno',
+        en: 'Panorama of Pogodno',
+        ua: 'Панорама Погонно'
     },
     gallery_caption_3: {
-        pl: 'Opis 3',
-        de: 'Beschreibung 3',
-        en: 'Caption 3',
-        ua: 'Підпис 3'
+        pl: 'Osiedle \'Pogodno\' w Szczecinie – jednostka pomocnicza miasta w 2010',
+        de: 'Wohnsiedlung \'Pogodno\' in Szczecin – Hilfseinheit der Stadt im Jahr 2010.',
+        en: '\'Pogodno\' housing estate in Szczecin – auxiliary unit of the city in 2010.',
+        ua: 'Житловий масив \'Погонно\' у Щецині – допоміжна одиниця міста у 2010 році.'
     },
     gallery_caption_4: {
-        pl: 'Opis 4',
-        de: 'Beschreibung 4',
-        en: 'Caption 4',
-        ua: 'Підпис 4'
+        pl: 'Szczecin ul. Grzegorza z Sanoka',
+        de: 'Szczecin ul. Grzegorza z Sanoka',
+        en: 'Szczecin ul. Grzegorza z Sanoka',
+        ua: 'Щецин вул. Grzegorza z Sanoka'
     },
-    map_point_A_title: {
+    gallery_caption_5: {
+        pl: 'Siedziba Wydziału Nauk Ekonomicznych i Zarządzania Uniwersytetu Szczecińskiego przy ul. Mickiewicza 64 w Szczecinie.',
+        de: 'Der Hauptsitz der Fakultät für Wirtschaftswissenschaften und Management der Universität Szczecin, gelegen in Mickiewicza 64 in Szczecin, Polen.',
+        en: 'The headquarters of the Faculty of Economics and Management of the University of Szczecin, located at Mickiewicza 64 in Szczecin, Poland.',
+        ua: 'Штаб-квартира факультету економіки та управління Щецинського університету, розташована за адресою Mickiewicza 64 у Щецині, Польща.'
+    },
+    gallery_caption_6: {
+        pl: 'Stadion w 2021',
+        de: 'Stadion im Jahr 2021',
+        en: 'Stadium in 2021',
+        ua: 'Стадіон у 2021 році'
+    },
+    map_point_0_title: {
         pl: 'Dawne baseny MKS Pogoń',
         de: 'Ehemalige Pools MKS Pogoń',
         en: 'Old pools of MKS Pogoń',
         ua: 'Старі басейни MKS Pogoń'
     },
-    map_point_B_title: {
+    map_point_1_title: {
         pl: 'Punkt B',
         de: 'Punkt B (DE)',
         en: 'Point B',
         ua: 'Пункт B'
     },
-    map_point_C_title: {
+    map_point_2_title: {
         pl: 'Punkt C',
         de: 'Punkt C (DE)',
         en: 'Point C',
@@ -104,16 +116,16 @@ const translations = {
     map_unlock_instructions: {
         pl: 'Zeskanuj kod QR, aby odblokować szczegóły',
         de: 'Scannen Sie den QR-Code, um Stadiondetails freizuschalten',
-        en: 'Scan QR code to unlock stadium details',
+        en: 'Scan QR code to unlock basenyPogoni details',
         ua: 'Скануйте QR-код, щоб розблокувати деталі стадіону'
     },
-    stadium_title: {
+    basenyPogoni_title: {
         pl: 'Dawne baseny MKS Pogoń',
         de: 'Ehemalige Pools MKS Pogoń',
         en: 'Old pools of MKS Pogoń',
         ua: 'Старі басейни MKS Pogoń'
     },
-    stadium_intro: {
+    basenyPogoni_intro: {
         pl: 'Informacje o dawnych basenach MKS Pogoń.',
         de: 'Informationen über die ehemaligen Pools von MKS Pogoń.',
         en: 'Information about the old pools of MKS Pogoń.',
