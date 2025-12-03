@@ -14,19 +14,19 @@ function setLanguage(lang) {
         }
     });
 
-    // FIX: Correctly constructs the property name for reading data-caption-XX attributes
+    // Set captions for gallery items using i18n
     document.querySelectorAll('.gallery-item').forEach(item => {
-        // Example: 'pl' -> 'Pl'
-        const capitalizedLang = lang.charAt(0).toUpperCase() + lang.slice(1);
-        // Example: 'captionPl'. This matches item.dataset property for data-caption-pl
-        const propertyName = 'caption' + capitalizedLang;
-
-        // Sets the current caption for the lightbox to use
-        item.dataset.currentCaption = item.dataset[propertyName] || '';
-        console.log(`Gallery item caption set for ${item.dataset.currentCaption}`);
+        if (item.dataset.i18n && translations[item.dataset.i18n] && translations[item.dataset.i18n][lang]) {
+            item.dataset.currentCaption = translations[item.dataset.i18n][lang];
+            console.log(`Gallery item caption set for ${item.dataset.currentCaption}`);
+        }
     });
 
     populateGalleryImages();
+    // Update lightbox caption if open
+    if (lightbox && lightbox.style.display === 'flex') {
+        lightboxCaption.textContent = galleryImages[currentImageIndex].caption;
+    }
     localStorage.setItem('driftly_lang', lang);
     console.log('Language stored in localStorage:', lang);
 }
