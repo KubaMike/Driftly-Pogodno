@@ -6,10 +6,10 @@ const translations = {
         ua: 'Driftly-Pogodno'
     },
     intro: {
-        pl: 'Witamy na Driftly-Pogodno — krótki opis projektu.',
-        de: 'Willkommen bei Driftly-Pogodno — kurzer Projekttext.',
-        en: 'Welcome to Driftly-Pogodno — short project description.',
-        ua: 'Ласкаво просимо до Driftly-Pogodno — короткий опис проекту.'
+        pl: 'Witamy na Driftly-Pogodno',
+        de: 'Willkommen bei Driftly-Pogodno',
+        en: 'Welcome to Driftly-Pogodno',
+        ua: 'Ласкаво просимо до Driftly-Pogodno'
     },
     tab_trails: {
         pl: 'Szlaki',
