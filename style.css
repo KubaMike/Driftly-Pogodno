@@ -444,7 +444,7 @@ main.wrap > hr {
 
     .gallery {
         grid-template-columns: 1fr;
-        padding: 90px 0 20px;
+        padding: 90px 15px 20px;
     }
 
     .gallery-item img {
