@@ -313,18 +313,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         if (this._userMarker) {
                             this._userMarker.setLatLng([lat, lng]);
-                } else {
-                    this._userMarker = L.circleMarker([lat, lng], {
-                        radius: 8,
-                        fillColor: '#3388ff',
-                        color: '#fff',
-                        weight: 2,
-                        opacity: 1,
-                        fillOpacity: 0.8
-                    }).addTo(this._map);
-                    // Zoom to user's location on first locate
-                    this._map.setView([lat, lng], 15);
-                }
+                        } else {
+                            this._userMarker = L.circleMarker([lat, lng], {
+                                radius: 8,
+                                fillColor: '#3388ff',
+                                color: '#fff',
+                                weight: 2,
+                                opacity: 1,
+                                fillOpacity: 0.8
+                            }).addTo(this._map);
+                            // Zoom to user's location on first locate
+                            this._map.setView([lat, lng], 15);
+                        }
 
                     }, error => {
                         console.error('Error getting location:', error);
@@ -378,13 +378,16 @@ document.addEventListener('DOMContentLoaded', () => {
         initializeDropPoints(map, storedLang);
 
         // Add the custom locate control
-        L.control.locate({position: 'bottomright'}).addTo(map);
+        L.control.locate({ position: 'bottomright' }).addTo(map);
 
     } else {
         console.log('Map element not found.');
     }
 
     // Unlock checks
-    pointUnlock(0, "225e41a4ad.html");
+    // pointUnlock(0, "225e41a4ad.html");  // Moved outside
     
 });
+
+// Unlock checks - moved outside DOMContentLoaded to run on script load
+pointUnlock(0, "225e41a4ad.html");
