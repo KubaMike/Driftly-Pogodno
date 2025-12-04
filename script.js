@@ -66,7 +66,11 @@ function setLanguage(lang) {
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
         if (translations[el.dataset.i18n] && translations[el.dataset.i18n][lang]) {
-            el.textContent = translations[el.dataset.i18n][lang];
+            if (el.tagName === 'IMG') {
+                el.alt = translations[el.dataset.i18n][lang];
+            } else {
+                el.textContent = translations[el.dataset.i18n][lang];
+            }
             console.log(`Translated element ${el.dataset.i18n} to ${translations[el.dataset.i18n][lang]}`);
         } else {
             console.warn(`Translation missing for key: ${el.dataset.i18n} in language: ${lang}`);
@@ -86,6 +90,14 @@ function setLanguage(lang) {
     if (lightbox && lightbox.style.display === 'flex') {
         lightboxCaption.textContent = galleryImages[currentImageIndex].caption;
     }
+
+    // Update document title if it has data-i18n
+    const titleEl = document.querySelector('title');
+    if (titleEl && titleEl.dataset.i18n && translations[titleEl.dataset.i18n] && translations[titleEl.dataset.i18n][lang]) {
+        document.title = translations[titleEl.dataset.i18n][lang];
+        console.log(`Document title set to ${document.title}`);
+    }
+
     localStorage.setItem('driftly_lang', lang);
     console.log('Language stored in localStorage:', lang);
 }
@@ -342,18 +354,10 @@ document.addEventListener('DOMContentLoaded', () => {
             return new L.Control.Locate(options);
         };
 
-        // Define approximate bounding box for Szczecin (Pogodno, Zawadzkiego, Niebuszewo-Bolinko)
-        // Southwest corner (lat, lng), Northeast corner (lat, lng)
-        const szczecinBounds = [
-            [53.36, 14.40], // Roughly southwest of Szczecin
-            [53.50, 14.65]  // Roughly northeast of Szczecin
-        ];
-
         try {
             map = L.map('map', {
                 center: [53.447, 14.536], // Centered around Szczecin/Pogodno
                 zoom: 13,
-                maxBounds: szczecinBounds, // Limit panning
                 zoomControl: false // Disable default zoom control
             });
             console.log('Map object created:', map);
@@ -364,8 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }).addTo(map);
 
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-                maxBounds: szczecinBounds // Apply maxBounds to tile layer as well for consistency
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
             console.log('Tile layer added.');
         } catch (error) {
