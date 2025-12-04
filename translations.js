@@ -54,40 +54,40 @@ const translations = {
         ua: 'Виберіть мову'
     },
     gallery_caption_1: {
-        pl: 'Widok z drona na stadion w Szczecinie',
-        de: 'Drohnenansicht des Stadions in Szczecin',
-        en: 'Drone view of the basenyPogoni in Szczecin',
-        ua: 'Вид з дрона на стадіон у Щецині'
+        pl: 'Przedwojenne plany Szczecina z ok. 1935 roku — w tym miejscu znajduje się dziś stadion Pogoni Szczecin.',
+        de: '',
+        en: '',
+        ua: ''
     },
     gallery_caption_2: {
-        pl: 'Panorama Pogodna',
-        de: 'Panorama von Pogodno',
-        en: 'Panorama of Pogodno',
-        ua: 'Панорама Погонно'
+        pl: 'Braunsfelde — dzisiejsza ul. Rostworowskiego, zdjęcie sprzed 1945 roku.',
+        de: '',
+        en: '',
+        ua: ''
     },
     gallery_caption_3: {
-        pl: 'Osiedle \'Pogodno\' w Szczecinie – jednostka pomocnicza miasta w 2010',
-        de: 'Wohnsiedlung \'Pogodno\' in Szczecin – Hilfseinheit der Stadt im Jahr 2010.',
-        en: '\'Pogodno\' housing estate in Szczecin – auxiliary unit of the city in 2010.',
-        ua: 'Житловий масив \'Погонно\' у Щецині – допоміжна одиниця міста у 2010 році.'
+        pl: 'Widok na panoramę Pogodna z wieży kościoła przy ul. Wieniawskiego 4',
+        de: '',
+        en: '',
+        ua: ''
     },
     gallery_caption_4: {
-        pl: 'Szczecin ul. Grzegorza z Sanoka',
-        de: 'Szczecin ul. Grzegorza z Sanoka',
-        en: 'Szczecin ul. Grzegorza z Sanoka',
-        ua: 'Щецин вул. Grzegorza z Sanoka'
+        pl: 'Przedwojenny płot na Pogodnie.',
+        de: '',
+        en: '',
+        ua: ''
     },
     gallery_caption_5: {
-        pl: 'Siedziba Wydziału Nauk Ekonomicznych i Zarządzania Uniwersytetu Szczecińskiego przy ul. Mickiewicza 64 w Szczecinie.',
-        de: 'Der Hauptsitz der Fakultät für Wirtschaftswissenschaften und Management der Universität Szczecin, gelegen in Mickiewicza 64 in Szczecin, Polen.',
-        en: 'The headquarters of the Faculty of Economics and Management of the University of Szczecin, located at Mickiewicza 64 in Szczecin, Poland.',
-        ua: 'Штаб-квартира факультету економіки та управління Щецинського університету, розташована за адресою Mickiewicza 64 у Щецині, Польща.'
+        pl: 'Plan z 1979 roku - rosyjska jednostka wojskowa; dziś teren campusu ZUT.',
+        de: '',
+        en: '',
+        ua: ''
     },
     gallery_caption_6: {
-        pl: 'Stadion w 2021',
-        de: 'Stadion im Jahr 2021',
-        en: 'Stadium in 2021',
-        ua: 'Стадіон у 2021 році'
+        pl: 'Zdobienia masońskie na kamienicy przy ulicy Konopnickiej 27', // that is correct translate it to other langs
+        de: '',
+        en: '',
+        ua: ''
     },
     map_point_0_title: {
         pl: 'Dawne baseny MKS Pogoń',
