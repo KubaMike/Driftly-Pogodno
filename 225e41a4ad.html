@@ -35,8 +35,8 @@
             font-family: 'Playfair Display', serif;
             font-size: 48px;
             color: var(--accent);
-            margin-top: -55px;
-            margin-bottom: 24px;
+            margin-top: 0px;
+            margin-bottom: 30px;
             text-align: center;
         }
 
@@ -73,6 +73,13 @@
             font-style: italic;
             text-align: center;
             margin-top: 24px;
+        }
+
+        /* Sekcja wspomnień */
+        .memories-content {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         @media(max-width:768px) {
@@ -203,6 +210,10 @@
             </p>
         </section>
 
+        <hr>
+
+        <h2 data-i18n="gallery_title">Galeria</h2>
+
         <div class="gallery subsite-gallery">
             <div class="gallery-item" data-i18n="basen_szczecin_alt">
                 <img src="Photos/basen_pogon_szczecin.jpg" alt="Basen Pogoń Szczecin" data-i18n="basen_szczecin_alt">
@@ -217,6 +228,20 @@
                 <img src="Photos/basen_pogon_1965.jpg" alt="Basen Pogoń 1965" data-i18n="basen_1965_alt">
             </div>
         </div>
+
+        <hr>
+
+        <section class="memories-content">
+            <h2 data-i18n="memories_title">Wspomnienia mieszkańców</h2>
+            <p data-i18n="basenyPogoni_memory_1"></p>
+            <p data-i18n="basenyPogoni_memory_2"></p>
+            <p data-i18n="basenyPogoni_memory_3"></p>
+            <p data-i18n="basenyPogoni_memory_4"></p>
+            <p data-i18n="basenyPogoni_memory_5"></p>
+            <p data-i18n="basenyPogoni_memory_6"></p>
+            <p data-i18n="basenyPogoni_memory_7"></p>
+            <p data-i18n="basenyPogoni_memory_8"></p>
+        </section>
 
         <div id="lightbox">
             <span class="close-button">✕</span>

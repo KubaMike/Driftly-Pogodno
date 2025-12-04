@@ -220,5 +220,65 @@ const translations = {
         de: 'Informationen über die ehemaligen Pools von MKS Pogoń.',
         en: 'Information about the old pools of MKS Pogoń.',
         ua: 'Інформація про старі басейни MKS Pogoń.'
+    },
+    gallery_title: {
+        pl: 'Galeria',
+        de: 'Galerie',
+        en: 'Gallery',
+        ua: 'Галерея'
+    },
+    memories_title: {
+        pl: 'Wspomnienia mieszkańców',
+        de: 'Erinnerungen der Bewohner',
+        en: 'Residents\' Memories',
+        ua: 'Спогади мешканців'
+    },
+    basenyPogoni_memory_1: {
+        pl: 'Pamiętam to doskonale! Piękny obiekt z ogromnym potencjałem, który niestety — bez odpowiedniego gospodarza — umarł śmiercią naturalną. Szkoda, bo mógłby dalej cieszyć ludzi.',
+        de: 'Ich erinnere mich gut daran! Ein wunderschönes Objekt mit großem Potenzial, das leider – ohne einen geeigneten Betreiber – eines natürlichen Todes starb. Schade, denn es hätte die Menschen weiterhin erfreuen können.',
+        en: 'I remember it perfectly! A beautiful facility with huge potential, which unfortunately—without a proper caretaker—died a natural death. Pity, because it could have continued to delight people.',
+        ua: 'Я пам\'ятаю це чудово! Прекрасний об\'єкт з величезним потенціалом, який, на жаль, без відповідного господаря, помер природною смертю. Шкода, бо міг би й далі радувати людей.'
+    },
+    basenyPogoni_memory_2: {
+        pl: 'Jako młoda dziewczyna spędzałam tam mnóstwo czasu z mamą i młodszym bratem. Były trzy baseny: duży, podgrzewany oraz dwa mniejsze, z których jeden miał zjeżdżalnię. To był taki basen, na który czasami trudno było się dostać, ale latem wieczorami… wiadomo — przez płot i pływanie za darmo. Były to lata 80. i 90.',
+        de: 'Als junges Mädchen verbrachte ich dort viel Zeit mit meiner Mutter und meinem jüngeren Bruder. Es gab drei Pools: einen großen, beheizten und zwei kleinere, von denen einer eine Rutsche hatte. Es war ein Pool, in den man manchmal schwer hineinkam, aber in Sommerabenden… bekanntlich – über den Zaun und kostenloses Schwimmen. Das waren die 80er und 90er Jahre.',
+        en: 'As a young girl, I spent a lot of time there with my mom and younger brother. There were three pools: a large, heated one and two smaller ones, one of which had a slide. It was a pool that was sometimes hard to get into, but in summer evenings… you know—over the fence and swimming for free. These were the 80s and 90s.',
+        ua: 'Як молода дівчина, я проводила там багато часу з мамою та молодшим братом. Було три басейни: великий, підігрітий та два менші, один з яких мав гірку. Це був такий басейн, куди іноді важко було потрапити, але в літні вечори… зрозуміло — через паркан і плавання безкоштовно. Це були 80-ті та 90-ті роки.'
+    },
+    basenyPogoni_memory_3: {
+        pl: 'Też pamiętam tamte czasy. Razem z bratem właziliśmy przez płot, bo rodzice nie zawsze chcieli dać pieniądze na bilety, albo chcieliśmy zaoszczędzić na lody. Raz nas złapali i po zamknięciu basenu kazano nam odpracować niewykupione wejściówki. Sprzątaliśmy teren z papierków po lodach Bambino i innych śmieci. To była naprawdę dobra lekcja wychowawcza — dziś pewnie wezwano by policję, a potem rodziców…',
+        de: 'Ich erinnere mich auch an diese Zeiten. Zusammen mit meinem Bruder kletterten wir über den Zaun, weil die Eltern nicht immer Geld für Tickets geben wollten, oder wir wollten Geld für Bambino-Eis sparen. Einmal wurden wir erwischt und nach Schließung des Pools mussten wir die nicht eingelösten Eintrittskarten abarbeiten. Wir räumten das Gelände von Bambino-Eispapieren und anderem Müll auf. Das war wirklich eine gute Erziehungslektion — heute würde man wahrscheinlich die Polizei rufen und dann die Eltern…',
+        en: 'I also remember those times. Together with my brother, we climbed over the fence because parents didn\'t always want to give money for tickets, or we wanted to save for Bambino ice cream. Once we got caught and after the pool closed, we were made to work off the unused tickets. We cleaned the area of Bambino ice cream wrappers and other trash. It was really a good educational lesson—today they would probably call the police and then the parents…',
+        ua: 'Я також пам\'ятаю ті часи. Разом із братом ми лазили через паркан, бо батьки не завжди хотіли давати гроші на квитки, або ми хотіли заощадити на морозиво Bambino. Одного разу нас спіймали і після закриття басейну нам наказали відпрацювати невикуплені квитки. Ми прибирали територію від папірців від морозива Bambino та іншого сміття. Це була дійсно добра виховна лекція — сьогодні, мабуть, викликали б поліцію, а потім батьків…'
+    },
+    basenyPogoni_memory_4: {
+        pl: 'Największą frajdą było dla mnie spotkanie piłkarzy Pogoni, którzy często tam bywali.',
+        de: 'Das größte Vergnügen für mich war das Treffen mit Pogoń-Fußballern, die oft dort waren.',
+        en: 'The biggest fun for me was meeting Pogoń players, who often hung out there.',
+        ua: 'Найбільшою радістю для мене було зустріч із футболістами Погоні, які часто там бували.'
+    },
+    basenyPogoni_memory_5: {
+        pl: 'W latach 70. był to jak na tamte czasy wspaniały obiekt — zawsze gwarno, wesoło, a w budynku działała kawiarenka. Żal, że nikt później nie zadbał o jego utrzymanie.',
+        de: 'In den 70er Jahren war es für damalige Zeiten eine wunderbare Einrichtung — immer lebhaft, fröhlich, und im Gebäude gab es ein Café. Schade, dass sich später niemand um seine Instandhaltung kümmerte.',
+        en: 'In the 70s, it was a wonderful facility for those times—always lively, cheerful, and there was a café in the building. Pity that no one took care of its maintenance later.',
+        ua: 'У 70-х це був чудовий об\'єкт на той час — завжди гамірно, весело, а в будівлі працювала кав\'ярня. Шкода, що пізніше ніхто не подбав про його утримання.'
+    },
+    basenyPogoni_memory_6: {
+        pl: 'Ach tak, to był naprawdę piękny basen! I te wymiary! Dzisiaj chyba żaden architekt nie podpisałby się pod projektem tak niestandardowej budowli. Pamiętam też lodowatą wodę, która jednak nikomu nie przeszkadzała — liczyło się miejsce i to, że było tak blisko bloków.',
+        de: 'Ach ja, das war wirklich ein schönes Schwimmbad! Und diese Maße! Heute würde wahrscheinlich kein Architekt ein so ungewöhnliches Gebäudeprojekt unterschreiben. Ich erinnere mich auch an das eiskalte Wasser, das aber niemanden störte — es zählte der Ort und dass es so nah an den Blocks war.',
+        en: 'Oh yes, it was really a beautiful pool! And those dimensions! Today, probably no architect would sign off on such a non-standard building project. I also remember the icy water, which however didn\'t bother anyone—the place counted and that it was so close to the blocks.',
+        ua: 'О так, це був дійсно красивий басейн! І ці розміри! Сьогодні, мабуть, жоден архітектор не підписав би такий нестандартний проект будівлі. Я також пам\'ятаю крижану воду, яка, однак, нікому не заважала — рахувалося місце і те, що воно було так близько до блоків.'
+    },
+    basenyPogoni_memory_7: {
+        pl: 'Za naszymi plecami z lewej strony stała trójpoziomowa wieża, chyba ośmiometrowa (mogę się mylić), a na górce po lewej był basen dla dzieci. Kolejki do kasy potrafiły ciągnąć się godzinami, a ci, którym udało się wejść, spędzali kolejne pół godziny, szukając skrawka trawy na ręcznik.',
+        de: 'Hinter uns stand links eine dreistöckige Turm, wahrscheinlich acht Meter hoch (ich könnte mich irren), und oben links war das Kinderbecken. Die Schlangen an der Kasse konnten sich stundenlang ziehen, und die, denen es gelang einzusteigen, verbrachten die nächsten halbe Stunde damit, einen Grasfleck für ihr Handtuch zu suchen.',
+        en: 'Behind us on the left stood a three-level tower, probably eight meters high (I might be wrong), and on the hill to the left was the children\'s pool. Queues at the cash register could stretch for hours, and those who managed to get in spent the next half hour looking for a patch of grass for their towel.',
+        ua: 'Позаду нас зліва стояла трирівнева вежа, мабуть, восьмиметрова (я можу помилятися), а на горі зліва був басейн для дітей. Черги до каси могли тягнутися годинами, а ті, кому вдалося увійти, проводили наступні півгодини, шукаючи клаптик трави для рушника.'
+    },
+    basenyPogoni_memory_8: {
+        pl: 'Patologią były kradzieże butów — trzeba było nieźle kombinować, żeby po wyjściu ze ścisku na basenie zastać swoje rzeczy na miejscu.',
+        de: 'Pathologisch waren die Schuhdiebstähle — man musste ziemlich kombinieren, um nach dem Verlassen des Gedränges am Pool seine Sachen noch vorzufinden.',
+        en: 'Pathological were the shoe thefts—you had to scheme quite a bit to find your things in place after leaving the crush at the pool.',
+        ua: 'Патологією були крадіжки взуття — треба було добре комбінувати, щоб після виходу з тисняви на басейні знайти свої речі на місці.'
     }
 };
