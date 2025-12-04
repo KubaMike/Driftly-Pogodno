@@ -95,17 +95,11 @@ const translations = {
         en: 'Old pools of MKS Pogoń',
         ua: 'Старі басейни MKS Pogoń'
     },
-    map_point_1_title: {
-        pl: 'Punkt B',
-        de: 'Punkt B (DE)',
-        en: 'Point B',
-        ua: 'Пункт B'
-    },
-    map_point_2_title: {
-        pl: 'Punkt C',
-        de: 'Punkt C (DE)',
-        en: 'Point C',
-        ua: 'Пункт C'
+    map_point_0_unlock: {
+        pl: 'Zeskanuj kod QR, aby dowiedzieć się więcej o dawnych basenach MKS Pogoń',
+        de: 'Scannen Sie den QR-Code, um mehr über die alten Schwimmbäder von MKS Pogoń, zu erfahren.',
+        en: 'Scan the QR code to learn more about the old MKS Pogoń pools.',
+        ua: 'Скануйте QR-код, щоб дізнатися більше про старі басейни MKS Pogoń.'
     },
     map_link_text: {
         pl: 'Link do strony',
@@ -113,15 +107,9 @@ const translations = {
         en: 'Link to page',
         ua: 'Посилання на сторінку'
     },
-    map_unlock_instructions: {
-        pl: 'Zeskanuj kod QR, aby odblokować szczegóły stadionu',
-        de: 'Scannen Sie den QR-Code, um Stadiondetails freizuschalten',
-        en: 'Scan QR code to unlock basenyPogoni details',
-        ua: 'Скануйте QR-код, щоб розблокувати деталі стадіону'
-    },
     basenyPogoni_title: {
-        pl: 'Dawne baseny MKS Pogoń',
-        de: 'Ehemalige Pools MKS Pogoń',
+        pl: 'Dawne baseny MKS Pogoń', 
+        de: 'Alte Schwimmbäder von MKS Pogoń',
         en: 'Old pools of MKS Pogoń',
         ua: 'Старі басейни MKS Pogoń'
     },

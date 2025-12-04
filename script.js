@@ -35,7 +35,7 @@ function createPointMarker(point, coords, titleKey, url, storedLang) {
         popupLink = url;
     } else if (point === 0) {
         marker = L.marker(coords);
-        popupTitle = (translations['map_unlock_instructions'] && translations['map_unlock_instructions'][storedLang]) || 'Scan QR code to unlock basenyPogoni details';
+        popupTitle = (translations['map_point_0_unlock'] && translations['map_point_0_unlock'][storedLang]) || 'Scan QR code to unlock basenyPogoni details';
         popupLink = '';
     } else {
         marker = L.marker(coords);
