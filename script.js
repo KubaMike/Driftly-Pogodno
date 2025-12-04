@@ -68,7 +68,7 @@ function setLanguage(lang) {
         if (translations[el.dataset.i18n] && translations[el.dataset.i18n][lang]) {
             if (el.tagName === 'IMG') {
                 el.alt = translations[el.dataset.i18n][lang];
-            } else {
+            } else if (!el.classList.contains('gallery-item')) {
                 el.textContent = translations[el.dataset.i18n][lang];
             }
             console.log(`Translated element ${el.dataset.i18n} to ${translations[el.dataset.i18n][lang]}`);

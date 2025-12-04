@@ -321,13 +321,12 @@ main.wrap > hr {
     transition: transform 0.3s ease;
 }
 
-.gallery-item img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 16px;
-    transition: transform 0.3s ease-in-out;
-}
+    .gallery-item img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 16px;
+        transition: transform 0.3s ease-in-out;
+    }
 
 .gallery-item:hover img {
     transform: scale(1.05);
