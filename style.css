@@ -444,5 +444,12 @@ main.wrap > hr {
 
     .gallery {
         grid-template-columns: 1fr;
+        padding: 90px 0 20px;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        aspect-ratio: unset;
+        height: auto;
     }
 }
