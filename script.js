@@ -66,12 +66,10 @@ function setLanguage(lang) {
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
         if (translations[el.dataset.i18n] && translations[el.dataset.i18n][lang]) {
-            if (el.tagName === 'IMG') {
-                el.alt = translations[el.dataset.i18n][lang];
-            } else if (!el.classList.contains('gallery-item')) {
+            if (!el.classList.contains('gallery-item')) {
                 el.textContent = translations[el.dataset.i18n][lang];
+                console.log(`Translated element ${el.dataset.i18n} to ${translations[el.dataset.i18n][lang]}`);
             }
-            console.log(`Translated element ${el.dataset.i18n} to ${translations[el.dataset.i18n][lang]}`);
         } else {
             console.warn(`Translation missing for key: ${el.dataset.i18n} in language: ${lang}`);
         }
