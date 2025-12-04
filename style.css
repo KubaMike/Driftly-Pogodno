@@ -322,11 +322,12 @@ main.wrap > hr {
     border-radius: 16px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    aspect-ratio: 1/1;
 }
 
     .gallery-item img {
-        max-width: 100%;
-        aspect-ratio: 1/1;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         object-position: center;
         border-radius: 16px;
@@ -445,6 +446,11 @@ main.wrap > hr {
     .gallery {
         grid-template-columns: 1fr;
         padding: 90px 15px 20px;
+    }
+
+    .gallery-item {
+        aspect-ratio: unset;
+        height: auto;
     }
 
     .gallery-item img {
