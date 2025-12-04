@@ -222,10 +222,10 @@ const translations = {
         ua: 'Басейн Погоні 1965'
     },
     stadium_title: {
-        pl: 'Stadion',
-        de: 'Stadion',
-        en: 'Stadium',
-        ua: 'Стадіон'
+        pl: 'Baseny Pogoni',
+        de: 'Pogoń-Bäder',
+        en: 'Pogoń Pools',
+        ua: 'Басейни Погоні'
     },
     stadium_intro: {
         pl: 'Informacje o dawnych basenach MKS Pogoń.',
