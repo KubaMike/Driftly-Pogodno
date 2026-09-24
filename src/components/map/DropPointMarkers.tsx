@@ -2,9 +2,9 @@ import L from 'leaflet';
 import { CircleMarker, Marker, Popup } from 'react-leaflet';
 import { Link } from 'react-router-dom';
 import { dropPoints } from '../../data/dropPoints';
-import { useLanguage } from '../../i18n/LanguageContext';
-import type { DropPoint } from '../../types';
 import { isPointActive } from '../../hooks/usePointUnlock';
+import { useLanguage } from '../../i18n/LanguageContext';
+import type { PointSiteConfig } from '../../points/types';
 
 const defaultIcon = L.icon({
     iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
@@ -37,16 +37,13 @@ function MarkerPopup({ title, hasLink, url }: MarkerPopupProps) {
     );
 }
 
-function DropPointMarker({ point }: { point: DropPoint }) {
-    const { t } = useLanguage();
-    const isPointZero = point.id === 0;
-    const active = isPointActive(0);
-    const showUnlocked = isPointZero && active;
-    const title = isPointZero && !active ? t('map_point_0_unlock') : t(point.titleKey);
-    const hasLink = !(isPointZero && !active);
-    const url = point.url;
+function DropPointMarker({ point }: { point: PointSiteConfig }) {
+    const { l } = useLanguage();
+    const active = isPointActive(point.id);
+    const title = active ? l(point.marker.title) : l(point.marker.lockedTitle);
+    const hasLink = active;
 
-    if (showUnlocked) {
+    if (active) {
         return (
             <CircleMarker
                 center={point.coords}
@@ -59,14 +56,14 @@ function DropPointMarker({ point }: { point: DropPoint }) {
                     fillOpacity: 0.8
                 }}
             >
-                <MarkerPopup title={title} hasLink={hasLink} url={url} />
+                <MarkerPopup title={title} hasLink={hasLink} url={point.path} />
             </CircleMarker>
         );
     }
 
     return (
         <Marker position={point.coords} icon={defaultIcon}>
-            <MarkerPopup title={title} hasLink={hasLink} url={url} />
+            <MarkerPopup title={title} hasLink={hasLink} url={point.path} />
         </Marker>
     );
 }

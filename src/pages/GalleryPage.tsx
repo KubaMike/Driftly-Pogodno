@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { Gallery } from '../components/gallery/Gallery';
 import { usePageTitle } from '../hooks/usePageTitle';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -40,9 +41,19 @@ export function GalleryPage() {
     const { t } = useLanguage();
     usePageTitle(`${t('gallery_title')} - Driftly-Pogodno`);
 
+    const resolved = useMemo(
+        () =>
+            galleryImages.map((image) => ({
+                src: image.src,
+                alt: t(image.altKey),
+                caption: t(image.captionKey)
+            })),
+        [t]
+    );
+
     return (
         <main className="wrap">
-            <Gallery images={galleryImages} />
+            <Gallery images={resolved} />
         </main>
     );
 }

@@ -1,8 +1,5 @@
 import { useCallback, useEffect } from 'react';
 
-export const BASENY_PATH = '225e41a4ad.html';
-export const BASENY_POINT_ID = 0;
-
 export function isPointActive(point: number): boolean {
     return localStorage.getItem(`point_${point}`) === 'true';
 }
@@ -19,8 +16,4 @@ export function usePointUnlock(point: number, path: string): void {
             unlock();
         }
     }, [path, point, unlock]);
-}
-
-export function useBasenyUnlock(): void {
-    usePointUnlock(BASENY_POINT_ID, BASENY_PATH);
 }

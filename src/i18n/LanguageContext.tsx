@@ -1,7 +1,9 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import type { ReactNode } from 'react';
-import type { Lang, TranslationKey } from '../types';
+import type { Lang } from '../types';
+import type { LocalizedText } from '../points/types';
 import { DEFAULT_LANG, getTranslation, LANGS } from './translations';
+import type { TranslationKey } from './translations';
 
 const STORAGE_KEY = 'driftly_lang';
 
@@ -9,6 +11,7 @@ interface LanguageContextValue {
     lang: Lang;
     setLang: (lang: Lang) => void;
     t: (key: TranslationKey) => string;
+    l: (text: LocalizedText) => string;
     isLang: (lang: Lang) => boolean;
 }
 
@@ -35,9 +38,11 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
     const t = useCallback((key: TranslationKey) => getTranslation(key, lang), [lang]);
 
+    const resolveLocalized = useCallback((text: LocalizedText) => text[lang], [lang]);
+
     const value = useMemo(
-        () => ({ lang, setLang, t, isLang }),
-        [lang, setLang, t]
+        () => ({ lang, setLang, t, l: resolveLocalized, isLang }),
+        [lang, setLang, t, resolveLocalized]
     );
 
     return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
