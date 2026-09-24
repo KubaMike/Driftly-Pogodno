@@ -457,6 +457,7 @@ main.wrap > hr {
 /* ===== Strona mapy ===== */
 main.wrap.map-page {
     height: calc(100vh - 70px);
+    height: calc(100dvh - 70px);
     margin-top: 70px;
     padding: 0;
     display: flex;
