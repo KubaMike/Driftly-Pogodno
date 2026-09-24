@@ -3,7 +3,7 @@ import type { PointSiteConfig } from './types';
 export const basenyPogoni: PointSiteConfig = {
     id: 0,
     path: '225e41a4ad.html',
-    coords: [53.435, 14.52],
+    coords: [53.4348021, 14.5211351],
     pageTitle: {
         pl: 'Baseny Pogoni',
         de: 'Pogoń-Bäder',

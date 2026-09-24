@@ -98,10 +98,10 @@ function PointSiteContent({ config }: { config: PointSiteConfig }) {
 
             <Gallery images={galleryItems} subsite />
 
-            <hr />
-
             {config.memories && config.memories.length > 0 && (
                 <>
+                    <hr />
+
                     <h2 className="memories-title">{memoriesHeadline}</h2>
 
                     <section className="memories-content">

@@ -1,8 +1,9 @@
 import L from 'leaflet';
+import { useEffect, useReducer } from 'react';
 import { CircleMarker, Marker, Popup } from 'react-leaflet';
 import { Link } from 'react-router-dom';
 import { dropPoints } from '../../data/dropPoints';
-import { isPointActive } from '../../hooks/usePointUnlock';
+import { isPointActive, subscribeUnlockAll } from '../../hooks/usePointUnlock';
 import { useLanguage } from '../../i18n/LanguageContext';
 import type { PointSiteConfig } from '../../points/types';
 
@@ -69,6 +70,10 @@ function DropPointMarker({ point }: { point: PointSiteConfig }) {
 }
 
 export function DropPointMarkers() {
+    const [, forceRender] = useReducer((x: number) => x + 1, 0);
+
+    useEffect(() => subscribeUnlockAll(forceRender), []);
+
     return (
         <>
             {dropPoints.map((point) => (

@@ -1,5 +1,11 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { RefObject } from 'react';
+import {
+    isUnlockAllEnabled,
+    setUnlockAll,
+    subscribeUnlockAll
+} from '../../hooks/usePointUnlock';
 import { useLanguage } from '../../i18n/LanguageContext';
 
 interface SidebarProps {
@@ -25,6 +31,27 @@ export function Sidebar({ open, onClose, innerRef }: SidebarProps) {
                 </Link>
             </div>
             <LanguageSelect />
+            <DebugUnlockToggle />
+        </div>
+    );
+}
+
+function DebugUnlockToggle() {
+    const [enabled, setEnabled] = useState(isUnlockAllEnabled());
+
+    useEffect(() => subscribeUnlockAll(() => setEnabled(isUnlockAllEnabled())), []);
+
+    return (
+        <div className="lang centered-lang">
+            <label className="debug-unlock" htmlFor="debug-unlock">
+                <input
+                    id="debug-unlock"
+                    type="checkbox"
+                    checked={enabled}
+                    onChange={(e) => setUnlockAll(e.target.checked)}
+                />
+                Unlock all (test)
+            </label>
         </div>
     );
 }
