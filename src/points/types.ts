@@ -42,5 +42,5 @@ export interface PointSiteConfig {
     galleryHeadline?: LocalizedText;
     gallery: PointGalleryItem[];
     memoriesHeadline?: LocalizedText;
-    memories: LocalizedText[];
+    memories?: LocalizedText[];
 }

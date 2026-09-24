@@ -100,15 +100,19 @@ function PointSiteContent({ config }: { config: PointSiteConfig }) {
 
             <hr />
 
-            <h2 className="memories-title">{memoriesHeadline}</h2>
+            {config.memories && config.memories.length > 0 && (
+                <>
+                    <h2 className="memories-title">{memoriesHeadline}</h2>
 
-            <section className="memories-content">
-                <ul className="memories-list">
-                    {config.memories.map((memory, index) => (
-                        <li key={index}>{l(memory)}</li>
-                    ))}
-                </ul>
-            </section>
+                    <section className="memories-content">
+                        <ul className="memories-list">
+                            {config.memories.map((memory, index) => (
+                                <li key={index}>{l(memory)}</li>
+                            ))}
+                        </ul>
+                    </section>
+                </>
+            )}
         </main>
     );
 }
