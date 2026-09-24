@@ -165,6 +165,7 @@ export const dworzecPkp: PointSiteConfig = {
             }
         }
     ],
+    audio: 'audiodescriptions/Dworzec PKP Szczecin Pogodno.mp3',
     conclusion: {
         pl: 'Dziś stacja Szczecin Pogodno to miejsce, w którym industrialna historia XX wieku spotyka się z nowoczesnym transportem metropolitalnym — a jej surowa wiata wciąż przypomina o architektonicznej odwadze minionej epoki.',
         de: 'Heute ist der Bahnhof Szczecin Pogodno ein Ort, an dem die industrielle Geschichte des 20. Jahrhunderts auf den modernen Metropolverkehr trifft – und sein rohes Dach erinnert noch immer an den architektonischen Mut einer vergangenen Epoche.',

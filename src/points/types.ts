@@ -31,7 +31,7 @@ export interface PointSiteConfig {
     marker: PointMarkerConfig;
     hero: PointHero;
     historyHeadline: LocalizedText;
-    note: LocalizedText;
+    note?: LocalizedText;
     lead?: {
         headline?: LocalizedText;
         body?: LocalizedText;

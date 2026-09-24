@@ -109,6 +109,7 @@ export const stadionPogoni: PointSiteConfig = {
             }
         }
     ],
+    audio: 'audiodescriptions/Stadion Pogoni Szczecin.mp3',
     conclusion: {
         pl: 'Stadion Pogoni to nie tylko arena sportowa — to żywa legenda, która od dziesięcioleci nadaje Pogodnu sportowo-wspólnotowy rytm.',
         de: 'Das Pogoń-Stadion ist nicht nur eine Sportarena – es ist eine lebendige Legende, die Pogodno seit Jahrzehnten einen sportlich-gemeinschaftlichen Rhythmus verleiht.',

@@ -76,7 +76,7 @@ function PointSiteContent({ config }: { config: PointSiteConfig }) {
                     </audio>
                 )}
 
-                <p className="historical-note">{l(config.note)}</p>
+                {config.note && <p className="historical-note">{l(config.note)}</p>}
 
                 {config.lead?.headline && <h3>{l(config.lead.headline)}</h3>}
                 {config.lead?.body && <p>{l(config.lead.body)}</p>}

@@ -137,6 +137,7 @@ export const mostAkademicki: PointSiteConfig = {
             }
         }
     ],
+    audio: 'audiodescriptions/Most Akademicki.mp3',
     conclusion: {
         pl: 'Most Akademicki to żywy pomnik powojennej odbudowy Szczecina — konstrukcja, która przeszła próbę 67 ton ładunku i do dziś łączy Pogodno ze Śródmieściem.',
         de: 'Die Akademische Brücke ist ein lebendiges Denkmal des Wiederaufbaus von Stettin – eine Konstruktion, die eine 67-Tonnen-Probe bestand und bis heute Pogodno mit der Innenstadt verbindet.',

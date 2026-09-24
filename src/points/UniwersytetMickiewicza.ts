@@ -81,6 +81,7 @@ export const uniwersytetMickiewicza: PointSiteConfig = {
             }
         }
     ],
+    audio: 'audiodescriptions/Uniwersytet Szczeciński przy Mickiewicza.mp3',
     conclusion: {
         pl: 'To miejsce, gdzie od dziesięcioleci kształcą się kolejne pokolenia ekonomistów, a akademicka energia nadaje Pogodnu wyjątkowy, prężny charakter.',
         de: 'Es ist ein Ort, an dem seit Jahrzehnten Generationen von Wirtschaftswissenschaftlern ausgebildet werden und die akademische Energie Pogodno einen besonderen, dynamischen Charakter verleiht.',

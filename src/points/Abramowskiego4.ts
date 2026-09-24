@@ -81,6 +81,7 @@ export const abramowskiego4: PointSiteConfig = {
             }
         }
     ],
+    audio: 'audiodescriptions/Ulica Abramowskiego 4.mp3',
     conclusion: {
         pl: 'Tablica przy Abramowskiego 4 to niepozorny, ale ważny ślad literackiego dziedzictwa Pogodna i powojennego Szczecina.',
         de: 'Die Tafel an der Abramowskiego 4 ist eine unscheinbare, aber wichtige Spur des literarischen Erbes von Pogodno und des Nachkriegs-Stettins.',

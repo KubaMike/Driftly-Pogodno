@@ -45,12 +45,6 @@ export const korfantegoBoiska: PointSiteConfig = {
         en: 'History of the sports fields on Korfantego',
         ua: 'Історія майданчиків на Корфантого'
     },
-    note: {
-        pl: 'Zanim powstały nowoczesne, zamknięte orliki czy profesjonalne akademie, otwarte boiska w rejonie ul. Korfantego były miejscem, gdzie całe dnie spędzały osiedlowe dzieciaki i młodzież. To tam rozgrywano legendarne mecze „podwórko na podwórko".',
-        de: 'Bevor moderne, geschlossene Kunstrasenplätze oder professionelle Akademien entstanden, waren die offenen Sportplätze im Bereich der Korfantego-Straße ein Ort, an dem die Kinder und Jugendlichen der Siedlung ganze Tage verbrachten. Dort wurden die legendären „Hof-zu-Hof"-Spiele ausgetragen.',
-        en: 'Before modern, enclosed pitches or professional academies appeared, the open sports fields around ul. Korfantego were a place where neighbourhood kids and teenagers spent entire days. Legendary "yard versus yard" matches were played there.',
-        ua: 'Перш ніж з\'явилися сучасні закриті майданчики чи професійні академії, відкриті спортмайданчики в районі вул. Корфантого були місцем, де осадкові діти та молодь проводили цілі дні. Саме там проводили легендарні матчі «двір проти двору».'
-    },
     sections: [
         {
             heading: {

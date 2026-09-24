@@ -95,6 +95,7 @@ export const lodyMickiewicza: PointSiteConfig = {
             }
         }
     ],
+    audio: 'audiodescriptions/Lody na Mickiewicza.mp3',
     conclusion: {
         pl: 'Lody na Mickiewicza to smak dzieciństwa kilku pokoleń szczecinian — kameralny rytuał, który na zawsze wpisał się w letni klimat Pogodna.',
         de: 'Das Eis an der Mickiewicza-Straße ist der Geschmack der Kindheit mehrerer Generationen von Stettinern – ein intimes Ritual, das sich für immer in das Sommerklima von Pogodno eingeschrieben hat.',
