@@ -24,10 +24,28 @@ const translations = {
         ua: 'Стежки'
     },
     trails_info: {
-        pl: 'Wkrótce pojawią się nasze trasy — zapraszamy do śledzenia!',
-        de: 'Bald werden unsere Routen verfügbar sein — bleiben Sie dran!',
-        en: 'Our trails will be available soon — stay tuned!',
-        ua: 'Наші маршрути незабаром будуть доступні — слідкуйте за оновленнями!'
+        pl: 'Wybierz szlak, aby zobaczyć go na mapie.',
+        de: 'Wählen Sie einen Weg, um ihn auf der Karte anzusehen.',
+        en: 'Choose a trail to see it on the map.',
+        ua: 'Виберіть стежку, щоб побачити її на карті.'
+    },
+    trail_view_on_map: {
+        pl: 'Zobacz na mapie',
+        de: 'Auf der Karte ansehen',
+        en: 'View on map',
+        ua: 'Переглянути на карті'
+    },
+    trail_places: {
+        pl: 'Miejsca na trasie',
+        de: 'Orte auf dem Weg',
+        en: 'Places it visits',
+        ua: 'Місця на маршруті'
+    },
+    trail_back: {
+        pl: 'Wróć do listy szlaków',
+        de: 'Zurück zur Wegeliste',
+        en: 'Back to trails',
+        ua: 'Назад до списку стежок'
     },
     nav_gallery: {
         pl: 'Galeria',

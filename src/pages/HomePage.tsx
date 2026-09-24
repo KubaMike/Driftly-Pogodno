@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 import { usePageTitle } from '../hooks/usePageTitle';
+import { trails } from '../trails/registry';
 
 export function HomePage() {
-    const { t } = useLanguage();
+    const { t, l } = useLanguage();
     usePageTitle('Driftly-Pogodno');
 
     return (
@@ -28,6 +29,19 @@ export function HomePage() {
             <section className="trails-preview">
                 <h2>{t('tab_trails')}</h2>
                 <p>{t('trails_info')}</p>
+                <div className="trail-list">
+                    {trails.map((trail) => (
+                        <div key={trail.id} className="trail-card">
+                            <div className="trail-card-info">
+                                <h3>{l(trail.title)}</h3>
+                                <p>{l(trail.description)}</p>
+                            </div>
+                            <Link className="btn primary" to={`/trail/${trail.id}`}>
+                                {t('trail_view_on_map')}
+                            </Link>
+                        </div>
+                    ))}
+                </div>
             </section>
         </main>
     );

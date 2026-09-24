@@ -461,6 +461,8 @@ main.wrap.map-page {
     padding: 0;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    overscroll-behavior: none;
 }
 
 #map {
@@ -579,5 +581,248 @@ main.wrap.map-page {
 
     .baseny-page p {
         font-size: 15px;
+    }
+}
+
+/* ===== Lista szlaków (strona główna) ===== */
+.trail-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    width: 100%;
+    margin: 32px auto 0;
+    padding: 0 20px;
+}
+
+.trail-card {
+    background: var(--panel);
+    border: 1px solid var(--muted);
+    border-radius: 16px;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    text-align: left;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trail-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+.trail-card-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.trail-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--accent);
+    margin: 0;
+}
+
+.trail-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--text);
+}
+
+.trail-card .btn.primary {
+    flex-shrink: 0;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: var(--accent);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.trail-card .btn.primary:hover {
+    background: #555;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media(max-width:768px) {
+    .trail-list {
+        padding: 0 16px;
+    }
+
+    .trail-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* ===== Strona szlaku (pełnoekranowa mapa + panel) ===== */
+main.wrap.trail-page {
+    position: fixed;
+    inset: 0;
+    padding: 0;
+    overflow: hidden;
+    overscroll-behavior: none;
+}
+
+.trail-page .trail-map {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    isolation: isolate;
+}
+
+.trail-page .trail-sidebar {
+    position: absolute;
+    top: 86px;
+    right: 20px;
+    bottom: 20px;
+    width: 340px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: var(--shadow);
+    border-radius: 16px;
+    padding: 28px 24px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.trail-page .sheet-handle {
+    display: none;
+}
+
+.trail-sidebar .trail-back {
+    align-self: flex-start;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 20px;
+    transition: color 0.2s ease;
+}
+
+.trail-sidebar .trail-back:hover {
+    color: #555;
+}
+
+.trail-sidebar h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: var(--accent);
+    margin: 0 0 12px 0;
+}
+
+.trail-sidebar .trail-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 0 24px 0;
+    color: var(--text);
+}
+
+.trail-sidebar .trail-places h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: var(--accent);
+    margin: 0 0 12px 0;
+    font-style: italic;
+}
+
+.trail-sidebar .trail-places ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trail-sidebar .trail-places li a {
+    display: block;
+    padding: 10px 14px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-size: 15px;
+}
+
+.trail-sidebar .trail-places li a:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+@media(max-width:768px) {
+    main.wrap.trail-page {
+        /* fullscreen map stays fixed; only the sheet moves */
+    }
+
+    .trail-page .trail-sidebar {
+        top: auto;
+        left: 50%;
+        right: auto;
+        bottom: 0;
+        width: min(360px, 92vw);
+        height: 78%;
+        border-radius: 24px;
+        padding: 0 24px 24px;
+        transition: transform 0.3s ease, left 0.3s ease, width 0.3s ease;
+        overscroll-behavior: contain;
+    }
+
+    .trail-page .trail-sidebar.open {
+        left: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 24px 24px 0 0;
+    }
+
+    .trail-page .trail-sidebar.dragging {
+        transition: none;
+    }
+
+    .trail-page .trail-sidebar .trail-back,
+    .trail-page .trail-sidebar h2,
+    .trail-page .trail-sidebar .trail-desc,
+    .trail-page .trail-sidebar .trail-places {
+        padding-right: 4px;
+    }
+
+    .trail-page .sheet-handle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        padding: 10px 0;
+        margin: 0 -24px 14px;
+        cursor: grab;
+        touch-action: none;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .trail-page .sheet-handle:active {
+        cursor: grabbing;
+    }
+
+    .trail-page .sheet-grip {
+        width: 72px;
+        height: 5px;
+        border-radius: 4px;
+        background: var(--muted);
     }
 }
