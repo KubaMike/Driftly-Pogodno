@@ -3,6 +3,7 @@ import type { CSSProperties } from 'react';
 import { useEffect } from 'react';
 import L from 'leaflet';
 import { MAP_CENTER, MAP_ZOOM } from '../../data/dropPoints';
+import { useScrollLock } from '../../hooks/useScrollLock';
 import { DropPointMarkers } from './DropPointMarkers';
 import { LocateControl } from './LocateControl';
 import { TrailLines } from './TrailLines';
@@ -31,6 +32,8 @@ function FitBounds({ waypoints }: { waypoints: [number, number][] }) {
 }
 
 export function MapView({ trailId, waypoints = [] }: MapViewProps) {
+    useScrollLock();
+
     return (
         <MapContainer
             id="map"
