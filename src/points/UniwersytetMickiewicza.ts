@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const uniwersytetMickiewicza: PointSiteConfig = {
     id: 16,
-    path: 'site-16-uniwersytet-mickiewicza',
+    path: '0bb8188940.html',
     coords: [53.4386019, 14.5198883],
     pageTitle: {
         pl: 'Uniwersytet Szczeciński przy Mickiewicza',

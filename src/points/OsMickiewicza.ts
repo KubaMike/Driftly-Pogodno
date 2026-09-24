@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const osMickiewicza: PointSiteConfig = {
     id: 10,
-    path: 'site-10-os-mickiewicza',
+    path: '845ef1911b.html',
     coords: [53.439844, 14.516477],
     pageTitle: {
         pl: 'Oś ulicy Mickiewicza — handel, usługi i historia',

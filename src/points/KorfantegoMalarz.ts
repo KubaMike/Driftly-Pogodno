@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const korfantegoMalarz: PointSiteConfig = {
     id: 19,
-    path: 'site-19-korfantego-malarz',
+    path: '48176edefb.html',
     coords: [53.4402624, 14.5210829],
     pageTitle: {
         pl: 'Budynek malarza na Korfantego',

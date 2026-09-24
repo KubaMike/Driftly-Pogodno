@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const stadionPogoni: PointSiteConfig = {
     id: 4,
-    path: 'site-4-stadion-pogoni',
+    path: 'f262ab0e03.html',
     coords: [53.4363652, 14.5183543],
     pageTitle: {
         pl: 'Stadion Pogoni Szczecin',

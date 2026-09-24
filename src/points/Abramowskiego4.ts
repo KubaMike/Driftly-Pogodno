@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const abramowskiego4: PointSiteConfig = {
     id: 8,
-    path: 'site-8-abramowskiego-4',
+    path: 'b2941e4d3e.html',
     coords: [53.438747, 14.517028],
     pageTitle: {
         pl: 'Ulica Abramowskiego 4 — tablica pamiątkowa',

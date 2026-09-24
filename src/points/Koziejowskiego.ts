@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const koziejowskiego: PointSiteConfig = {
     id: 9,
-    path: 'site-9-koziejowskiego',
+    path: '489c949d46.html',
     coords: [53.439722, 14.516111],
     pageTitle: {
         pl: 'Ulica Koziejowskiego — legendy i wspomnienia',

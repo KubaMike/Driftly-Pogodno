@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const wydzialEkonomiczny: PointSiteConfig = {
     id: 3,
-    path: 'site-3-wydzial-ekonomiczny',
+    path: 'a76414dacc.html',
     coords: [53.4386019, 14.5198883],
     pageTitle: {
         pl: 'Wydział Ekonomiczny Uniwersytetu Szczecińskiego',

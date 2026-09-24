@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const punktPrzesiedlenia: PointSiteConfig = {
     id: 17,
-    path: 'site-17-punkt-przesiedlenia',
+    path: '90a82f90d7.html',
     coords: [53.4392732, 14.5190684],
     pageTitle: {
         pl: 'Punkt przesiedlenia ludności niemieckiej',

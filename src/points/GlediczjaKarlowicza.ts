@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const glediczjaKarlowicza: PointSiteConfig = {
     id: 5,
-    path: 'site-5-glediczja-karlowicza',
+    path: 'c6fb90abdc.html',
     coords: [53.4383113, 14.5183435],
     pageTitle: {
         pl: 'Karłowicza — aleja Glediczji trójcierniowej',

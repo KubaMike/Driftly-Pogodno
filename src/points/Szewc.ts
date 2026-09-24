@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const szewc: PointSiteConfig = {
     id: 13,
-    path: 'site-13-szewc',
+    path: 'd6fa661741.html',
     coords: [53.4408004, 14.5140435],
     pageTitle: {
         pl: 'Szewc na Pogodnie',

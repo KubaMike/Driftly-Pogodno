@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const dworzecPkp: PointSiteConfig = {
     id: 1,
-    path: 'site-1-dworzec-pkp',
+    path: '01ea2731c8.html',
     coords: [53.4384455, 14.52337],
     pageTitle: {
         pl: 'Dworzec PKP Szczecin Pogodno',

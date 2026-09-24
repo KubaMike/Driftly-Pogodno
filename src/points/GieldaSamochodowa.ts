@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const gieldaSamochodowa: PointSiteConfig = {
     id: 7,
-    path: 'site-7-gielda-samochodowa',
+    path: '5985585fee.html',
     coords: [53.4351273, 14.5186656],
     pageTitle: {
         pl: 'Legendarne Giełdy Samochodowe na Pogodnie',

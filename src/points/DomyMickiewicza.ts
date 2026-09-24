@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const domyMickiewicza: PointSiteConfig = {
     id: 14,
-    path: 'site-14-domy-mickiewicza',
+    path: 'd6083919ad.html',
     coords: [53.4399365, 14.5166919],
     pageTitle: {
         pl: 'Domy wzdłuż Mickiewicza',

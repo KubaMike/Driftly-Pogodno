@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const korfantegoBoiska: PointSiteConfig = {
     id: 18,
-    path: 'site-18-korfantego-boiska',
+    path: 'd807c81302.html',
     coords: [53.4394913, 14.5217581],
     pageTitle: {
         pl: 'Boiska na Korfantego',

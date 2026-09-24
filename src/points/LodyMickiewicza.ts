@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const lodyMickiewicza: PointSiteConfig = {
     id: 12,
-    path: 'site-12-lody-mickiewicza',
+    path: 'e648d39408.html',
     coords: [53.4408449, 14.5138615],
     pageTitle: {
         pl: 'Lody na Mickiewicza',

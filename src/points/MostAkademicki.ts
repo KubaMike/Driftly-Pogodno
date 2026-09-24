@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const mostAkademicki: PointSiteConfig = {
     id: 2,
-    path: 'site-2-most-akademicki',
+    path: 'a42ea94cef.html',
     coords: [53.4388083, 14.5234471],
     pageTitle: {
         pl: 'Most Akademicki',

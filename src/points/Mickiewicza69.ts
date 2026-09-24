@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const mickiewicza69: PointSiteConfig = {
     id: 15,
-    path: 'site-15-mickiewicza-69',
+    path: '3e082705a6.html',
     coords: [53.4394209, 14.519711],
     pageTitle: {
         pl: 'Mickiewicza 69 — dawna Sparkasse',
