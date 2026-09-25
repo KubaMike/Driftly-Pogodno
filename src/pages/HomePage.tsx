@@ -24,7 +24,7 @@ export function HomePage() {
                 </div>
             </section>
 
-            <hr />
+            <hr className="home-divider" />
 
             <section className="trails-preview">
                 <h2>{t('tab_trails')}</h2>

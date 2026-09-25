@@ -192,6 +192,10 @@ main.wrap > hr {
     margin: 40px auto;
 }
 
+main.wrap > .home-divider {
+    margin: 40px auto 0;
+}
+
 /* Strona tytułowa */
 .home-card {
     display: flex;
@@ -294,7 +298,7 @@ main.wrap > hr {
 
 .trails-preview h2 {
     font-size: 32px;
-    margin-bottom: 12px;
+    margin: 0 0 12px;
 }
 
 .trails-preview p {
