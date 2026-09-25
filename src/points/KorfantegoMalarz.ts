@@ -11,6 +11,7 @@ export const korfantegoMalarz: PointSiteConfig = {
         ua: 'Будинок художника на Корфантого'
     },
     marker: {
+        color: '#1b9e77',
         title: {
             pl: 'Budynek malarza przy ul. Korfantego',
             de: 'Haus des Malers an der Korfantego-Straße',

@@ -11,6 +11,7 @@ export const szewc: PointSiteConfig = {
         ua: 'Швець із Погодно'
     },
     marker: {
+        color: '#1b9e77',
         title: {
             pl: 'Szewc na Traugutta i Mickiewicza',
             de: 'Schuhmacher an Traugutta und Mickiewicza',

@@ -11,6 +11,7 @@ export const uniwersytetMickiewicza: PointSiteConfig = {
         ua: 'Щецинський університет на Міцкевича'
     },
     marker: {
+        color: '#a6761d',
         title: {
             pl: 'Uniwersytet Szczeciński (Wydział Ekonomiczny)',
             de: 'Universität Stettin (Wirtschaftswissenschaftliche Fakultät)',

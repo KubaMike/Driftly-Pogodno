@@ -11,6 +11,7 @@ export const dworzecPkp: PointSiteConfig = {
         ua: 'Вокзал Щецин Погодно'
     },
     marker: {
+        color: '#a6761d',
         title: {
             pl: 'Dworzec PKP Szczecin Pogodno',
             de: 'Bahnhof Szczecin Pogodno',

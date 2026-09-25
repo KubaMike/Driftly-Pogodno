@@ -11,6 +11,7 @@ export const domyMickiewicza: PointSiteConfig = {
         ua: 'Будинки вздовж Міцкевича'
     },
     marker: {
+        color: '#a6761d',
         title: {
             pl: 'Domy wzdłuż Mickiewicza',
             de: 'Häuser entlang der Mickiewicza',

@@ -11,6 +11,7 @@ export const punktPrzesiedlenia: PointSiteConfig = {
         ua: 'Пункт переселення німецького населення'
     },
     marker: {
+        color: '#a6761d',
         title: {
             pl: 'Punkt przesiedlenia przy Mickiewicza',
             de: 'Umsiedlungspunkt an der Mickiewicza-Straße',

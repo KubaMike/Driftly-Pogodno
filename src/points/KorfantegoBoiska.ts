@@ -11,6 +11,7 @@ export const korfantegoBoiska: PointSiteConfig = {
         ua: 'Спортивні майданчики на Корфантого'
     },
     marker: {
+        color: '#1b9e77',
         title: {
             pl: 'Boiska przy ul. Korfantego',
             de: 'Sportplätze an der Korfantego-Straße',

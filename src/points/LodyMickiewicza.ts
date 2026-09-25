@@ -11,6 +11,7 @@ export const lodyMickiewicza: PointSiteConfig = {
         ua: 'Морозиво на Міцкевича'
     },
     marker: {
+        color: '#1b9e77',
         title: {
             pl: 'Kultowe lody na Mickiewicza',
             de: 'Kult-Eis an der Mickiewicza-Straße',

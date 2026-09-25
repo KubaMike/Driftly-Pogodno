@@ -11,6 +11,7 @@ export const wydzialEkonomiczny: PointSiteConfig = {
         ua: 'Економічний факультет Щецинського університету'
     },
     marker: {
+        color: '#a6761d',
         title: {
             pl: 'Wydział Ekonomiczny US',
             de: 'Wirtschaftswissenschaftliche Fakultät der US',

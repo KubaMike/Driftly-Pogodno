@@ -470,6 +470,10 @@ main.wrap.map-page {
     width: 100%;
 }
 
+.drop-point-icon {
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.35));
+}
+
 /* ===== Strona Baseny Pogoni ===== */
 .subsite-gallery {
     display: flex;

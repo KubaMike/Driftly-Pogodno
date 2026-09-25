@@ -11,6 +11,7 @@ export const glediczjaKarlowicza: PointSiteConfig = {
         ua: 'Карловіча — алея гледичії триколючкової'
     },
     marker: {
+        color: '#a6761d',
         title: {
             pl: 'Aleja Glediczji przy ul. Karłowicza',
             de: 'Gleditschien-Allee an der Karłowicza-Straße',

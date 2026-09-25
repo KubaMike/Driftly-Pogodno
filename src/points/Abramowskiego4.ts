@@ -11,6 +11,7 @@ export const abramowskiego4: PointSiteConfig = {
         ua: 'Вулиця Абрамовського 4 — меморіальна дошка'
     },
     marker: {
+        color: '#a6761d',
         title: {
             pl: 'Tablica Józefa Bursewicza',
             de: 'Gedenktafel für Józef Bursewicz',

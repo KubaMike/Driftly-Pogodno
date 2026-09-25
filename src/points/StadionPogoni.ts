@@ -11,6 +11,7 @@ export const stadionPogoni: PointSiteConfig = {
         ua: 'Стадіон Погоні Щецин'
     },
     marker: {
+        color: '#a6761d',
         title: {
             pl: 'Stadion Miejski im. Floriana Krygiera',
             de: 'Städtisches Stadion im. Floriana Krygiera',

@@ -11,6 +11,7 @@ export const mostAkademicki: PointSiteConfig = {
         ua: 'Академічний міст'
     },
     marker: {
+        color: '#a6761d',
         title: {
             pl: 'Most Akademicki',
             de: 'Akademische Brücke',

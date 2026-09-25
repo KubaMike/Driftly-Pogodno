@@ -11,6 +11,7 @@ export const koziejowskiego: PointSiteConfig = {
         ua: 'Вулиця Козеювського — легенди та спогади'
     },
     marker: {
+        color: '#a6761d',
         title: {
             pl: 'Legendy ul. Koziejowskiego',
             de: 'Legenden der Koziejowskiego-Straße',

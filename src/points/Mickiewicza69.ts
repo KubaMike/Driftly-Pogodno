@@ -11,6 +11,7 @@ export const mickiewicza69: PointSiteConfig = {
         ua: 'Міцкевича, 69 — колишня Sparkasse'
     },
     marker: {
+        color: '#1b9e77',
         title: {
             pl: 'Mickiewicza 69 — dawna Sparkasse',
             de: 'Mickiewicza 69 – ehemalige Sparkasse',

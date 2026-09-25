@@ -11,6 +11,7 @@ export const osMickiewicza: PointSiteConfig = {
         ua: 'Ось вулиці Міцкевича — торгівля, послуги та історія'
     },
     marker: {
+        color: '#a6761d',
         title: {
             pl: 'Oś ulicy Mickiewicza',
             de: 'Achse der Mickiewicza-Straße',

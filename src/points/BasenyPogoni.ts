@@ -11,6 +11,7 @@ export const basenyPogoni: PointSiteConfig = {
         ua: 'Басейни Погоні'
     },
     marker: {
+        color: '#a6761d',
         title: {
             pl: 'Dawne baseny MKS Pogoń',
             de: 'Ehemalige Pools MKS Pogoń',

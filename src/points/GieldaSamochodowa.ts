@@ -11,6 +11,7 @@ export const gieldaSamochodowa: PointSiteConfig = {
         ua: 'Легендарні автомобільні ринки в Погодно'
     },
     marker: {
+        color: '#a6761d',
         title: {
             pl: 'Giełda Samochodowa na Pogodnie',
             de: 'Automarkt in Pogodno',
