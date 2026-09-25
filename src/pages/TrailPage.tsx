@@ -32,7 +32,9 @@ function TrailContent({ trail }: { trail: TrailConfig }) {
     usePageTitle(`${l(trail.title)} - Driftly-Pogodno`);
 
     return (
-        <main className="wrap trail-page">
+        <main
+            className={`wrap trail-page${open ? ' trail-panel-open' : ''}${dragging ? ' trail-panel-dragging' : ''}`}
+        >
             <div className="trail-map">
                 <MapView trailId={trail.id} waypoints={trail.waypoints} />
             </div>

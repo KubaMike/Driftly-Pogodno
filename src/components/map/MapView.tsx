@@ -31,6 +31,16 @@ function FitBounds({ waypoints }: { waypoints: [number, number][] }) {
     return null;
 }
 
+function HideLeafletAttribution() {
+    const map = useMap();
+
+    useEffect(() => {
+        map.attributionControl?.setPrefix(false);
+    }, [map]);
+
+    return null;
+}
+
 export function MapView({ trailId, waypoints = [] }: MapViewProps) {
     useScrollLock();
 
@@ -46,6 +56,7 @@ export function MapView({ trailId, waypoints = [] }: MapViewProps) {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
+            <HideLeafletAttribution />
             <ZoomControl position="bottomright" />
             {trailId && <TrailLines trailId={trailId} />}
             {waypoints.length > 0 && <FitBounds waypoints={waypoints} />}
