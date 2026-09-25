@@ -749,7 +749,8 @@ main.wrap.trail-page {
     gap: 10px;
 }
 
-.trail-sidebar .trail-places li a {
+.trail-sidebar .trail-places li a,
+.trail-sidebar .trail-places .trail-place-locked {
     display: block;
     padding: 10px 14px;
     background: #fff;
@@ -762,6 +763,14 @@ main.wrap.trail-page {
 .trail-sidebar .trail-places li a:hover {
     background: var(--accent);
     color: #fff;
+}
+
+.trail-sidebar .trail-places .trail-place-locked {
+    background: rgba(0, 0, 0, 0.08);
+    color: var(--muted);
+    cursor: not-allowed;
+    filter: blur(2px);
+    user-select: none;
 }
 
 @media(max-width:768px) {

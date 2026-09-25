@@ -1,5 +1,7 @@
+import { useEffect, useReducer } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { MapView } from '../components/map/MapView';
+import { isPointActive, subscribeUnlockAll } from '../hooks/usePointUnlock';
 import { usePageTitle } from '../hooks/usePageTitle';
 import { usePullSheet } from '../hooks/usePullSheet';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -22,7 +24,10 @@ export function TrailPage() {
 function TrailContent({ trail }: { trail: TrailConfig }) {
     const { t, l } = useLanguage();
     const places = trail.places.map(getPointSiteById).filter(isPointSite);
+    const [, forceRender] = useReducer((value: number) => value + 1, 0);
     const { open, dragging, sheetStyle, handleProps } = usePullSheet();
+
+    useEffect(() => subscribeUnlockAll(forceRender), []);
 
     usePageTitle(`${l(trail.title)} - Driftly-Pogodno`);
 
@@ -47,13 +52,27 @@ function TrailContent({ trail }: { trail: TrailConfig }) {
                     <div className="trail-places">
                         <h3>{t('trail_places')}</h3>
                         <ul>
-                            {places.map((point) => (
-                                <li key={point.id}>
-                                    <Link to={`/${point.path}`}>
-                                        {l(point.marker.title)}
-                                    </Link>
-                                </li>
-                            ))}
+                            {places.map((point) => {
+                                const active = isPointActive(point.id);
+
+                                return (
+                                    <li key={point.id}>
+                                        {active ? (
+                                            <Link to={`/${point.path}`}>
+                                                {l(point.marker.title)}
+                                            </Link>
+                                        ) : (
+                                            <span
+                                                className="trail-place-locked"
+                                                aria-disabled="true"
+                                                title={l(point.marker.lockedTitle)}
+                                            >
+                                                {l(point.marker.title)}
+                                            </span>
+                                        )}
+                                    </li>
+                                );
+                            })}
                         </ul>
                     </div>
                 )}
