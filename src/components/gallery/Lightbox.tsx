@@ -13,6 +13,10 @@ interface LightboxProps {
 export function Lightbox({ images, index, onNavigate, onClose }: LightboxProps) {
     const image = images[index];
 
+    if (!image) {
+        return null;
+    }
+
     return (
         <div id="lightbox" style={{ display: 'flex' }} onClick={onClose}>
             <span className="close-button" onClick={onClose}>✕</span>

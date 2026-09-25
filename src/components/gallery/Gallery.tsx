@@ -12,14 +12,12 @@ interface GalleryProps {
     subsite?: boolean;
 }
 
-function wrap(length: number, index: number): number {
-    if (index < 0) {
-        return length - 1;
+function wrap(length: number, index: number): number | null {
+    if (length === 0) {
+        return null;
     }
-    if (index >= length) {
-        return 0;
-    }
-    return index;
+
+    return ((index % length) + length) % length;
 }
 
 export function Gallery({ images, subsite = false }: GalleryProps) {
@@ -30,19 +28,27 @@ export function Gallery({ images, subsite = false }: GalleryProps) {
             return;
         }
 
+        if (activeIndex < 0 || activeIndex >= images.length) {
+            setActiveIndex(null);
+            return;
+        }
+
         const handleKeyDown = (e: KeyboardEvent) => {
             if (e.key === 'Escape') {
                 setActiveIndex(null);
             } else if (e.key === 'ArrowLeft') {
-                setActiveIndex((index) => wrap(images.length, (index ?? 0) - 1));
+                setActiveIndex(wrap(images.length, activeIndex - 1));
             } else if (e.key === 'ArrowRight') {
-                setActiveIndex((index) => wrap(images.length, (index ?? 0) + 1));
+                setActiveIndex(wrap(images.length, activeIndex + 1));
             }
         };
 
         document.addEventListener('keydown', handleKeyDown);
         return () => document.removeEventListener('keydown', handleKeyDown);
     }, [activeIndex, images.length]);
+
+    const currentIndex =
+        activeIndex !== null && activeIndex >= 0 && activeIndex < images.length ? activeIndex : null;
 
     return (
         <>
@@ -51,17 +57,17 @@ export function Gallery({ images, subsite = false }: GalleryProps) {
                     <div
                         key={image.src}
                         className="gallery-item"
-                        onClick={() => setActiveIndex(index)}
+                        onClick={() => setActiveIndex(wrap(images.length, index))}
                     >
                         <img src={image.src} alt={image.alt} />
                     </div>
                 ))}
             </div>
-            {activeIndex !== null && (
+            {currentIndex !== null && (
                 <Lightbox
                     images={images}
-                    index={activeIndex}
-                    onNavigate={setActiveIndex}
+                    index={currentIndex}
+                    onNavigate={(index) => setActiveIndex(wrap(images.length, index))}
                     onClose={() => setActiveIndex(null)}
                 />
             )}
