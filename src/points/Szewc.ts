@@ -26,7 +26,7 @@ export const szewc: PointSiteConfig = {
         }
     },
     hero: {
-        image: 'Photos/placeholder-13-szewc.svg',
+        image: 'Photos/szewc/szewc_1.jpg',
         title: {
             pl: 'Szewc na Pogodnie',
             de: 'Der Schuhmacher von Pogodno',
@@ -104,12 +104,48 @@ export const szewc: PointSiteConfig = {
     },
     gallery: [
         {
-            src: 'Photos/placeholder-13-szewc.svg',
+            src: 'Photos/szewc/szewc_1.jpg',
             caption: {
                 pl: 'Zakład szewski na Mickiewicza',
                 de: 'Schuhmacherwerkstatt an der Mickiewicza',
                 en: 'Cobbler\'s workshop on Mickiewicza',
                 ua: 'Шевська майстерня на Міцкевича'
+            }
+        },
+        {
+            src: 'Photos/szewc/szewc_2.jpg',
+            caption: {
+                pl: 'Zakład szewski na Mickiewicza',
+                de: 'Schuhmacherwerkstatt an der Mickiewicza',
+                en: 'Cobbler\'s workshop on Mickiewicza',
+                ua: 'Шевська майстерня на Міцкевича'
+            }
+        },
+        {
+            src: 'Photos/szewc/szewc_3.jpg',
+            caption: {
+                pl: 'Zakład szewski na Mickiewicza',
+                de: 'Schuhmacherwerkstatt an der Mickiewicza',
+                en: 'Cobbler\'s workshop on Mickiewicza',
+                ua: 'Шевська майстерня на Міцкевича'
+            }
+        },
+        {
+            src: 'Photos/szewc/szewc_4.jpg',
+            caption: {
+                pl: 'Zakład szewski na Mickiewicza',
+                de: 'Schuhmacherwerkstatt an der Mickiewicza',
+                en: 'Cobbler\'s workshop on Mickiewicza',
+                ua: 'Шевська майстерня на Міцкевича'
+            }
+        },
+        {
+            src: 'Photos/szewc/szewc_kartka.jpg',
+            caption: {
+                pl: 'Kartka związana z zakładem szewskim',
+                de: 'Zettel im Zusammenhang mit der Schuhmacherwerkstatt',
+                en: 'A card related to the cobbler\'s workshop',
+                ua: 'Картка, пов\'язана із шевською майстернею'
             }
         }
     ]

@@ -26,7 +26,7 @@ export const korfantegoBoiska: PointSiteConfig = {
         }
     },
     hero: {
-        image: 'Photos/placeholder-18-korfantego-boiska.svg',
+        image: 'Photos/korfantego-boiska/boiska_dron.jpg',
         title: {
             pl: 'Boiska na Korfantego',
             de: 'Sportplätze an der Korfantego-Straße',
@@ -98,7 +98,34 @@ export const korfantegoBoiska: PointSiteConfig = {
     },
     gallery: [
         {
-            src: 'Photos/placeholder-18-korfantego-boiska.svg',
+            src: 'Photos/korfantego-boiska/boiska_dron.jpg',
+            caption: {
+                pl: 'Boiska przy ul. Korfantego od góry',
+                de: 'Sportplätze an der Korfantego-Straße von oben',
+                en: 'The sports fields on ul. Korfantego from above',
+                ua: 'Майданчики на вул. Корфантого згори'
+            }
+        },
+        {
+            src: 'Photos/korfantego-boiska/boiska_przed.jpg',
+            caption: {
+                pl: 'Boiska przy ul. Korfantego przed przebudową',
+                de: 'Sportplätze an der Korfantego-Straße vor dem Umbau',
+                en: 'The sports fields on ul. Korfantego before the reconstruction',
+                ua: 'Майданчики на вул. Корфантого до реконструкції'
+            }
+        },
+        {
+            src: 'Photos/korfantego-boiska/boiska_po-przebudowie.jpg',
+            caption: {
+                pl: 'Boiska przy ul. Korfantego po przebudowie',
+                de: 'Sportplätze an der Korfantego-Straße nach dem Umbau',
+                en: 'The sports fields on ul. Korfantego after the reconstruction',
+                ua: 'Майданчики на вул. Корфантого після реконструкції'
+            }
+        },
+        {
+            src: 'Photos/korfantego-boiska/boiska.jpg',
             caption: {
                 pl: 'Boiska przy ul. Korfantego',
                 de: 'Sportplätze an der Korfantego-Straße',

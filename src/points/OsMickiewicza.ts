@@ -26,7 +26,7 @@ export const osMickiewicza: PointSiteConfig = {
         }
     },
     hero: {
-        image: 'Photos/placeholder-10-os-mickiewicza.svg',
+        image: 'Photos/os-mickiewicza/mickiewicza_1.jpg',
         title: {
             pl: 'Oś ulicy Mickiewicza',
             de: 'Achse der Mickiewicza-Straße',
@@ -104,12 +104,21 @@ export const osMickiewicza: PointSiteConfig = {
     },
     gallery: [
         {
-            src: 'Photos/placeholder-10-os-mickiewicza.svg',
+            src: 'Photos/os-mickiewicza/mickiewicza_1.jpg',
             caption: {
                 pl: 'Oś ulicy Mickiewicza na Pogodnie',
                 de: 'Achse der Mickiewicza-Straße in Pogodno',
                 en: 'Axis of ul. Mickiewicza in Pogodno',
                 ua: 'Ось вул. Міцкевича в Погодно'
+            }
+        },
+        {
+            src: 'Photos/os-mickiewicza/mickiewicza_2012.jpg',
+            caption: {
+                pl: 'Oś ulicy Mickiewicza w 2012 roku',
+                de: 'Achse der Mickiewicza-Straße im Jahr 2012',
+                en: 'Axis of ul. Mickiewicza in 2012',
+                ua: 'Ось вул. Міцкевича у 2012 році'
             }
         }
     ]

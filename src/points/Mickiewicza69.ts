@@ -26,7 +26,7 @@ export const mickiewicza69: PointSiteConfig = {
         }
     },
     hero: {
-        image: 'Photos/placeholder-15-mickiewicza-69.svg',
+        image: 'Photos/mickiewicza-69/mickiewicza_2012.jpg',
         title: {
             pl: 'Mickiewicza 69 — dawna Sparkasse',
             de: 'Mickiewicza 69 – die ehemalige Sparkasse',
@@ -104,12 +104,12 @@ export const mickiewicza69: PointSiteConfig = {
     },
     gallery: [
         {
-            src: 'Photos/placeholder-15-mickiewicza-69.svg',
+            src: 'Photos/mickiewicza-69/mickiewicza_2012.jpg',
             caption: {
-                pl: 'Dawna Sparkasse przy Mickiewicza 69',
-                de: 'Frühere Sparkasse an der Mickiewicza 69',
-                en: 'Former Sparkasse at Mickiewicza 69',
-                ua: 'Колишня Sparkasse на Міцкевича, 69'
+                pl: 'Dawna Sparkasse przy Mickiewicza 69 — zdjęcie z 2012 roku',
+                de: 'Frühere Sparkasse an der Mickiewicza 69 — Foto aus dem Jahr 2012',
+                en: 'Former Sparkasse at Mickiewicza 69 — photo from 2012',
+                ua: 'Колишня Sparkasse на Міцкевича, 69 — фото 2012 року'
             }
         }
     ]

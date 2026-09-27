@@ -34,6 +34,16 @@ const galleryImages: GalleryImage[] = [
         src: 'Photos/gallery-photos/zdobienie_gwiazda.jpg',
         altKey: 'gallery_alt_6',
         captionKey: 'gallery_caption_6'
+    },
+    {
+        src: 'Photos/gallery-photos/pocztowka-pogodno_panorama.jpg',
+        altKey: 'gallery_alt_7',
+        captionKey: 'gallery_caption_7'
+    },
+    {
+        src: 'Photos/gallery-photos/pocztowka-pogodno_panorama-stadion.jpg',
+        altKey: 'gallery_alt_8',
+        captionKey: 'gallery_caption_8'
     }
 ];
 

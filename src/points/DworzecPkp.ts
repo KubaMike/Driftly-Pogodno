@@ -26,7 +26,7 @@ export const dworzecPkp: PointSiteConfig = {
         }
     },
     hero: {
-        image: 'Photos/placeholder-1-dworzec-pkp.svg',
+        image: 'Photos/dworzec-pkp-pogodno/dworzec_pkp_pogodno-budowa.jpg',
         title: {
             pl: 'Dworzec PKP Szczecin Pogodno',
             de: 'Bahnhof Szczecin Pogodno',
@@ -175,12 +175,30 @@ export const dworzecPkp: PointSiteConfig = {
     },
     gallery: [
         {
-            src: 'Photos/placeholder-1-dworzec-pkp.svg',
+            src: 'Photos/dworzec-pkp-pogodno/dworzec_pkp_pogodno-budowa.jpg',
+            caption: {
+                pl: 'Budowa dworca PKP Szczecin Pogodno',
+                de: 'Bau des Bahnhofs Szczecin Pogodno',
+                en: 'Construction of PKP Station Szczecin Pogodno',
+                ua: 'Будівництво вокзалу Щецин Погодно'
+            }
+        },
+        {
+            src: 'Photos/dworzec-pkp-pogodno/dworzec_pkp_pogodno-1.jpg',
             caption: {
                 pl: 'Dworzec PKP Szczecin Pogodno',
                 de: 'Bahnhof Szczecin Pogodno',
                 en: 'PKP Station Szczecin Pogodno',
                 ua: 'Вокзал Щецин Погодно'
+            }
+        },
+        {
+            src: 'Photos/dworzec-pkp-pogodno/dworzec_pkp_pogodno-2.jpg',
+            caption: {
+                pl: 'Dworzec PKP Pogodno — zdjęcie archiwalne',
+                de: 'Bahnhof Szczecin Pogodno – Archivfoto',
+                en: 'PKP Station Szczecin Pogodno – archive photo',
+                ua: 'Вокзал Щецин Погодно — архівне фото'
             }
         }
     ]

@@ -26,7 +26,7 @@ export const mostAkademicki: PointSiteConfig = {
         }
     },
     hero: {
-        image: 'Photos/placeholder-2-most-akademicki.svg',
+        image: 'Photos/most-akademicki/most_akademicki-1.jpg',
         title: {
             pl: 'Most Akademicki',
             de: 'Akademische Brücke',
@@ -147,7 +147,16 @@ export const mostAkademicki: PointSiteConfig = {
     },
     gallery: [
         {
-            src: 'Photos/placeholder-2-most-akademicki.svg',
+            src: 'Photos/most-akademicki/most_akademicki-1.jpg',
+            caption: {
+                pl: 'Most Akademicki',
+                de: 'Akademische Brücke',
+                en: 'Academic Bridge',
+                ua: 'Академічний міст'
+            }
+        },
+        {
+            src: 'Photos/most-akademicki/most_akademicki-2.jpg',
             caption: {
                 pl: 'Most Akademicki nad wykopem kolejowym',
                 de: 'Akademische Brücke über dem Bahneinschnitt',
