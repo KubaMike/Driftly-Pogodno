@@ -11,7 +11,7 @@ export function HomePage() {
         <main className="wrap">
             <section className="card home-card">
                 <div className="visual">
-                    <img src="Photos/hero.jpg" alt="hero" className="hero-img" />
+                    <img src="Photos/hero.jpg" alt={t('hero_alt')} className="hero-img" />
                 </div>
                 <div className="info">
                     <div className="name">{t('site_name')}</div>
