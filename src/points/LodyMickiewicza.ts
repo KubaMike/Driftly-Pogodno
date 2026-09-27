@@ -26,7 +26,7 @@ export const lodyMickiewicza: PointSiteConfig = {
         }
     },
     hero: {
-        image: 'Photos/placeholder-12-lody-mickiewicza.svg',
+        image: 'Photos/lody-mickiewicza/lody_mickiewicza.jpg',
         title: {
             pl: 'Lody na Mickiewicza',
             de: 'Eis an der Mickiewicza-Straße',
@@ -125,7 +125,7 @@ export const lodyMickiewicza: PointSiteConfig = {
     ],
     gallery: [
         {
-            src: 'Photos/placeholder-12-lody-mickiewicza.svg',
+            src: 'Photos/lody-mickiewicza/lody_mickiewicza.jpg',
             caption: {
                 pl: 'Kultowe lody na Mickiewicza',
                 de: 'Kult-Eis an der Mickiewicza-Straße',

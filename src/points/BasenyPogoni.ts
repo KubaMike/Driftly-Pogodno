@@ -26,7 +26,7 @@ export const basenyPogoni: PointSiteConfig = {
         }
     },
     hero: {
-        image: 'Photos/basen_pogon_ludzie.jpg',
+        image: 'Photos/baseny-pogoni/basen_pogon_ludzie.jpg',
         title: {
             pl: 'Dawne baseny MKS Pogoń',
             de: 'Alte Schwimmbäder von MKS Pogoń',
@@ -119,7 +119,16 @@ export const basenyPogoni: PointSiteConfig = {
     audio: 'audiodescriptions/Basen przy stadionie Pogoni.mp3',
     gallery: [
         {
-            src: 'Photos/basen_pogon_szczecin.jpg',
+            src: 'Photos/baseny-pogoni/basen_pogon_ludzie.jpg',
+            caption: {
+                pl: 'Ludzie na dawnym basenie Pogoni',
+                de: 'Menschen im alten Pogoń-Bad',
+                en: 'People at the old Pogoń pool',
+                ua: 'Люди на давньому басейні Погоні'
+            }
+        },
+        {
+            src: 'Photos/baseny-pogoni/basen_pogon_szczecin.jpg',
             caption: {
                 pl: 'Basen Pogoń Szczecin',
                 de: 'Pogoń-Bad Szczecin',
@@ -128,7 +137,7 @@ export const basenyPogoni: PointSiteConfig = {
             }
         },
         {
-            src: 'Photos/basen_pogon_wejscie.jpg',
+            src: 'Photos/baseny-pogoni/basen_pogon_wejscie.jpg',
             caption: {
                 pl: 'Basen Pogoń Wejście',
                 de: 'Pogoń-Bad Eingang',
@@ -137,7 +146,7 @@ export const basenyPogoni: PointSiteConfig = {
             }
         },
         {
-            src: 'Photos/basen_pogon_60s.jpg',
+            src: 'Photos/baseny-pogoni/basen_pogon_60s.jpg',
             caption: {
                 pl: 'Basen Pogoń 1960s',
                 de: 'Pogoń-Bad 1960er',
@@ -146,7 +155,7 @@ export const basenyPogoni: PointSiteConfig = {
             }
         },
         {
-            src: 'Photos/basen_pogon_1965.jpg',
+            src: 'Photos/baseny-pogoni/basen_pogon_1965.jpg',
             caption: {
                 pl: 'Basen Pogoń 1965',
                 de: 'Pogoń-Bad 1965',

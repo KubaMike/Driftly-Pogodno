@@ -6,3 +6,5 @@ dist-ssr
 .DS_Store
 # scratch data
 *.txt
+# untouched source photos (web versions live in public/Photos)
+_originals/

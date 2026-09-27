@@ -26,7 +26,7 @@ export const punktPrzesiedlenia: PointSiteConfig = {
         }
     },
     hero: {
-        image: 'Photos/placeholder-17-punkt-przesiedlenia.svg',
+        image: 'Photos/punkt-przesiedlenia/przesiedlenia_1.jpg',
         title: {
             pl: 'Punkt przesiedlenia ludności niemieckiej',
             de: 'Umsiedlungspunkt für die deutsche Bevölkerung',
@@ -104,7 +104,25 @@ export const punktPrzesiedlenia: PointSiteConfig = {
     },
     gallery: [
         {
-            src: 'Photos/placeholder-17-punkt-przesiedlenia.svg',
+            src: 'Photos/punkt-przesiedlenia/przesiedlenia_1.jpg',
+            caption: {
+                pl: 'Punkt przesiedlenia ludności niemieckiej przy Mickiewicza',
+                de: 'Umsiedlungspunkt für die deutsche Bevölkerung an der Mickiewicza',
+                en: 'Resettlement point for the German population on ul. Mickiewicza',
+                ua: 'Пункт переселення німецького населення на Міцкевича'
+            }
+        },
+        {
+            src: 'Photos/punkt-przesiedlenia/przesiedlenia_2.jpg',
+            caption: {
+                pl: 'Punkt przesiedlenia ludności niemieckiej przy Mickiewicza',
+                de: 'Umsiedlungspunkt für die deutsche Bevölkerung an der Mickiewicza',
+                en: 'Resettlement point for the German population on ul. Mickiewicza',
+                ua: 'Пункт переселення німецького населення на Міцкевича'
+            }
+        },
+        {
+            src: 'Photos/punkt-przesiedlenia/przesiedlenia_3.jpg',
             caption: {
                 pl: 'Punkt przesiedlenia ludności niemieckiej przy Mickiewicza',
                 de: 'Umsiedlungspunkt für die deutsche Bevölkerung an der Mickiewicza',

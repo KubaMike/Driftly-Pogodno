@@ -17,6 +17,12 @@ const translations = {
         en: 'Welcome to Driftly-Pogodno',
         ua: 'Ласкаво просимо до Driftly-Pogodno'
     },
+    hero_alt: {
+        pl: 'Pogodno — dzielnica Szczecina odtworzona z archiwalnych fotografii',
+        de: 'Pogodno — ein Stettiner Stadtteil, rekonstruiert aus Archivfotografien',
+        en: 'Pogodno — a district of Szczecin recreated from archival photographs',
+        ua: 'Погодно — район Щецина, відтворений з архівних фотографій'
+    },
     tab_trails: {
         pl: 'Szlaki',
         de: 'Wege',
@@ -113,6 +119,18 @@ const translations = {
         en: 'Masonic decorations on the tenement at ul. Konopnickiej 27',
         ua: "Масонські прикраси на кам'яниці на вулиці Конопницької 27"
     },
+    gallery_caption_7: {
+        pl: 'Pocztówka z panoramą Pogodna',
+        de: 'Postkarte mit Panorama von Pogodno',
+        en: 'Postcard with a panorama of Pogodno',
+        ua: 'Листівка з панорамою Погодно'
+    },
+    gallery_caption_8: {
+        pl: 'Pocztówka z panoramą Pogodna i stadionem',
+        de: 'Postkarte mit Panorama von Pogodno und Stadion',
+        en: 'Postcard with a panorama of Pogodno and the stadium',
+        ua: 'Листівка з панорамою Погодно та стадіоном'
+    },
     gallery_alt_1: {
         pl: 'Przedwojenne plany Szczecina z ok. 1935 roku — w tym miejscu znajduje się dziś stadion Pogoni Szczecin.',
         de: 'Vorkriegspläne von Szczecin aus ca. 1935 — hier befindet sich heute das Stadion von Pogoń Szczecin.',
@@ -148,6 +166,18 @@ const translations = {
         de: 'Freimaurerische Verzierungen auf dem Mietshaus an der ul. Konopnickiej 27',
         en: 'Masonic decorations on the tenement at ul. Konopnickiej 27',
         ua: "Масонські прикраси на кам'яниці на вулиці Конопницької 27"
+    },
+    gallery_alt_7: {
+        pl: 'Pocztówka z panoramą Pogodna',
+        de: 'Postkarte mit Panorama von Pogodno',
+        en: 'Postcard with a panorama of Pogodno',
+        ua: 'Листівка з панорамою Погодно'
+    },
+    gallery_alt_8: {
+        pl: 'Pocztówka z panoramą Pogodna i stadionem',
+        de: 'Postkarte mit Panorama von Pogodno und Stadion',
+        en: 'Postcard with a panorama of Pogodno and the stadium',
+        ua: 'Листівка з панорамою Погодно та стадіоном'
     },
     map_link_text: {
         pl: 'Link do strony',

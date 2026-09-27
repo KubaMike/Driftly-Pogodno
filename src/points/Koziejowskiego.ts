@@ -26,7 +26,7 @@ export const koziejowskiego: PointSiteConfig = {
         }
     },
     hero: {
-        image: 'Photos/placeholder-9-koziejowskiego.svg',
+        image: 'Photos/koziejowskiego/koziejowskiego_18a-b.jpg',
         title: {
             pl: 'Ulica Koziejowskiego',
             de: 'Koziejowskiego-Straße',
@@ -124,12 +124,21 @@ export const koziejowskiego: PointSiteConfig = {
     ],
     gallery: [
         {
-            src: 'Photos/placeholder-9-koziejowskiego.svg',
+            src: 'Photos/koziejowskiego/koziejowskiego_18a-b.jpg',
             caption: {
-                pl: 'Ulica Koziejowskiego na Pogodnie',
-                de: 'Koziejowskiego-Straße in Pogodno',
-                en: 'ul. Koziejowskiego in Pogodno',
-                ua: 'Вулиця Козеювського в Погодно'
+                pl: 'Koziejowskiego 18a-b',
+                de: 'Koziejowskiego-Straße 18a-b',
+                en: '18a-b Koziejowskiego Street',
+                ua: 'Козеювського 18a-b'
+            }
+        },
+        {
+            src: 'Photos/koziejowskiego/koziejowskiego_28.jpg',
+            caption: {
+                pl: 'Koziejowskiego 28',
+                de: 'Koziejowskiego-Straße 28',
+                en: '28 Koziejowskiego Street',
+                ua: 'Козеювського 28'
             }
         }
     ]

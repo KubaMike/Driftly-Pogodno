@@ -26,7 +26,7 @@ export const wydzialEkonomiczny: PointSiteConfig = {
         }
     },
     hero: {
-        image: 'Photos/placeholder-3-wydzial-ekonomiczny.svg',
+        image: 'Photos/wydzial-ekonomiczny/wydzial_ekonomiczny.jpg',
         title: {
             pl: 'Wydział Ekonomiczny Uniwersytetu Szczecińskiego',
             de: 'Wirtschaftswissenschaftliche Fakultät der Universität Stettin',
@@ -146,7 +146,25 @@ export const wydzialEkonomiczny: PointSiteConfig = {
     },
     gallery: [
         {
-            src: 'Photos/placeholder-3-wydzial-ekonomiczny.svg',
+            src: 'Photos/wydzial-ekonomiczny/wydzial_ekonomiczny.jpg',
+            caption: {
+                pl: 'Wydział Ekonomiczny Uniwersytetu Szczecińskiego',
+                de: 'Wirtschaftswissenschaftliche Fakultät der Universität Stettin',
+                en: 'Faculty of Economics of the University of Szczecin',
+                ua: 'Економічний факультет Щецинського університету'
+            }
+        },
+        {
+            src: 'Photos/wydzial-ekonomiczny/wydzial_ekonomiczny_2.jpg',
+            caption: {
+                pl: 'Wydział Ekonomiczny Uniwersytetu Szczecińskiego',
+                de: 'Wirtschaftswissenschaftliche Fakultät der Universität Stettin',
+                en: 'Faculty of Economics of the University of Szczecin',
+                ua: 'Економічний факультет Щецинського університету'
+            }
+        },
+        {
+            src: 'Photos/wydzial-ekonomiczny/wydzial_ekonomiczny_3.jpg',
             caption: {
                 pl: 'Wydział Ekonomiczny Uniwersytetu Szczecińskiego',
                 de: 'Wirtschaftswissenschaftliche Fakultät der Universität Stettin',
