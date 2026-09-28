@@ -111,11 +111,11 @@ export const trails: TrailConfig[] = [
     places: [3, 8, 12, 13, 14, 15, 16, 17, 18]
   },
   {
-    id: 'nue-westend',
+    id: 'neu-westend',
     title: {
-      pl: 'Nue Westend',
+      pl: 'Neu Westend',
       de: 'Neue Westend',
-      en: 'Nue Westend',
+      en: 'Neu Westend',
       ua: 'Нове Вестенд'
     },
     description: {
