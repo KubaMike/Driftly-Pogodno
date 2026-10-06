@@ -2,6 +2,7 @@ import L from 'leaflet';
 import { useEffect, useReducer } from 'react';
 import { CircleMarker, Marker, Popup } from 'react-leaflet';
 import { Link } from 'react-router-dom';
+import { districtAt } from '../../data/districts';
 import { dropPoints } from '../../data/dropPoints';
 import { isPointActive, subscribeUnlockAll } from '../../hooks/usePointUnlock';
 import { useLanguage } from '../../i18n/LanguageContext';
@@ -56,7 +57,7 @@ function DropPointMarker({ point }: { point: PointSiteConfig }) {
     const active = isPointActive(point.id);
     const title = active ? l(point.marker.title) : l(point.marker.lockedTitle);
     const hasLink = active;
-    const color = point.marker.color;
+    const color = districtAt(point.coords)?.color ?? point.marker.color;
 
     if (active) {
         return (
