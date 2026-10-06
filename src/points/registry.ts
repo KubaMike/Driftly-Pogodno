@@ -17,6 +17,11 @@ import { stadionPogoni } from './StadionPogoni';
 import { szewc } from './Szewc';
 import { uniwersytetMickiewicza } from './UniwersytetMickiewicza';
 import { wydzialEkonomiczny } from './WydzialEkonomiczny';
+import { fotografKonopnickiej } from './FotografKonopnickiej';
+import { jakubaWujka } from './JakubaWujka';
+import { kwiaciarniaLukasinskiego } from './KwiaciarniaLukasinskiego';
+import { szkolaSiemierackiego } from './SzkolaSiemierackiego';
+import { wzgorzeNapoleona } from './WzgorzeNapoleona';
 
 export const pointSites: PointSiteConfig[] = [
     basenyPogoni,
@@ -36,7 +41,12 @@ export const pointSites: PointSiteConfig[] = [
     uniwersytetMickiewicza,
     punktPrzesiedlenia,
     korfantegoBoiska,
-    korfantegoMalarz
+    korfantegoMalarz,
+    fotografKonopnickiej,
+    jakubaWujka,
+    kwiaciarniaLukasinskiego,
+    szkolaSiemierackiego,
+    wzgorzeNapoleona
 ];
 
 export function getPointSiteByPath(path: string): PointSiteConfig | undefined {
