@@ -46,8 +46,8 @@ function TrailContent({ trail }: { trail: TrailConfig }) {
 
                 <section className={`trail-panel trail-panel-info${showPlaces ? ' collapsed' : ''}`}>
                     <div className="trail-panel-head">
-                        <Link to="/" className="trail-back">
-                            ← {t('trail_back')}
+                        <Link to="/" className="trail-back" aria-label={t('trail_back')}>
+                            ←
                         </Link>
                         <button
                             type="button"
@@ -58,7 +58,9 @@ function TrailContent({ trail }: { trail: TrailConfig }) {
                             <h2>{l(trail.title)}</h2>
                         </button>
                     </div>
-                    {!showPlaces && <p className="trail-desc">{l(trail.longDescription)}</p>}
+                    <div className="trail-panel-body">
+                        <p className="trail-desc">{l(trail.longDescription)}</p>
+                    </div>
                 </section>
 
                 {places.length > 0 && (
@@ -72,7 +74,7 @@ function TrailContent({ trail }: { trail: TrailConfig }) {
                             <span className="places-title">{t('trail_places')}</span>
                             <span className="trail-panel-chevron" />
                         </button>
-                        {showPlaces && (
+                        <div className="trail-panel-body">
                             <div className="trail-places">
                                 <ul>
                                     {places.map((point) => {
@@ -98,7 +100,7 @@ function TrailContent({ trail }: { trail: TrailConfig }) {
                                     })}
                                 </ul>
                             </div>
-                        )}
+                        </div>
                     </section>
                 )}
             </aside>
