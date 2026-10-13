@@ -10,11 +10,16 @@ export const trails: TrailConfig[] = [
       ua: 'Пагорб Акермана'
     },
     description: {
-    // pl: 'Trasa wzdłuż Wzgórza Ackermana prowadzi przez spokojne, urokliwe uliczki, które zostały harmonijnie wpasowane w naturalne, pofałdowane ukształtowanie terenu. Dominująca tu kameralna zabudowa z malowniczymi, spadzistymi dachami i drewnianymi akcentami przywodzi na myśl przytulną, szwajcarską architekturę alpejską, choć tuż obok – m.in. wzdłuż ulicy Sienkiewicza – można natrafić na niezwykle ciekawą zabudowę modernistyczną. Jako jedna z pierwszych zamieszkanych części Pogodna, rejon ten zachwyca bogactwem form i unikalnym klimatem. Wzniesienie to zawdzięcza swoją nazwę zasłużonemu nadburmistrzowi Szczecina, Friedrichowi Ackermannowi. To z jego inicjatywy miasto przyłączyło te tereny, dając początek nowej, prestiżowej dzielnicy rezydencjonalnej. ',
       pl: 'Trasa wzdłuż Wzgórza Ackermana prowadzi przez spokojne, urokliwe uliczki, które zostały harmonijnie wpasowane w naturalne, pofałdowane ukształtowanie terenu.',
       de: 'to be translated',
       en: 'to be translated',
       ua: 'to be translated'
+    },
+    longDescription: {
+      pl: 'Trasa wzdłuż Wzgórza Ackermana prowadzi przez spokojne, urokliwe uliczki, które zostały harmonijnie wpasowane w naturalne, pofałdowane ukształtowanie terenu. Dominująca tu kameralna zabudowa z malowniczymi, spadzistymi dachami i drewnianymi akcentami przywodzi na myśl przytulną, szwajcarską architekturę alpejską, choć tuż obok – m.in. wzdłuż ulicy Sienkiewicza – można natrafić na niezwykle ciekawą zabudowę modernistyczną. Jako jedna z pierwszych zamieszkanych części Pogodna, rejon ten zachwyca bogactwem form i unikalnym klimatem. Wzniesienie to zawdzięcza swoją nazwę zasłużonemu nadburmistrzowi Szczecina, Friedrichowi Ackermannowi. To z jego inicjatywy miasto przyłączyło te tereny, dając początek nowej, prestiżowej dzielnicy rezydencjonalnej.',
+      de: 'TO BE ADDED',
+      en: 'TO BE ADDED',
+      ua: 'TO BE ADDED'
     },
     waypoints: [
       [53.43781962048088, 14.52325504189928],
@@ -59,6 +64,12 @@ export const trails: TrailConfig[] = [
       de: '',
       en: '',
       ua: ''
+    },
+    longDescription: {
+      pl: 'Trasa prowadzi przez tereny sportowo-rekreacyjne, które utworzono na obszarze dawnej żwirowni. To właśnie tutaj powstał Stadion Miejski im. Floriana Krygiera, a w jego sąsiedztwie przez lata funkcjonowały kultowe miejsca – dawne otwarte kąpielisko Pogoni Szczecin oraz znana w całym regionie giełda samochodowa. W bliskim sąsiedztwie mieścił się także przedwojenny Instytut dla Dzieci Głuchoniemych, którego budynek po 1945 roku przeszedł pod władanie Uniwersytetu Szczecińskiego. Miejsce to niesie ze sobą również trudniejsze karty historii – po zakończeniu II wojny światowej znajdował się tu jeden z punktów przesiedleńczych dla ludności niemieckiej.',
+      de: 'TO BE ADDED',
+      en: 'TO BE ADDED',
+      ua: 'TO BE ADDED'
     },
     waypoints: [
       [53.43676487676694, 14.52028366690906],
@@ -124,6 +135,12 @@ export const trails: TrailConfig[] = [
       de: '',
       en: '',
       ua: ''
+    },
+    longDescription: {
+      pl: 'Neu Westend (Nowy Westend) to rozwijana w latach 20. i 30. XX wieku część Pogodna, wyróżniająca się stonowaną, funkcjonalną architekturą modernistyczną. Krajobraz osiedla tworzą eleganckie domy, urokliwe bliźniaki i kameralne kamieniczki z przydomowymi ogródkami. Sercem tej urbanistycznej kompozycji jest zielony, kolisty Plac Jakuba Wujka, od którego promieniście odchodzi pięć urokliwych uliczek. Całość zachwyca spójną zabudową, dojrzałą zielenią i spokojem, idealnie dopełniając koncepcję miasta-ogrodu.',
+      de: 'TO BE ADDED',
+      en: 'TO BE ADDED',
+      ua: 'TO BE ADDED'
     },
     waypoints: [
       [53.4415820496903, 14.51146922125177],
@@ -250,6 +267,12 @@ export const trails: TrailConfig[] = [
       en: '',
       ua: ''
     },
+    longDescription: {
+      pl: 'Tereny dawnego osiedla Braunsfelde („Pole Brauna”) stanowią historyczny rdzeń dzisiejszego Pogodna, obejmujący obszar między obecnymi ulicami Czorsztyńską a Poniatowskiego, skupiony wokół osi ulicy Mickiewicza. Pierwsze domy powstawały tu na przełomie XIX i XX wieku – wzdłuż dzisiejszych ulic Mickiewicza, Wieniawskiego, Konopnickiej, Brodzińskiego, Świętej Kostki czy Syrokomli. Zamieszkiwane niegdyś głównie przez szczecińską inteligencję, urzędników i reprezentantów wolnych zawodów, osiedle do dziś zachwyca elegancką, kameralną zabudową willową. Spacerując tutejszymi urokliwymi uliczkami, usianymi sędziwym starodrzewem, można na każdym kroku odkrywać prawdziwe architektoniczne perełki dawnego Szczecina.',
+      de: 'TO BE ADDED',
+      en: 'TO BE ADDED',
+      ua: 'TO BE ADDED'
+    },
     waypoints: [
       [53.44158388040689, 14.51147485539087],
       [53.44117073732073, 14.51122415477656],
@@ -325,6 +348,12 @@ export const trails: TrailConfig[] = [
       de: '',
       en: '',
       ua: ''
+    },
+    longDescription: {
+      pl: 'Tereny w kwartale ulic Mickiewicza, Klonowica, Janickiego i Żołnierskiej stanowią ważny, militarny akcent w historii Pogodna. Około 1930 roku zbudowano tu kompleks koszarowy z czerwonej cegły, do którego przylegał rozległy poligon ciągnący się aż pod lasy Głębokiego. Po II wojnie światowej część obszaru zajęła Armia Radziecka, a później Wojsko Polskie. Dziś ten dawniej zamknięty garnizon jest tętniącą życiem przestrzenią miejską, mieszczącą instytucje publiczne, uczelnie i nowoczesne osiedla.',
+      de: 'TO BE ADDED',
+      en: 'TO BE ADDED',
+      ua: 'TO BE ADDED'
     },
     waypoints: [
       [53.44458493015041, 14.49760669744093],

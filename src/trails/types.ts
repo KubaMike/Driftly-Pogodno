@@ -4,6 +4,7 @@ export interface TrailConfig {
     id: string;
     title: LocalizedText;
     description: LocalizedText;
+    longDescription: LocalizedText;
     waypoints: [number, number][];
     pathOptions: {
         color: string;

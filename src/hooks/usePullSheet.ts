@@ -6,8 +6,12 @@ const SHEET_OPEN_HEIGHT = 0.78;
 const PEEK_PX = 32;
 const OPEN_THRESHOLD = 0.5;
 
-export function usePullSheet() {
-    const [open, setOpen] = useState(false);
+interface UsePullSheetOptions {
+    initiallyOpen?: boolean;
+}
+
+export function usePullSheet({ initiallyOpen = false }: UsePullSheetOptions = {}) {
+    const [open, setOpen] = useState(initiallyOpen);
     const [isMobile, setIsMobile] = useState(
         () => typeof window !== 'undefined' && window.matchMedia(SHEET_QUERY).matches
     );

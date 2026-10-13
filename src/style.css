@@ -674,7 +674,7 @@ main.wrap.map-page {
     }
 }
 
-/* ===== Strona szlaku (pełnoekranowa mapa + panel) ===== */
+/* ===== Strona szlaku (pełnoekranowa mapa + panele) ===== */
 main.wrap.trail-page {
     position: fixed;
     inset: 0;
@@ -694,65 +694,125 @@ main.wrap.trail-page {
     left: -370px;
 }
 
-.trail-page .trail-sidebar {
+/* Desktop: dwa panele zadokowane do prawej krawędzi */
+.trail-page .trail-sheet {
+    position: static;
+}
+
+.trail-page .trail-panel {
     position: absolute;
-    top: 86px;
-    right: 20px;
-    bottom: 20px;
-    width: 340px;
     z-index: 1000;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: var(--shadow);
     border-radius: 16px;
-    padding: 28px 24px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
 }
 
-.trail-page .sheet-handle {
+.trail-page .trail-panel-info {
+    top: 86px;
+    right: 20px;
+    width: 340px;
+    padding: 28px 24px 24px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+}
+
+.trail-page .trail-panel-info.collapsed .trail-desc {
     display: none;
 }
 
-.trail-sidebar .trail-back {
+.trail-page .trail-panel-info.collapsed {
+    padding-bottom: 20px;
+}
+
+.trail-page .trail-panel-places {
+    right: 20px;
+    bottom: 20px;
+    width: 340px;
+    padding: 20px 24px;
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
+.trail-page .trail-panel-head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.trail-page .trail-panel-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+}
+
+.trail-page .trail-back {
     align-self: flex-start;
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
     color: var(--accent);
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     transition: color 0.2s ease;
 }
 
-.trail-sidebar .trail-back:hover {
+.trail-page .trail-back:hover {
     color: #555;
 }
 
-.trail-sidebar h2 {
+.trail-page h2 {
     font-family: 'Playfair Display', serif;
     font-size: 30px;
     color: var(--accent);
-    margin: 0 0 12px 0;
+    margin: 0;
 }
 
-.trail-sidebar .trail-desc {
+.trail-page .trail-desc {
     font-size: 15px;
     line-height: 1.6;
-    margin: 0 0 24px 0;
+    margin: 12px 0 0 0;
     color: var(--text);
 }
 
-.trail-sidebar .trail-places h3 {
+.trail-page .trail-panel-places .places-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
     font-family: 'Playfair Display', serif;
     font-size: 18px;
-    color: var(--accent);
-    margin: 0 0 12px 0;
     font-style: italic;
+    color: var(--accent);
 }
 
-.trail-sidebar .trail-places ul {
+.trail-page .trail-panel-chevron {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid var(--accent);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.trail-page .trail-panel-places.open .trail-panel-chevron {
+    transform: rotate(180deg);
+}
+
+.trail-page .trail-places {
+    margin-top: 16px;
+}
+
+.trail-page .trail-places ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -761,8 +821,8 @@ main.wrap.trail-page {
     gap: 10px;
 }
 
-.trail-sidebar .trail-places li a,
-.trail-sidebar .trail-places .trail-place-locked {
+.trail-page .trail-places li a,
+.trail-page .trail-places .trail-place-locked {
     display: block;
     padding: 10px 14px;
     background: #fff;
@@ -772,12 +832,12 @@ main.wrap.trail-page {
     font-size: 15px;
 }
 
-.trail-sidebar .trail-places li a:hover {
+.trail-page .trail-places li a:hover {
     background: var(--accent);
     color: #fff;
 }
 
-.trail-sidebar .trail-places .trail-place-locked {
+.trail-page .trail-places .trail-place-locked {
     background: rgba(0, 0, 0, 0.08);
     color: var(--muted);
     cursor: not-allowed;
@@ -785,13 +845,17 @@ main.wrap.trail-page {
     user-select: none;
 }
 
+.trail-page .sheet-handle {
+    display: none;
+}
+
 @media(max-width:768px) {
     main.wrap.trail-page {
         /* fullscreen map stays fixed; only the sheet moves */
     }
 
-    .trail-page .trail-sidebar {
-        top: auto;
+    .trail-page .trail-sheet {
+        position: absolute;
         left: 50%;
         right: auto;
         bottom: 0;
@@ -801,6 +865,13 @@ main.wrap.trail-page {
         padding: 0 24px 24px;
         transition: transform 0.3s ease, left 0.3s ease, width 0.3s ease;
         overscroll-behavior: contain;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: var(--shadow);
     }
 
     .trail-page .leaflet-bottom.leaflet-right .leaflet-control:not(.leaflet-control-attribution) {
@@ -813,21 +884,40 @@ main.wrap.trail-page {
         bottom: calc(78vh + 10px);
     }
 
-    .trail-page .trail-sidebar.open {
+    .trail-page .trail-sheet.open {
         left: 0;
         right: 0;
         width: 100%;
         border-radius: 24px 24px 0 0;
     }
 
-    .trail-page .trail-sidebar.dragging {
+    .trail-page .trail-sheet.dragging {
         transition: none;
     }
 
-    .trail-page .trail-sidebar .trail-back,
-    .trail-page .trail-sidebar h2,
-    .trail-page .trail-sidebar .trail-desc,
-    .trail-page .trail-sidebar .trail-places {
+    .trail-page .trail-panel {
+        position: static;
+        width: auto;
+        max-height: none;
+        overflow: visible;
+        background: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .trail-page .trail-panel-places {
+        margin-top: 18px;
+        padding-top: 16px;
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .trail-page .trail-back,
+    .trail-page h2,
+    .trail-page .trail-desc,
+    .trail-page .trail-places {
         padding-right: 4px;
     }
 
