@@ -10,10 +10,11 @@ export const trails: TrailConfig[] = [
       ua: 'Пагорб Акермана'
     },
     description: {
-      pl: 'Trasa spacerowa wokół Wzgórza Ackermana, prowadząca przez historyczne uliczki Pogodna z widokami na okoliczne zabudowania.',
-      de: 'Eine Wanderroute rund um den Ackerman-Hügel durch die historischen Gassen von Pogodno mit Blick auf die umliegenden Gebäude.',
-      en: 'A walking route around Ackerman Hill through the historic streets of Pogodno with views over the surrounding buildings.',
-      ua: 'Прогулянкова стежка навколо пагорба Акермана, що проходить історичними вуличками Погодно з краєвидами на навколишню забудову.'
+    // pl: 'Trasa wzdłuż Wzgórza Ackermana prowadzi przez spokojne, urokliwe uliczki, które zostały harmonijnie wpasowane w naturalne, pofałdowane ukształtowanie terenu. Dominująca tu kameralna zabudowa z malowniczymi, spadzistymi dachami i drewnianymi akcentami przywodzi na myśl przytulną, szwajcarską architekturę alpejską, choć tuż obok – m.in. wzdłuż ulicy Sienkiewicza – można natrafić na niezwykle ciekawą zabudowę modernistyczną. Jako jedna z pierwszych zamieszkanych części Pogodna, rejon ten zachwyca bogactwem form i unikalnym klimatem. Wzniesienie to zawdzięcza swoją nazwę zasłużonemu nadburmistrzowi Szczecina, Friedrichowi Ackermannowi. To z jego inicjatywy miasto przyłączyło te tereny, dając początek nowej, prestiżowej dzielnicy rezydencjonalnej. ',
+      pl: 'Trasa wzdłuż Wzgórza Ackermana prowadzi przez spokojne, urokliwe uliczki, które zostały harmonijnie wpasowane w naturalne, pofałdowane ukształtowanie terenu.',
+      de: 'to be translated',
+      en: 'to be translated',
+      ua: 'to be translated'
     },
     waypoints: [
       [53.43781962048088, 14.52325504189928],
@@ -54,10 +55,10 @@ export const trails: TrailConfig[] = [
       ua: 'Браунсвельде I'
     },
     description: {
-      pl: 'Pętla wokół dzielnicy Braunswelde, łącząca najważniejsze punkty historycznej dzielnicy na Pogodnie.',
-      de: 'Eine Ringroute um das Viertel Braunswelde, die die wichtigsten Orte des historischen Viertels in Pogodno verbindet.',
-      en: 'A loop around the Braunswelde district, linking the key spots of this historical part of Pogodno.',
-      ua: 'Кільцева стежка навколо району Браунсвельде, що з\'єднує найважливіші місця історичного району Погодно.'
+      pl: 'Trasa prowadzi przez tereny sportowo-rekreacyjne, które utworzono na obszarze dawnej żwirowni.',
+      de: '',
+      en: '',
+      ua: ''
     },
     waypoints: [
       [53.43676487676694, 14.52028366690906],
@@ -119,10 +120,10 @@ export const trails: TrailConfig[] = [
       ua: 'Нове Вестенд'
     },
     description: {
-      pl: 'Historyczna trasa przez dawną dzielnicę Nowy Westend, z domami z początku XX wieku i pamiątkami dawnego Szczecina.',
-      de: 'Ein historischer Weg durch das ehemalige Viertel Neue Westend mit Häusern vom Anfang des 20. Jahrhunderts und Erinnerungen an das alte Stettin.',
-      en: 'A historic route through the former Nue Westend district, with early 20th-century houses and relics of old Szczecin.',
-      ua: 'Історичний маршрут через колишній район Нове Вестенд із будинками початку XX століття та пам\'ятками старого Щецина.'
+      pl: 'Neu Westend (Nowy Westend) to rozwijana w latach 20. i 30. XX wieku część Pogodna, wyróżniająca się stonowaną, funkcjonalną architekturą modernistyczną.',
+      de: '',
+      en: '',
+      ua: ''
     },
     waypoints: [
       [53.4415820496903, 14.51146922125177],
@@ -244,10 +245,10 @@ export const trails: TrailConfig[] = [
       ua: 'Браунсвельде II'
     },
     description: {
-      pl: 'Przechadzka przez część Braunswelde, gdzie zachowały się ślady dawnej zabudowy i przedwojenne ulice Pogodna.',
-      de: 'Ein Spaziergang durch den Teil von Braunswelde mit erhaltenen Spuren der alten Bebauung und Vorkriegsstraßen von Pogodno.',
-      en: 'A stroll through the Braunswelde part where traces of old buildings and pre-war streets of Pogodno survive.',
-      ua: 'Прогулянка районом Браунсвельде, де збереглися сліди старої забудови та довоєнні вулиці Погодно.'
+      pl: 'Tereny dawnego osiedla Braunsfelde („Pole Brauna”) stanowią historyczny rdzeń dzisiejszego Pogodna, obejmujący obszar między obecnymi ulicami Czorsztyńską a Poniatowskiego, skupiony wokół osi ulicy Mickiewicza.',
+      de: '',
+      en: '',
+      ua: ''
     },
     waypoints: [
       [53.44158388040689, 14.51147485539087],
@@ -320,10 +321,10 @@ export const trails: TrailConfig[] = [
       ua: 'Військові території'
     },
     description: {
-      pl: 'Trasa wzdłuż dawnych terenów wojskowych po zachodniej stronie Pogodna, pełna historycznych śladów dawnych koszar.',
-      de: 'Ein Weg entlang des ehemaligen Militärgeländes westlich von Pogodno, reich an historischen Spuren früherer Kasernen.',
-      en: 'A route along the former military grounds west of Pogodno, rich with historical traces of former barracks.',
-      ua: 'Маршрут уздовж колишніх військових територій на захід від Погодно, сповнений історичних слідів колишніх казарм.'
+      pl: 'Tereny w kwartale ulic Mickiewicza, Klonowica, Janickiego i Żołnierskiej stanowią ważny, militarny akcent w historii Pogodna.',
+      de: '',
+      en: '',
+      ua: ''
     },
     waypoints: [
       [53.44458493015041, 14.49760669744093],
