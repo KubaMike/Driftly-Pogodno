@@ -8,3 +8,4 @@ dist-ssr
 *.txt
 # untouched source photos (web versions live in public/Photos)
 _originals/
+OdPoliny/

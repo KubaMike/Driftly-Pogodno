@@ -22,6 +22,30 @@ import { jakubaWujka } from './JakubaWujka';
 import { kwiaciarniaLukasinskiego } from './KwiaciarniaLukasinskiego';
 import { szkolaSiemierackiego } from './SzkolaSiemierackiego';
 import { wzgorzeNapoleona } from './WzgorzeNapoleona';
+import { bienCafe } from './BienCafe';
+import { budynekRadyOsiedla } from './BudynekRadyOsiedla';
+import { dawneTerenyWojskoweJanickiego } from './DawneTerenyWojskoweJanickiego';
+import { domGalczynskiego } from './DomGalczynskiego';
+import { domHugoLemcke } from './DomHugoLemcke';
+import { domWologoska } from './DomWologoska';
+import { dyrekcjaBibliotek } from './DyrekcjaBibliotek';
+import { dziuraSzpital } from './DziuraSzpital';
+import { fryzjerWieniawskiego } from './FryzjerWieniawskiego';
+import { gazowniaMickiewicza } from './GazowniaMickiewicza';
+import { kosciolSwietegoKrzyza } from './KosciolSwietegoKrzyza';
+import { lelewelaMakuszynskiego } from './LelewelaMakuszynskiego';
+import { ochronaSrodowiskaJakubaWujka } from './OchronaSrodowiskaJakubaWujka';
+import { osiedleSamosierry } from './OsiedleSamosierry';
+import { ostrzalyLukasinskiego } from './OstrzalyLukasinskiego';
+import { placPawlowskiego } from './PlacPawlowskiego';
+import { samosierryLukasinskiego } from './SamosierryLukasinskiego';
+import { sp3Reymonta } from './SP3Reymonta';
+import { sp48Czorsztynska } from './SP48Czorsztynska';
+import { terenJednostkiRadzieckiej } from './TerenJednostkiRadzieckiej';
+import { wieniawskiegoZoltyDom } from './WieniawskiegoZoltyDom';
+import { wieniawskiegoZameczek } from './WieniawskiegoZameczek';
+import { wiezaSpadochronowa } from './WiezaSpadochronowa';
+import { zdobieniaKonopnickiej27 } from './ZdobieniaKonopnickiej27';
 
 export const pointSites: PointSiteConfig[] = [
     basenyPogoni,
@@ -46,7 +70,31 @@ export const pointSites: PointSiteConfig[] = [
     jakubaWujka,
     kwiaciarniaLukasinskiego,
     szkolaSiemierackiego,
-    wzgorzeNapoleona
+    wzgorzeNapoleona,
+    bienCafe,
+    budynekRadyOsiedla,
+    dawneTerenyWojskoweJanickiego,
+    domGalczynskiego,
+    domHugoLemcke,
+    domWologoska,
+    dyrekcjaBibliotek,
+    dziuraSzpital,
+    fryzjerWieniawskiego,
+    gazowniaMickiewicza,
+    kosciolSwietegoKrzyza,
+    lelewelaMakuszynskiego,
+    ochronaSrodowiskaJakubaWujka,
+    osiedleSamosierry,
+    ostrzalyLukasinskiego,
+    placPawlowskiego,
+    samosierryLukasinskiego,
+    sp3Reymonta,
+    sp48Czorsztynska,
+    terenJednostkiRadzieckiej,
+    wieniawskiegoZoltyDom,
+    wieniawskiegoZameczek,
+    wiezaSpadochronowa,
+    zdobieniaKonopnickiej27
 ];
 
 export function getPointSiteByPath(path: string): PointSiteConfig | undefined {

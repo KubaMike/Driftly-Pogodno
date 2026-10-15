@@ -200,6 +200,69 @@ export const dworzecPkp: PointSiteConfig = {
                 en: 'PKP Station Szczecin Pogodno – archive photo',
                 ua: 'Вокзал Щецин Погодно — архівне фото'
             }
+        },
+        {
+            src: 'Photos/dworzec-pkp-pogodno/20221006_124445.webp',
+            caption: {
+                pl: 'Stacja Szczecin Pogodno',
+                de: 'Bahnhof Szczecin Pogodno',
+                en: 'Szczecin Pogodno Station',
+                ua: 'Станція Щецин Погодно'
+            }
+        },
+        {
+            src: 'Photos/dworzec-pkp-pogodno/20230107_130519.webp',
+            caption: {
+                pl: 'Stacja Szczecin Pogodno',
+                de: 'Bahnhof Szczecin Pogodno',
+                en: 'Szczecin Pogodno Station',
+                ua: 'Станція Щецин Погодно'
+            }
+        },
+        {
+            src: 'Photos/dworzec-pkp-pogodno/20230107_130526.webp',
+            caption: {
+                pl: 'Stacja Szczecin Pogodno',
+                de: 'Bahnhof Szczecin Pogodno',
+                en: 'Szczecin Pogodno Station',
+                ua: 'Станція Щецин Погодно'
+            }
+        },
+        {
+            src: 'Photos/dworzec-pkp-pogodno/20230107_130549.webp',
+            caption: {
+                pl: 'Stacja Szczecin Pogodno',
+                de: 'Bahnhof Szczecin Pogodno',
+                en: 'Szczecin Pogodno Station',
+                ua: 'Станція Щецин Погодно'
+            }
+        },
+        {
+            src: 'Photos/dworzec-pkp-pogodno/20230107_130616.webp',
+            caption: {
+                pl: 'Stacja Szczecin Pogodno',
+                de: 'Bahnhof Szczecin Pogodno',
+                en: 'Szczecin Pogodno Station',
+                ua: 'Станція Щецин Погодно'
+            }
+        },
+        {
+            src: 'Photos/dworzec-pkp-pogodno/20230107_130644.webp',
+            caption: {
+                pl: 'Stacja Szczecin Pogodno',
+                de: 'Bahnhof Szczecin Pogodno',
+                en: 'Szczecin Pogodno Station',
+                ua: 'Станція Щецин Погодно'
+            }
+        },
+        {
+            src: 'Photos/dworzec-pkp-pogodno/20230107_130934.webp',
+            caption: {
+                pl: 'Stacja Szczecin Pogodno',
+                de: 'Bahnhof Szczecin Pogodno',
+                en: 'Szczecin Pogodno Station',
+                ua: 'Станція Щецин Погодно'
+            }
         }
     ]
 };
