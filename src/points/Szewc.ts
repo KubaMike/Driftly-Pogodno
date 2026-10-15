@@ -147,6 +147,42 @@ export const szewc: PointSiteConfig = {
                 en: 'A card related to the cobbler\'s workshop',
                 ua: 'Картка, пов\'язана із шевською майстернею'
             }
+        },
+        {
+            src: 'Photos/szewc/20230107_140215.webp',
+            caption: {
+                pl: 'Zakład szewski na Mickiewicza',
+                de: 'Schuhmacherwerkstatt an der Mickiewicza',
+                en: 'Cobbler\'s workshop on Mickiewicza',
+                ua: 'Шевська майстерня на Міцкевича'
+            }
+        },
+        {
+            src: 'Photos/szewc/20230107_140226.webp',
+            caption: {
+                pl: 'Zakład szewski na Mickiewicza',
+                de: 'Schuhmacherwerkstatt an der Mickiewicza',
+                en: 'Cobbler\'s workshop on Mickiewicza',
+                ua: 'Шевська майстерня на Міцкевича'
+            }
+        },
+        {
+            src: 'Photos/szewc/IMG_20221223_131637.webp',
+            caption: {
+                pl: 'Zakład szewski na Mickiewicza',
+                de: 'Schuhmacherwerkstatt an der Mickiewicza',
+                en: 'Cobbler\'s workshop on Mickiewicza',
+                ua: 'Шевська майстерня на Міцкевича'
+            }
+        },
+        {
+            src: 'Photos/szewc/IMG_20221223_131651.webp',
+            caption: {
+                pl: 'Zakład szewski na Mickiewicza',
+                de: 'Schuhmacherwerkstatt an der Mickiewicza',
+                en: 'Cobbler\'s workshop on Mickiewicza',
+                ua: 'Шевська майстерня на Міцкевича'
+            }
         }
     ]
 };

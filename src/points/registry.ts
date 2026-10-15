@@ -20,7 +20,7 @@ import { wydzialEkonomiczny } from './WydzialEkonomiczny';
 import { fotografKonopnickiej } from './FotografKonopnickiej';
 import { jakubaWujka } from './JakubaWujka';
 import { kwiaciarniaLukasinskiego } from './KwiaciarniaLukasinskiego';
-import { szkolaSiemierackiego } from './SzkolaSiemierackiego';
+import { szkolaSiemiradzkiego } from './SzkolaSiemiradzkiego';
 import { wzgorzeNapoleona } from './WzgorzeNapoleona';
 import { biancafe } from './Biancafe';
 import { budynekRadyOsiedla } from './BudynekRadyOsiedla';
@@ -69,7 +69,7 @@ export const pointSites: PointSiteConfig[] = [
     fotografKonopnickiej,
     jakubaWujka,
     kwiaciarniaLukasinskiego,
-    szkolaSiemierackiego,
+    szkolaSiemiradzkiego,
     wzgorzeNapoleona,
     biancafe,
     budynekRadyOsiedla,

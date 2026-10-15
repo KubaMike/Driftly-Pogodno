@@ -27,7 +27,7 @@ export const wzgorzeNapoleona: PointSiteConfig = {
         }
     },
     hero: {
-        image: 'Photos/placeholder-22-wzgorze-napoleona.svg',
+        image: 'Photos/wzgorze-napoleona/P1020385.webp',
         title: {
             pl: 'Wzgórze Napoleona',
             de: 'Napoleonsberg',
@@ -85,7 +85,52 @@ export const wzgorzeNapoleona: PointSiteConfig = {
     },
     gallery: [
         {
-            src: 'Photos/placeholder-22-wzgorze-napoleona.svg',
+            src: 'Photos/wzgorze-napoleona/P1020385.webp',
+            caption: {
+                pl: 'Wzgórze Napoleona',
+                de: 'Napoleonsberg',
+                en: 'Napoleon Hill',
+                ua: 'Пагорб Наполеона'
+            }
+        },
+        {
+            src: 'Photos/wzgorze-napoleona/P1830685.webp',
+            caption: {
+                pl: 'Wzgórze Napoleona',
+                de: 'Napoleonsberg',
+                en: 'Napoleon Hill',
+                ua: 'Пагорб Наполеона'
+            }
+        },
+        {
+            src: 'Photos/wzgorze-napoleona/P1830689.webp',
+            caption: {
+                pl: 'Wzgórze Napoleona',
+                de: 'Napoleonsberg',
+                en: 'Napoleon Hill',
+                ua: 'Пагорб Наполеона'
+            }
+        },
+        {
+            src: 'Photos/wzgorze-napoleona/P1830690.webp',
+            caption: {
+                pl: 'Wzgórze Napoleona',
+                de: 'Napoleonsberg',
+                en: 'Napoleon Hill',
+                ua: 'Пагорб Наполеона'
+            }
+        },
+        {
+            src: 'Photos/wzgorze-napoleona/P1830691.webp',
+            caption: {
+                pl: 'Wzgórze Napoleona',
+                de: 'Napoleonsberg',
+                en: 'Napoleon Hill',
+                ua: 'Пагорб Наполеона'
+            }
+        },
+        {
+            src: 'Photos/wzgorze-napoleona/P1830694.webp',
             caption: {
                 pl: 'Wzgórze Napoleona',
                 de: 'Napoleonsberg',

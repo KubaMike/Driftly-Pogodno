@@ -132,6 +132,15 @@ export const lodyMickiewicza: PointSiteConfig = {
                 en: 'Iconic ice cream on Mickiewicza',
                 ua: 'Культове морозиво на Міцкевича'
             }
+        },
+        {
+            src: 'Photos/lody-mickiewicza/IMG_20230107_140322.webp',
+            caption: {
+                pl: 'Kultowe lody na Mickiewicza',
+                de: 'Kult-Eis an der Mickiewicza-Straße',
+                en: 'Iconic ice cream on Mickiewicza',
+                ua: 'Культове морозиво на Міцкевича'
+            }
         }
     ]
 };

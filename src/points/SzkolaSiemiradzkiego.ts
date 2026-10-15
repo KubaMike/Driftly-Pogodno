@@ -1,6 +1,6 @@
 import type { PointSiteConfig } from './types';
 
-export const szkolaSiemierackiego: PointSiteConfig = {
+export const szkolaSiemiradzkiego: PointSiteConfig = {
     id: 21,
     path: '81c64af741.html',
     coords: [53.448248, 14.5135609],
@@ -27,7 +27,7 @@ export const szkolaSiemierackiego: PointSiteConfig = {
         }
     },
     hero: {
-        image: 'Photos/placeholder-21-szkola-siemierackiego.svg',
+        image: 'Photos/szkola-siemiradzkiego/IMG_20230410_121527.webp',
         title: {
             pl: 'Szkoła na Siemiradzkiego',
             de: 'Schule an der Siemiradzkiego-Straße',
@@ -85,7 +85,7 @@ export const szkolaSiemierackiego: PointSiteConfig = {
     },
     gallery: [
         {
-            src: 'Photos/placeholder-21-szkola-siemierackiego.svg',
+            src: 'Photos/szkola-siemiradzkiego/IMG_20230410_121527.webp',
             caption: {
                 pl: 'Szkoła przy ul. Henryka Siemiradzkiego',
                 de: 'Schule an der Henryka-Siemiradzkiego-Straße',

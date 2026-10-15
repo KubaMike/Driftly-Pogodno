@@ -27,7 +27,7 @@ export const jakubaWujka: PointSiteConfig = {
         }
     },
     hero: {
-        image: 'Photos/placeholder-11-jakuba-wujka.svg',
+        image: 'Photos/jakuba-wujka/DSC_0026.webp',
         title: {
             pl: 'Plac Ojca Jakuba Wujka',
             de: 'Platz des Vaters Jakub Wujek',
@@ -85,7 +85,25 @@ export const jakubaWujka: PointSiteConfig = {
     },
     gallery: [
         {
-            src: 'Photos/placeholder-11-jakuba-wujka.svg',
+            src: 'Photos/jakuba-wujka/DSC_0026.webp',
+            caption: {
+                pl: 'Plac Ojca Jakuba Wujka',
+                de: 'Platz des Vaters Jakub Wujek',
+                en: 'Father Jakub Wujek Square',
+                ua: 'Площа отця Якуба Вуйка'
+            }
+        },
+        {
+            src: 'Photos/jakuba-wujka/DSC_0027.webp',
+            caption: {
+                pl: 'Plac Ojca Jakuba Wujka',
+                de: 'Platz des Vaters Jakub Wujek',
+                en: 'Father Jakub Wujek Square',
+                ua: 'Площа отця Якуба Вуйка'
+            }
+        },
+        {
+            src: 'Photos/jakuba-wujka/DSC_0289-01.webp',
             caption: {
                 pl: 'Plac Ojca Jakuba Wujka',
                 de: 'Platz des Vaters Jakub Wujek',
