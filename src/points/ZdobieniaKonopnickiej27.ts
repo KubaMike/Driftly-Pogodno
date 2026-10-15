@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const zdobieniaKonopnickiej27: PointSiteConfig = {
     id: 46,
-    path: 'a58e008fa0.html',
+    path: 'd5047f74b5.html',
     coords: [53.4387637, 14.5081139],
     pageTitle: { pl: 'Zdobienia na Konopnickiej 27', de: 'Verzierungen an der Konopnickiej 27', en: 'Ornaments at Konopnickiej 27', ua: 'Оздоблення на Конопніцькій 27' },
     marker: {
@@ -69,6 +69,15 @@ export const zdobieniaKonopnickiej27: PointSiteConfig = {
         ua: 'Вміст готується — Оздоблення на Конопніцькій 27 — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/zdobienia-konopnickiej-27/IMG_20230401_121141.webp',
+            caption: {
+                pl: 'Zdjęcie — Zdobienia na Konopnickiej 27',
+                de: 'Foto — Verzierungen an der Konopnickiej 27',
+                en: 'Photo — Ornaments at Konopnickiej 27',
+                ua: 'Фото — Оздоблення на Конопніцькій 27'
+            }
+        },
         {
             src: 'Photos/zdobienia-konopnickiej-27/IMG_20230401_121202.webp',
             caption: {

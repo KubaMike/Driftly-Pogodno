@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const kosciolSwietegoKrzyza: PointSiteConfig = {
     id: 33,
-    path: '386938cdbe.html',
+    path: '9187c23a2c.html',
     coords: [53.4402146, 14.5093606],
     pageTitle: { pl: 'Kościół pw. Świętego Krzyża', de: 'Kirche zum Heiligen Kreuz', en: 'Church of the Holy Cross', ua: 'Костел Святого Хреста' },
     marker: {
@@ -69,6 +69,15 @@ export const kosciolSwietegoKrzyza: PointSiteConfig = {
         ua: 'Вміст готується — Костел Святого Хреста — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/kosciol-swietego-krzyza/P1050047.webp',
+            caption: {
+                pl: 'Zdjęcie — Kościół pw. Świętego Krzyża',
+                de: 'Foto — Kirche zum Heiligen Kreuz',
+                en: 'Photo — Church of the Holy Cross',
+                ua: 'Фото — Костел Святого Хреста'
+            }
+        },
         {
             src: 'Photos/kosciol-swietego-krzyza/P1050060.webp',
             caption: {

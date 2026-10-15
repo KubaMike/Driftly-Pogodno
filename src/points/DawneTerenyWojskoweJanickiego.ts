@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const dawneTerenyWojskoweJanickiego: PointSiteConfig = {
     id: 25,
-    path: 'b79691da44.html',
+    path: '423ce96c54.html',
     coords: [53.447169, 14.4996268],
     pageTitle: { pl: 'Dawne tereny wojskowe przy ul. Janickiego', de: 'Ehemaliges Militärgelände an der Janickiego', en: 'Former military grounds at Janickiego', ua: 'Колишні військові території на вул. Яніцького' },
     marker: {
@@ -69,6 +69,15 @@ export const dawneTerenyWojskoweJanickiego: PointSiteConfig = {
         ua: 'Вміст готується — Колишні військові території на вул. Яніцького — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/dawne-tereny-wojskowe-janickiego/IMG_20220828_175305.webp',
+            caption: {
+                pl: 'Zdjęcie — Dawne tereny wojskowe przy ul. Janickiego',
+                de: 'Foto — Ehemaliges Militärgelände an der Janickiego',
+                en: 'Photo — Former military grounds at Janickiego',
+                ua: 'Фото — Колишні військові території на вул. Яніцького'
+            }
+        },
         {
             src: 'Photos/dawne-tereny-wojskowe-janickiego/IMG_20220828_175330.webp',
             caption: {

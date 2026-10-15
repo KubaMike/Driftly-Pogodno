@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const wiezaSpadochronowa: PointSiteConfig = {
     id: 45,
-    path: '1c847ee6c4.html',
+    path: 'd54ff7a150.html',
     coords: [53.4498951, 14.5198625],
     pageTitle: { pl: 'Wieża Spadochronowa', de: 'Fallschirmturm', en: 'Parachute Tower', ua: 'Вежа з парашутом' },
     marker: {
@@ -69,6 +69,15 @@ export const wiezaSpadochronowa: PointSiteConfig = {
         ua: 'Вміст готується — Вежа з парашутом — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/wieza-spadochronowa/28378013_1717045935014619_7307695424383730765_n.webp',
+            caption: {
+                pl: 'Zdjęcie — Wieża Spadochronowa',
+                de: 'Foto — Fallschirmturm',
+                en: 'Photo — Parachute Tower',
+                ua: 'Фото — Вежа з парашутом'
+            }
+        },
         {
             src: 'Photos/wieza-spadochronowa/28378461_1714997158552830_854452185181579286_n.webp',
             caption: {

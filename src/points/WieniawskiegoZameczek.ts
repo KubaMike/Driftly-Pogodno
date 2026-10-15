@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const wieniawskiegoZameczek: PointSiteConfig = {
     id: 44,
-    path: '3ffef86f3e.html',
+    path: '08f9ab397c.html',
     coords: [53.437319, 14.5111541],
     pageTitle: { pl: 'Zameczek przy Wieniawskiego', de: '„Zameczek“ an der Wieniawskiego', en: 'Zameczek at Wieniawskiego', ua: '«Замочок» на Венявського' },
     marker: {
@@ -69,6 +69,15 @@ export const wieniawskiegoZameczek: PointSiteConfig = {
         ua: 'Вміст готується — «Замочок» на Венявського — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/wieniawskiego-zameczek/P1830786.webp',
+            caption: {
+                pl: 'Zdjęcie — Zameczek przy Wieniawskiego',
+                de: 'Foto — „Zameczek“ an der Wieniawskiego',
+                en: 'Photo — Zameczek at Wieniawskiego',
+                ua: 'Фото — «Замочок» на Венявського'
+            }
+        },
         {
             src: 'Photos/wieniawskiego-zameczek/P1830787.webp',
             caption: {

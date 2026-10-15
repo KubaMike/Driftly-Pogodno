@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const placPawlowskiego: PointSiteConfig = {
     id: 38,
-    path: '1acd36013a.html',
+    path: 'fbf6315b81.html',
     coords: [53.4400498, 14.5054863],
     pageTitle: { pl: 'Plac Waleriana Pawłowskiego', de: 'Walerian-Pawłowski-Platz', en: 'Walerian Pawłowski Square', ua: 'Площа Валеріана Павловського' },
     marker: {
@@ -69,6 +69,15 @@ export const placPawlowskiego: PointSiteConfig = {
         ua: 'Вміст готується — Площа Валеріана Павловського — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/plac-pawlowskiego/P1050001.webp',
+            caption: {
+                pl: 'Zdjęcie — Plac Waleriana Pawłowskiego',
+                de: 'Foto — Walerian-Pawłowski-Platz',
+                en: 'Photo — Walerian Pawłowski Square',
+                ua: 'Фото — Площа Валеріана Павловського'
+            }
+        },
         {
             src: 'Photos/plac-pawlowskiego/P1050002.webp',
             caption: {

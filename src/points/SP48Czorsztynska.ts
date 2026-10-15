@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const sp48Czorsztynska: PointSiteConfig = {
     id: 41,
-    path: '067356a8d0.html',
+    path: '0d0b6549f6.html',
     coords: [53.4395919, 14.5003041],
     pageTitle: { pl: 'Szkoła Podstawowa nr 48', de: 'Grundschule Nr. 48', en: 'Primary School No. 48', ua: 'Початкова школа № 48' },
     marker: {
@@ -69,6 +69,15 @@ export const sp48Czorsztynska: PointSiteConfig = {
         ua: 'Вміст готується — Початкова школа № 48 — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/sp48-czorsztynska/20191125_233252.webp',
+            caption: {
+                pl: 'Zdjęcie — Szkoła Podstawowa nr 48',
+                de: 'Foto — Grundschule Nr. 48',
+                en: 'Photo — Primary School No. 48',
+                ua: 'Фото — Початкова школа № 48'
+            }
+        },
         {
             src: 'Photos/sp48-czorsztynska/20191125_233333.webp',
             caption: {

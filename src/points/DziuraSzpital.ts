@@ -2,8 +2,8 @@ import type { PointSiteConfig } from './types';
 
 export const dziuraSzpital: PointSiteConfig = {
     id: 30,
-    path: 'f46c4ea6a5.html',
-    coords: [53.4422102, 14.5201289],
+    path: '08153ad060.html',
+    coords: [53.4488216, 14.5077129],
     pageTitle: { pl: 'Dziura Szpital', de: 'Dziura Szpital', en: 'Dziura Szpital', ua: 'Dziura Szpital' },
     marker: {
         color: '#a6761d',
@@ -69,6 +69,15 @@ export const dziuraSzpital: PointSiteConfig = {
         ua: 'Вміст готується — Dziura Szpital — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/dziura-szpital/P1830734.webp',
+            caption: {
+                pl: 'Zdjęcie — Dziura Szpital',
+                de: 'Foto — Dziura Szpital',
+                en: 'Photo — Dziura Szpital',
+                ua: 'Фото — Dziura Szpital'
+            }
+        },
         {
             src: 'Photos/dziura-szpital/P1830735.webp',
             caption: {

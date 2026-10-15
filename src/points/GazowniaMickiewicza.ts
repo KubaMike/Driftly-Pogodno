@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const gazowniaMickiewicza: PointSiteConfig = {
     id: 32,
-    path: '4fb4807eba.html',
+    path: 'afe6902fb7.html',
     coords: [53.4424827, 14.504582],
     pageTitle: { pl: 'Gazownia na Mickiewicza', de: 'Gaswerk an der Mickiewicza', en: 'Gasworks on Mickiewicza', ua: 'Газовня на Міцкевича' },
     marker: {
@@ -69,6 +69,15 @@ export const gazowniaMickiewicza: PointSiteConfig = {
         ua: 'Вміст готується — Газовня на Міцкевича — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/gazownia-mickiewicza/20230107_143538.webp',
+            caption: {
+                pl: 'Zdjęcie — Gazownia na Mickiewicza',
+                de: 'Foto — Gaswerk an der Mickiewicza',
+                en: 'Photo — Gasworks on Mickiewicza',
+                ua: 'Фото — Газовня на Міцкевича'
+            }
+        },
         {
             src: 'Photos/gazownia-mickiewicza/20230107_143608.webp',
             caption: {

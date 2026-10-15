@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const lelewelaMakuszynskiego: PointSiteConfig = {
     id: 34,
-    path: '9c737d54d7.html',
+    path: '1b3b979d67.html',
     coords: [53.4411235, 14.5030755],
     pageTitle: { pl: 'Lelewela / Makuszyńskiego', de: 'Lelewela / Makuszyńskiego', en: 'Lelewela / Makuszyńskiego', ua: 'Лелевеля / Макушинського' },
     marker: {
@@ -69,6 +69,15 @@ export const lelewelaMakuszynskiego: PointSiteConfig = {
         ua: 'Вміст готується — Лелевеля / Макушинського — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/lelewela-makuszynskiego/P1050021.webp',
+            caption: {
+                pl: 'Zdjęcie — Lelewela / Makuszyńskiego',
+                de: 'Foto — Lelewela / Makuszyńskiego',
+                en: 'Photo — Lelewela / Makuszyńskiego',
+                ua: 'Фото — Лелевеля / Макушинського'
+            }
+        },
         {
             src: 'Photos/lelewela-makuszynskiego/P1050022.webp',
             caption: {

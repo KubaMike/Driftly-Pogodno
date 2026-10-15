@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const wieniawskiegoZoltyDom: PointSiteConfig = {
     id: 43,
-    path: '572eafb5e0.html',
+    path: 'c3bef7e932.html',
     coords: [53.4392552, 14.5105634],
     pageTitle: { pl: 'Żółty Dom przy Wieniawskiego', de: 'Gelbes Haus an der Wieniawskiego', en: 'Yellow House at Wieniawskiego', ua: 'Жовтий будинок на Венявського' },
     marker: {
@@ -69,6 +69,15 @@ export const wieniawskiegoZoltyDom: PointSiteConfig = {
         ua: 'Вміст готується — Жовтий будинок на Венявського — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/wieniawskiego-zolty-dom/P1830775.webp',
+            caption: {
+                pl: 'Zdjęcie — Żółty Dom przy Wieniawskiego',
+                de: 'Foto — Gelbes Haus an der Wieniawskiego',
+                en: 'Photo — Yellow House at Wieniawskiego',
+                ua: 'Фото — Жовтий будинок на Венявського'
+            }
+        },
         {
             src: 'Photos/wieniawskiego-zolty-dom/P1830776.webp',
             caption: {

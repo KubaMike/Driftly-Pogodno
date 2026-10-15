@@ -2,8 +2,8 @@ import type { PointSiteConfig } from './types';
 
 export const dyrekcjaBibliotek: PointSiteConfig = {
     id: 29,
-    path: 'ba336fdb8d.html',
-    coords: [53.4488216, 14.5077129],
+    path: '7f540343a3.html',
+    coords: [53.4422102, 14.5201289],
     pageTitle: { pl: 'Dyrekcja Bibliotek', de: 'Bibliotheksdirektion', en: 'Library Directorate', ua: 'Дирекція бібліотек' },
     marker: {
         color: '#a6761d',
@@ -69,6 +69,15 @@ export const dyrekcjaBibliotek: PointSiteConfig = {
         ua: 'Вміст готується — Дирекція бібліотек — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/dyrekcja-bibliotek/DSC_0130.webp',
+            caption: {
+                pl: 'Zdjęcie — Dyrekcja Bibliotek',
+                de: 'Foto — Bibliotheksdirektion',
+                en: 'Photo — Library Directorate',
+                ua: 'Фото — Дирекція бібліотек'
+            }
+        },
         {
             src: 'Photos/dyrekcja-bibliotek/DSC_0136.webp',
             caption: {

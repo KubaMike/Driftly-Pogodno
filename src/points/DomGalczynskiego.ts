@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const domGalczynskiego: PointSiteConfig = {
     id: 26,
-    path: '498a28c395.html',
+    path: '47a2ea3c9c.html',
     coords: [53.4499014, 14.51759],
     pageTitle: { pl: 'Dom Gałczyńskiego', de: 'Gałczyński-Haus', en: 'Gałczyński\'s House', ua: 'Будинок Галчинського' },
     marker: {
@@ -69,6 +69,15 @@ export const domGalczynskiego: PointSiteConfig = {
         ua: 'Вміст готується — Будинок Галчинського — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/dom-galczynskiego/P3311014.webp',
+            caption: {
+                pl: 'Zdjęcie — Dom Gałczyńskiego',
+                de: 'Foto — Gałczyński-Haus',
+                en: 'Photo — Gałczyński\'s House',
+                ua: 'Фото — Будинок Галчинського'
+            }
+        },
         {
             src: 'Photos/dom-galczynskiego/P3311015.webp',
             caption: {

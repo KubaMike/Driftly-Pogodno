@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const budynekRadyOsiedla: PointSiteConfig = {
     id: 24,
-    path: 'ba02246c53.html',
+    path: 'abb977b22b.html',
     coords: [53.4491938, 14.5135795],
     pageTitle: { pl: 'Budynek Rady Osiedla', de: 'Gebäude des Stadtteilrats', en: 'Neighbourhood Council Building', ua: 'Будівля Ради району' },
     marker: {
@@ -69,6 +69,15 @@ export const budynekRadyOsiedla: PointSiteConfig = {
         ua: 'Вміст готується — Будівля Ради району — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/budynek-rady-osiedla/20180419_190952.webp',
+            caption: {
+                pl: 'Zdjęcie — Budynek Rady Osiedla',
+                de: 'Foto — Gebäude des Stadtteilrats',
+                en: 'Photo — Neighbourhood Council Building',
+                ua: 'Фото — Будівля Ради району'
+            }
+        },
         {
             src: 'Photos/budynek-rady-osiedla/20180419_191121-01.webp',
             caption: {

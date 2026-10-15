@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const ostrzalyLukasinskiego: PointSiteConfig = {
     id: 37,
-    path: 'b9863502e0.html',
+    path: '7a06508c3d.html',
     coords: [53.4428238, 14.4981278],
     pageTitle: { pl: 'Postrzały na Łukasińskiego', de: 'Einschüsse an der Łukasińskiego', en: 'Bullet holes on Łukasińskiego', ua: 'Кульові отвори на Лукасинського' },
     marker: {
@@ -69,6 +69,15 @@ export const ostrzalyLukasinskiego: PointSiteConfig = {
         ua: 'Вміст готується — Кульові отвори на Лукасинського — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/ostrzaly-lukasinskiego/IMG_20221009_124251.webp',
+            caption: {
+                pl: 'Zdjęcie — Postrzały na Łukasińskiego',
+                de: 'Foto — Einschüsse an der Łukasińskiego',
+                en: 'Photo — Bullet holes on Łukasińskiego',
+                ua: 'Фото — Кульові отвори на Лукасинського'
+            }
+        },
         {
             src: 'Photos/ostrzaly-lukasinskiego/IMG_20221009_124256.webp',
             caption: {

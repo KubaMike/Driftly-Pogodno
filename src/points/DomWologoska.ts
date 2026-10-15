@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const domWologoska: PointSiteConfig = {
     id: 28,
-    path: 'b84d5d73b5.html',
+    path: '709a8002c2.html',
     coords: [53.4368199, 14.5098886],
     pageTitle: { pl: 'Dom Wologoska', de: 'Wologoska-Haus', en: 'Wologoska House', ua: 'Будинок Вологоська' },
     marker: {
@@ -69,6 +69,15 @@ export const domWologoska: PointSiteConfig = {
         ua: 'Вміст готується — Будинок Вологоська — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/dom-wologoska/P1830828.webp',
+            caption: {
+                pl: 'Zdjęcie — Dom Wologoska',
+                de: 'Foto — Wologoska-Haus',
+                en: 'Photo — Wologoska House',
+                ua: 'Фото — Будинок Вологоська'
+            }
+        },
         {
             src: 'Photos/dom-wologoska/P1830829.webp',
             caption: {

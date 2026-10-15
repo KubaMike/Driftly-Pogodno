@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const fryzjerWieniawskiego: PointSiteConfig = {
     id: 31,
-    path: '73ed14ba52.html',
+    path: '537daad082.html',
     coords: [53.4411964, 14.5092704],
     pageTitle: { pl: 'Fryzjer przy Wieniawskiego', de: 'Friseur an der Wieniawskiego', en: 'Barber at Wieniawskiego', ua: 'Перукарня на Венявського' },
     marker: {
@@ -69,6 +69,15 @@ export const fryzjerWieniawskiego: PointSiteConfig = {
         ua: 'Вміст готується — Перукарня на Венявського — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/fryzjer-wieniawskiego/artur-fryzjer-Tygodnik-Rzemieślnik-26-02-1967.webp',
+            caption: {
+                pl: 'Zdjęcie — Fryzjer przy Wieniawskiego',
+                de: 'Foto — Friseur an der Wieniawskiego',
+                en: 'Photo — Barber at Wieniawskiego',
+                ua: 'Фото — Перукарня на Венявського'
+            }
+        },
         {
             src: 'Photos/fryzjer-wieniawskiego/artur2.webp',
             caption: {

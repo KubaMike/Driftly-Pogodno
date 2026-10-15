@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const terenJednostkiRadzieckiej: PointSiteConfig = {
     id: 42,
-    path: '89663fa5c4.html',
+    path: '081dd22a80.html',
     coords: [53.4474738, 14.4922305],
     pageTitle: { pl: 'Teren dawnej jednostki radzieckiej', de: 'Gelände der ehemaligen sowjetischen Einheit', en: 'Site of the former Soviet unit', ua: 'Територія колишньої радянської частини' },
     marker: {
@@ -69,6 +69,15 @@ export const terenJednostkiRadzieckiej: PointSiteConfig = {
         ua: 'Вміст готується — Територія колишньої радянської частини — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/teren-jednostki-radzieckiej/P1830662.webp',
+            caption: {
+                pl: 'Zdjęcie — Teren dawnej jednostki radzieckiej',
+                de: 'Foto — Gelände der ehemaligen sowjetischen Einheit',
+                en: 'Photo — Site of the former Soviet unit',
+                ua: 'Фото — Територія колишньої радянської частини'
+            }
+        },
         {
             src: 'Photos/teren-jednostki-radzieckiej/P1830663.webp',
             caption: {

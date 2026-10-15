@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const domHugoLemcke: PointSiteConfig = {
     id: 27,
-    path: '90faefbd5f.html',
+    path: 'f48ba52c87.html',
     coords: [53.4513743, 14.5158949],
     pageTitle: { pl: 'Dom Hugo Lemcke', de: 'Hugo-Lemcke-Haus', en: 'Hugo Lemcke House', ua: 'Будинок Гуго Лемке' },
     marker: {
@@ -69,6 +69,15 @@ export const domHugoLemcke: PointSiteConfig = {
         ua: 'Вміст готується — Будинок Гуго Лемке — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/dom-hugo-lemcke/P1060103.webp',
+            caption: {
+                pl: 'Zdjęcie — Dom Hugo Lemcke',
+                de: 'Foto — Hugo-Lemcke-Haus',
+                en: 'Photo — Hugo Lemcke House',
+                ua: 'Фото — Будинок Гуго Лемке'
+            }
+        },
         {
             src: 'Photos/dom-hugo-lemcke/P1060104.webp',
             caption: {

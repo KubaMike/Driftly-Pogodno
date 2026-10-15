@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const ochronaSrodowiskaJakubaWujka: PointSiteConfig = {
     id: 35,
-    path: '0703250702.html',
+    path: '8b45bdf111.html',
     coords: [53.4466007, 14.5169143],
     pageTitle: { pl: 'Ochrona Środowiska', de: 'Naturschutz', en: 'Environmental Protection', ua: 'Охорона довкілля' },
     marker: {
@@ -69,6 +69,15 @@ export const ochronaSrodowiskaJakubaWujka: PointSiteConfig = {
         ua: 'Вміст готується — Охорона довкілля — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/ochrona-srodowiska-jakuba-wujka/DSC_0004.webp',
+            caption: {
+                pl: 'Zdjęcie — Ochrona Środowiska',
+                de: 'Foto — Naturschutz',
+                en: 'Photo — Environmental Protection',
+                ua: 'Фото — Охорона довкілля'
+            }
+        },
         {
             src: 'Photos/ochrona-srodowiska-jakuba-wujka/DSC_0005.webp',
             caption: {

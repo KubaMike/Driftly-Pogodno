@@ -22,7 +22,7 @@ import { jakubaWujka } from './JakubaWujka';
 import { kwiaciarniaLukasinskiego } from './KwiaciarniaLukasinskiego';
 import { szkolaSiemierackiego } from './SzkolaSiemierackiego';
 import { wzgorzeNapoleona } from './WzgorzeNapoleona';
-import { bienCafe } from './BienCafe';
+import { biancafe } from './Biancafe';
 import { budynekRadyOsiedla } from './BudynekRadyOsiedla';
 import { dawneTerenyWojskoweJanickiego } from './DawneTerenyWojskoweJanickiego';
 import { domGalczynskiego } from './DomGalczynskiego';
@@ -35,10 +35,10 @@ import { gazowniaMickiewicza } from './GazowniaMickiewicza';
 import { kosciolSwietegoKrzyza } from './KosciolSwietegoKrzyza';
 import { lelewelaMakuszynskiego } from './LelewelaMakuszynskiego';
 import { ochronaSrodowiskaJakubaWujka } from './OchronaSrodowiskaJakubaWujka';
-import { osiedleSamosierry } from './OsiedleSamosierry';
+import { osiedleSomosierry } from './OsiedleSomosierry';
 import { ostrzalyLukasinskiego } from './OstrzalyLukasinskiego';
 import { placPawlowskiego } from './PlacPawlowskiego';
-import { samosierryLukasinskiego } from './SamosierryLukasinskiego';
+import { somosierryLukasinskiego } from './SomosierryLukasinskiego';
 import { sp3Reymonta } from './SP3Reymonta';
 import { sp48Czorsztynska } from './SP48Czorsztynska';
 import { terenJednostkiRadzieckiej } from './TerenJednostkiRadzieckiej';
@@ -71,7 +71,7 @@ export const pointSites: PointSiteConfig[] = [
     kwiaciarniaLukasinskiego,
     szkolaSiemierackiego,
     wzgorzeNapoleona,
-    bienCafe,
+    biancafe,
     budynekRadyOsiedla,
     dawneTerenyWojskoweJanickiego,
     domGalczynskiego,
@@ -84,10 +84,10 @@ export const pointSites: PointSiteConfig[] = [
     kosciolSwietegoKrzyza,
     lelewelaMakuszynskiego,
     ochronaSrodowiskaJakubaWujka,
-    osiedleSamosierry,
+    osiedleSomosierry,
     ostrzalyLukasinskiego,
     placPawlowskiego,
-    samosierryLukasinskiego,
+    somosierryLukasinskiego,
     sp3Reymonta,
     sp48Czorsztynska,
     terenJednostkiRadzieckiej,

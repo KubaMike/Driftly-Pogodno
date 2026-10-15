@@ -2,7 +2,7 @@ import type { PointSiteConfig } from './types';
 
 export const sp3Reymonta: PointSiteConfig = {
     id: 40,
-    path: 'ab342cba46.html',
+    path: '4756c3d2fa.html',
     coords: [53.444819, 14.5124486],
     pageTitle: { pl: 'Szkoła Podstawowa nr 3', de: 'Grundschule Nr. 3', en: 'Primary School No. 3', ua: 'Початкова школа № 3' },
     marker: {
@@ -69,6 +69,15 @@ export const sp3Reymonta: PointSiteConfig = {
         ua: 'Вміст готується — Початкова школа № 3 — один із тих пунктів Погодно, які варто пізнати ближче.'
     },
     gallery: [
+        {
+            src: 'Photos/sp3-reymonta/P1830741.webp',
+            caption: {
+                pl: 'Zdjęcie — Szkoła Podstawowa nr 3',
+                de: 'Foto — Grundschule Nr. 3',
+                en: 'Photo — Primary School No. 3',
+                ua: 'Фото — Початкова школа № 3'
+            }
+        },
         {
             src: 'Photos/sp3-reymonta/P1830742.webp',
             caption: {
