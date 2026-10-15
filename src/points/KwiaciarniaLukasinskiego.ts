@@ -12,6 +12,7 @@ export const kwiaciarniaLukasinskiego: PointSiteConfig = {
     },
     marker: {
         color: '#a6761d',
+        comingSoon: true,
         title: {
             pl: 'Kwiaciarnia przy ul. Łukasińskiego',
             de: 'Blumenladen an der Łukasińskiego-Straße',

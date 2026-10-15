@@ -478,6 +478,10 @@ main.wrap.map-page {
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.35));
 }
 
+.drop-point-icon--hollow {
+    filter: none;
+}
+
 /* ===== Strona Baseny Pogoni ===== */
 .subsite-gallery {
     display: flex;
@@ -884,8 +888,9 @@ main.wrap.trail-page {
 
     .trail-page .trail-sheet {
         position: absolute;
-        left: 50%;
-        right: auto;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
         bottom: 0;
         width: min(360px, 92vw);
         height: 78%;

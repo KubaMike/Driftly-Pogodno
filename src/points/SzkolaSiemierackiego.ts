@@ -12,6 +12,7 @@ export const szkolaSiemierackiego: PointSiteConfig = {
     },
     marker: {
         color: '#a6761d',
+        comingSoon: true,
         title: {
             pl: 'Szkoła przy ul. Henryka Siemiradzkiego',
             de: 'Schule an der Henryka-Siemiradzkiego-Straße',

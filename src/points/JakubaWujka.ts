@@ -12,6 +12,7 @@ export const jakubaWujka: PointSiteConfig = {
     },
     marker: {
         color: '#a6761d',
+        comingSoon: true,
         title: {
             pl: 'Plac Ojca Jakuba Wujka',
             de: 'Platz des Vaters Jakub Wujek',

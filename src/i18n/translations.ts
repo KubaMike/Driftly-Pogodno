@@ -185,6 +185,12 @@ const translations = {
         en: 'Link to page',
         ua: 'Посилання на сторінку'
     },
+    map_coming_soon: {
+        pl: 'Już wkrótce',
+        de: 'Bald verfügbar',
+        en: 'Coming soon',
+        ua: 'Незабаром'
+    },
     gallery_title: {
         pl: 'Galeria',
         de: 'Galerie',

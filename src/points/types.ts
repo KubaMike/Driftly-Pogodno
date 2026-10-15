@@ -22,6 +22,7 @@ export interface PointMarkerConfig {
     color: string;
     title: LocalizedText;
     lockedTitle: LocalizedText;
+    comingSoon?: boolean;
 }
 
 export interface PointSiteConfig {

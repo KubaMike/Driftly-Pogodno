@@ -4,21 +4,32 @@ import { CircleMarker, Marker, Popup } from 'react-leaflet';
 import { Link } from 'react-router-dom';
 import { districtAt } from '../../data/districts';
 import { dropPoints } from '../../data/dropPoints';
-import { isPointActive, subscribeUnlockAll } from '../../hooks/usePointUnlock';
+import {
+    isComingSoonPreview,
+    isPointActive,
+    subscribeComingSoonPreview,
+    subscribeUnlockAll
+} from '../../hooks/usePointUnlock';
 import { useLanguage } from '../../i18n/LanguageContext';
 import type { PointSiteConfig } from '../../points/types';
 
 const dropIconCache = new Map<string, L.DivIcon>();
 
-function getDropIcon(color: string): L.DivIcon {
-    const cachedIcon = dropIconCache.get(color);
+function getDropIcon(color: string, hollow: boolean, dotColor: string): L.DivIcon {
+    const cacheKey = `${color}:${hollow}:${dotColor}`;
+    const cachedIcon = dropIconCache.get(cacheKey);
     if (cachedIcon) {
         return cachedIcon;
     }
 
     const icon = L.divIcon({
-        className: 'drop-point-icon',
-        html: `<svg width="25" height="41" viewBox="0 0 25 41" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        className: hollow ? 'drop-point-icon drop-point-icon--hollow' : 'drop-point-icon',
+        html: hollow
+            ? `<svg width="25" height="41" viewBox="0 0 25 41" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12.5 0C5.596 0 0 5.596 0 12.5C0 21.667 12.5 41 12.5 41S25 21.667 25 12.5C25 5.596 19.404 0 12.5 0Z" fill="#fff" fill-opacity="0.7" stroke="${color}" stroke-width="2" stroke-dasharray="5 4" />
+            <circle cx="12.5" cy="12.5" r="4" fill="${dotColor}" />
+        </svg>`
+            : `<svg width="25" height="41" viewBox="0 0 25 41" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M12.5 0C5.596 0 0 5.596 0 12.5C0 21.667 12.5 41 12.5 41S25 21.667 25 12.5C25 5.596 19.404 0 12.5 0Z" fill="${color}" stroke="#fff" stroke-width="1.5" />
             <circle cx="12.5" cy="12.5" r="4" fill="#fff" />
         </svg>`,
@@ -27,7 +38,7 @@ function getDropIcon(color: string): L.DivIcon {
         popupAnchor: [1, -34]
     });
 
-    dropIconCache.set(color, icon);
+    dropIconCache.set(cacheKey, icon);
     return icon;
 }
 
@@ -35,13 +46,20 @@ interface MarkerPopupProps {
     title: string;
     hasLink: boolean;
     url: string;
+    caption?: string;
 }
 
-function MarkerPopup({ title, hasLink, url }: MarkerPopupProps) {
+function MarkerPopup({ title, hasLink, url, caption }: MarkerPopupProps) {
     const { t } = useLanguage();
     return (
         <Popup>
             <b>{title}</b>
+            {caption && (
+                <>
+                    <br />
+                    <i>{caption}</i>
+                </>
+            )}
             {hasLink && (
                 <>
                     <br />
@@ -53,11 +71,28 @@ function MarkerPopup({ title, hasLink, url }: MarkerPopupProps) {
 }
 
 function DropPointMarker({ point }: { point: PointSiteConfig }) {
-    const { l } = useLanguage();
+    const { l, t } = useLanguage();
+    const comingSoon = point.marker.comingSoon === true;
     const active = isPointActive(point.id);
+    const color = point.marker.color;
+    const districtColor = districtAt(point.coords)?.color ?? point.marker.color;
+
+    if (comingSoon) {
+        const preview = isComingSoonPreview();
+        return (
+            <Marker position={point.coords} icon={getDropIcon(color, true, districtColor)}>
+                <MarkerPopup
+                    title={l(point.marker.title)}
+                    hasLink={preview}
+                    url={point.path}
+                    caption={t('map_coming_soon')}
+                />
+            </Marker>
+        );
+    }
+
     const title = active ? l(point.marker.title) : l(point.marker.lockedTitle);
     const hasLink = active;
-    const color = districtAt(point.coords)?.color ?? point.marker.color;
 
     if (active) {
         return (
@@ -78,7 +113,7 @@ function DropPointMarker({ point }: { point: PointSiteConfig }) {
     }
 
     return (
-        <Marker position={point.coords} icon={getDropIcon(color)}>
+        <Marker position={point.coords} icon={getDropIcon(color, false, color)}>
             <MarkerPopup title={title} hasLink={hasLink} url={point.path} />
         </Marker>
     );
@@ -88,6 +123,7 @@ export function DropPointMarkers() {
     const [, forceRender] = useReducer((x: number) => x + 1, 0);
 
     useEffect(() => subscribeUnlockAll(forceRender), []);
+    useEffect(() => subscribeComingSoonPreview(forceRender), []);
 
     return (
         <>

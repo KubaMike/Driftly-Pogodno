@@ -12,6 +12,7 @@ export const fotografKonopnickiej: PointSiteConfig = {
     },
     marker: {
         color: '#a6761d',
+        comingSoon: true,
         title: {
             pl: 'Fotograf przy ul. Konopnickiej',
             de: 'Fotograf an der Konopnickiej-Straße',

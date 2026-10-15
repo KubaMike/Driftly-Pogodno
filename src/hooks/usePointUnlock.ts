@@ -43,6 +43,37 @@ export function subscribeUnlockAll(listener: () => void): () => void {
     };
 }
 
+const PREVIEW_KEY = 'point_0_comingSoonPreview';
+
+const previewListeners = new Set<() => void>();
+
+let previewCache = readFlag(PREVIEW_KEY);
+
+export function isComingSoonPreview(): boolean {
+    return previewCache;
+}
+
+export function setComingSoonPreview(enabled: boolean): void {
+    previewCache = enabled;
+    try {
+        if (enabled) {
+            localStorage.setItem(PREVIEW_KEY, 'true');
+        } else {
+            localStorage.removeItem(PREVIEW_KEY);
+        }
+    } catch {
+        // ignore storage errors (e.g. private mode)
+    }
+    previewListeners.forEach((listener) => listener());
+}
+
+export function subscribeComingSoonPreview(listener: () => void): () => void {
+    previewListeners.add(listener);
+    return () => {
+        previewListeners.delete(listener);
+    };
+}
+
 export function isPointActive(point: number): boolean {
     return unlockAllCache || readFlag(`point_${point}`);
 }

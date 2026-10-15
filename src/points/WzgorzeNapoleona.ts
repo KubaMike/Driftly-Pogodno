@@ -12,6 +12,7 @@ export const wzgorzeNapoleona: PointSiteConfig = {
     },
     marker: {
         color: '#a6761d',
+        comingSoon: true,
         title: {
             pl: 'Wzgórze Napoleona',
             de: 'Napoleonsberg',
