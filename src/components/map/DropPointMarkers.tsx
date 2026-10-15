@@ -74,8 +74,8 @@ function DropPointMarker({ point }: { point: PointSiteConfig }) {
     const { l, t } = useLanguage();
     const comingSoon = point.marker.comingSoon === true;
     const active = isPointActive(point.id);
-    const color = point.marker.color;
-    const districtColor = districtAt(point.coords)?.color ?? point.marker.color;
+    const color = point.marker.color ?? '#000000';
+    const districtColor = districtAt(point.coords)?.color ?? color;
 
     if (comingSoon) {
         const preview = isComingSoonPreview();

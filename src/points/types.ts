@@ -19,7 +19,7 @@ export interface PointGalleryItem {
 }
 
 export interface PointMarkerConfig {
-    color: string;
+    color?: string;
     title: LocalizedText;
     lockedTitle: LocalizedText;
     comingSoon?: boolean;
