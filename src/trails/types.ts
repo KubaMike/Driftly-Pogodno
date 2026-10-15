@@ -12,6 +12,9 @@ export interface TrailConfig {
         opacity: number;
         dashArray?: string;
     };
-    places: number[];
-    requiredPointIds?: number[];
+    points: number[];
+}
+
+export interface TrailGeometry extends Omit<TrailConfig, 'points'> {
+    manualPoints?: number[];
 }

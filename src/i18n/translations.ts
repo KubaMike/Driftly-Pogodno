@@ -41,7 +41,7 @@ const translations = {
         en: 'View on map',
         ua: 'Переглянути на карті'
     },
-    trail_places: {
+    trail_points: {
         pl: 'Miejsca na trasie',
         de: 'Orte auf dem Weg',
         en: 'Places it visits',

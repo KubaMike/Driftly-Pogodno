@@ -1,6 +1,7 @@
-import type { TrailConfig } from './types';
+import type { TrailConfig, TrailGeometry } from './types';
+import { computeTrailPoints } from './autoPoints';
 
-export const trails: TrailConfig[] = [
+const trailGeometries: TrailGeometry[] = [
   {
     id: 'wzgorze-ackermana',
     title: {
@@ -49,7 +50,7 @@ export const trails: TrailConfig[] = [
       weight: 4,
       opacity: 0.9
     },
-    places: [1, 2, 9, 10, 12, 13, 18, 19]
+    manualPoints: [9, 10]
   },
   {
     id: 'braunswelde1',
@@ -120,7 +121,7 @@ export const trails: TrailConfig[] = [
       weight: 4,
       opacity: 0.9
     },
-    places: [3, 8, 12, 13, 14, 15, 16, 17, 18]
+    manualPoints: [18]
   },
   {
     id: 'neu-westend',
@@ -250,8 +251,7 @@ export const trails: TrailConfig[] = [
       color: '#388e3c',
       weight: 4,
       opacity: 0.9
-    },
-    places: []
+    }
   },
   {
     id: 'braunswelde2',
@@ -332,8 +332,7 @@ export const trails: TrailConfig[] = [
       color: '#d32f2f',
       weight: 4,
       opacity: 0.9
-    },
-    places: []
+    }
   },
   {
     id: 'tereny-wojskowe',
@@ -428,10 +427,14 @@ export const trails: TrailConfig[] = [
       color: '#fbc02d',
       weight: 4,
       opacity: 0.9
-    },
-    places: []
+    }
   }
 ];
+
+export const trails: TrailConfig[] = trailGeometries.map((trail) => ({
+  ...trail,
+  points: computeTrailPoints(trail.waypoints, trail.manualPoints),
+}));
 
 export function getTrailById(id: string): TrailConfig | undefined {
   return trails.find((trail) => trail.id === id);

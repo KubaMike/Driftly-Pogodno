@@ -723,7 +723,7 @@ main.wrap.trail-page {
     padding-bottom: 20px;
 }
 
-.trail-page .trail-panel-places {
+.trail-page .trail-panel-points {
     right: 20px;
     bottom: 20px;
     width: 340px;
@@ -793,11 +793,11 @@ main.wrap.trail-page {
     opacity: 1;
 }
 
-.trail-page .trail-panel-places .trail-panel-body {
+.trail-page .trail-panel-points .trail-panel-body {
     margin-top: 16px;
 }
 
-.trail-page .trail-panel-places.open .trail-panel-body {
+.trail-page .trail-panel-points.open .trail-panel-body {
     max-height: 1000px;
     opacity: 1;
 }
@@ -809,7 +809,7 @@ main.wrap.trail-page {
     color: var(--text);
 }
 
-.trail-page .trail-panel-places .places-head {
+.trail-page .trail-panel-points .points-head {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -836,11 +836,11 @@ main.wrap.trail-page {
     flex-shrink: 0;
 }
 
-.trail-page .trail-panel-places.open .trail-panel-chevron {
+.trail-page .trail-panel-points.open .trail-panel-chevron {
     transform: rotate(180deg);
 }
 
-.trail-page .trail-places ul {
+.trail-page .trail-points ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -849,8 +849,8 @@ main.wrap.trail-page {
     gap: 10px;
 }
 
-.trail-page .trail-places li a,
-.trail-page .trail-places .trail-place-locked {
+.trail-page .trail-points li a,
+.trail-page .trail-points .trail-point-locked {
     display: block;
     padding: 10px 14px;
     background: #fff;
@@ -860,12 +860,12 @@ main.wrap.trail-page {
     font-size: 15px;
 }
 
-.trail-page .trail-places li a:hover {
+.trail-page .trail-points li a:hover {
     background: var(--accent);
     color: #fff;
 }
 
-.trail-page .trail-places .trail-place-locked {
+.trail-page .trail-points .trail-point-locked {
     background: rgba(0, 0, 0, 0.08);
     color: var(--muted);
     cursor: not-allowed;
@@ -936,7 +936,7 @@ main.wrap.trail-page {
         padding: 0;
     }
 
-    .trail-page .trail-panel-places {
+    .trail-page .trail-panel-points {
         margin-top: 18px;
         padding-top: 16px;
         border-top: 1px solid rgba(0, 0, 0, 0.08);
@@ -945,7 +945,7 @@ main.wrap.trail-page {
     .trail-page .trail-back,
     .trail-page h2,
     .trail-page .trail-desc,
-    .trail-page .trail-places {
+    .trail-page .trail-points {
         padding-right: 4px;
     }
 

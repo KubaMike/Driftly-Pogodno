@@ -23,8 +23,8 @@ export function TrailPage() {
 
 function TrailContent({ trail }: { trail: TrailConfig }) {
     const { t, l } = useLanguage();
-    const places = trail.places.map(getPointSiteById).filter(isPointSite);
-    const [showPlaces, setShowPlaces] = useState(false);
+    const points = trail.points.map(getPointSiteById).filter(isPointSite);
+    const [showPoints, setShowPoints] = useState(false);
     const [, forceRender] = useReducer((value: number) => value + 1, 0);
     const { open, dragging, sheetStyle, handleProps } = usePullSheet({ initiallyOpen: true });
 
@@ -39,12 +39,12 @@ function TrailContent({ trail }: { trail: TrailConfig }) {
             <div className="trail-map">
                 <MapView trailId={trail.id} waypoints={trail.waypoints} />
             </div>
-            <aside className={`trail-sheet${showPlaces ? ' places-active' : ''}`} style={sheetStyle}>
+            <aside className={`trail-sheet${showPoints ? ' points-active' : ''}`} style={sheetStyle}>
                 <div className="sheet-handle" {...handleProps}>
                     <span className="sheet-grip" />
                 </div>
 
-                <section className={`trail-panel trail-panel-info${showPlaces ? ' collapsed' : ''}`}>
+                <section className={`trail-panel trail-panel-info${showPoints ? ' collapsed' : ''}`}>
                     <div className="trail-panel-head">
                         <Link to="/" className="trail-back" aria-label={t('trail_back')}>
                             ←
@@ -52,8 +52,8 @@ function TrailContent({ trail }: { trail: TrailConfig }) {
                         <button
                             type="button"
                             className="trail-panel-toggle"
-                            aria-expanded={!showPlaces}
-                            onClick={() => setShowPlaces(false)}
+                            aria-expanded={!showPoints}
+                            onClick={() => setShowPoints(false)}
                         >
                             <h2>{l(trail.title)}</h2>
                         </button>
@@ -63,21 +63,21 @@ function TrailContent({ trail }: { trail: TrailConfig }) {
                     </div>
                 </section>
 
-                {places.length > 0 && (
-                    <section className={`trail-panel trail-panel-places${showPlaces ? ' open' : ''}`}>
+                {points.length > 0 && (
+                    <section className={`trail-panel trail-panel-points${showPoints ? ' open' : ''}`}>
                         <button
                             type="button"
-                            className="places-head"
-                            aria-expanded={showPlaces}
-                            onClick={() => setShowPlaces(true)}
+                            className="points-head"
+                            aria-expanded={showPoints}
+                            onClick={() => setShowPoints(true)}
                         >
-                            <span className="places-title">{t('trail_places')}</span>
+                            <span className="points-title">{t('trail_points')}</span>
                             <span className="trail-panel-chevron" />
                         </button>
                         <div className="trail-panel-body">
-                            <div className="trail-places">
+                            <div className="trail-points">
                                 <ul>
-                                    {places.map((point) => {
+                                    {points.map((point) => {
                                         const active = isPointActive(point.id);
 
                                         return (
@@ -88,7 +88,7 @@ function TrailContent({ trail }: { trail: TrailConfig }) {
                                                     </Link>
                                                 ) : (
                                                     <span
-                                                        className="trail-place-locked"
+                                                        className="trail-point-locked"
                                                         aria-disabled="true"
                                                         title={l(point.marker.lockedTitle)}
                                                     >
