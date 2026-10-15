@@ -844,6 +844,23 @@ main.wrap.trail-page {
     transform: rotate(180deg);
 }
 
+.trail-page.fit-mode .trail-panel-info .trail-panel-body,
+.trail-page.fit-mode .trail-panel-points .trail-panel-body {
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+    transition: none;
+}
+
+.trail-page.fit-mode .trail-panel-toggle,
+.trail-page.fit-mode .points-head {
+    cursor: default;
+}
+
+.trail-page.fit-mode .trail-panel-chevron {
+    display: none;
+}
+
 .trail-page .trail-points ul {
     list-style: none;
     margin: 0;
@@ -910,11 +927,6 @@ main.wrap.trail-page {
     .trail-page .leaflet-bottom.leaflet-right .leaflet-control:not(.leaflet-control-attribution) {
         left: 0;
         bottom: 42px;
-    }
-
-    .trail-page.trail-panel-open .leaflet-bottom.leaflet-right .leaflet-control:not(.leaflet-control-attribution),
-    .trail-page.trail-panel-dragging .leaflet-bottom.leaflet-right .leaflet-control:not(.leaflet-control-attribution) {
-        bottom: calc(78vh + 10px);
     }
 
     .trail-page .trail-sheet.open {

@@ -21,7 +21,6 @@ export function usePullSheet({ initiallyOpen = false }: UsePullSheetOptions = {}
     const draggingRef = useRef(false);
     const startYRef = useRef(0);
     const startTranslateRef = useRef(0);
-    const startedOpenRef = useRef(false);
     const closedOffsetRef = useRef(0);
     const dragTranslateRef = useRef(0);
     const maxMoveRef = useRef(0);
@@ -44,7 +43,6 @@ export function usePullSheet({ initiallyOpen = false }: UsePullSheetOptions = {}
             );
             closedOffsetRef.current = closedOffset;
             startYRef.current = e.clientY;
-            startedOpenRef.current = open;
             startTranslateRef.current = open ? 0 : closedOffset;
             dragTranslateRef.current = startTranslateRef.current;
             maxMoveRef.current = 0;
@@ -104,12 +102,10 @@ export function usePullSheet({ initiallyOpen = false }: UsePullSheetOptions = {}
         ? {
               transform:
                   dragTranslate !== null
-                      ? startedOpenRef.current
-                        ? `translateY(${dragTranslate}px)`
-                        : `translate(-50%, ${dragTranslate}px)`
+                      ? `translateY(${dragTranslate}px)`
                       : open
                         ? 'translateY(0%)'
-                        : 'translate(-50%, calc(100% - 32px))'
+                        : 'translateY(calc(100% - 32px))'
           }
         : undefined;
 
