@@ -894,6 +894,33 @@ main.wrap.trail-page {
     user-select: none;
 }
 
+.trail-page .trail-points .trail-point-coming-soon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border: 1px dashed var(--muted);
+    background: rgba(0, 0, 0, 0.04);
+    filter: none;
+}
+
+.trail-page .trail-points .trail-point-coming-soon .trail-point-title {
+    filter: blur(2px);
+}
+
+.trail-page .trail-points .trail-point-badge {
+    flex-shrink: 0;
+    padding: 2px 8px;
+    border: 1px solid var(--muted);
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+}
+
 .trail-page .sheet-handle {
     display: none;
 }

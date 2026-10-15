@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useReducer, useRef, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { MapView } from '../components/map/MapView';
-import { isPointActive, subscribeUnlockAll } from '../hooks/usePointUnlock';
+import { isComingSoonPreview, isPointActive, subscribeComingSoonPreview, subscribeUnlockAll } from '../hooks/usePointUnlock';
 import { usePageTitle } from '../hooks/usePageTitle';
 import { usePullSheet } from '../hooks/usePullSheet';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -40,6 +40,7 @@ function TrailContent({ trail }: { trail: TrailConfig }) {
     const pointsContentRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => subscribeUnlockAll(forceRender), []);
+    useEffect(() => subscribeComingSoonPreview(forceRender), []);
 
     useLayoutEffect(() => {
         if (isMobile || points.length === 0) {
@@ -146,10 +147,31 @@ function TrailContent({ trail }: { trail: TrailConfig }) {
                                 <ul>
                                     {points.map((point) => {
                                         const active = isPointActive(point.id);
+                                        const comingSoon = point.marker.comingSoon === true;
+                                        const comingSoonContent = (
+                                            <>
+                                                <span className="trail-point-title">{l(point.marker.title)}</span>
+                                                <span className="trail-point-badge">{t('map_coming_soon')}</span>
+                                            </>
+                                        );
 
                                         return (
                                             <li key={point.id}>
-                                                {active ? (
+                                                {comingSoon ? (
+                                                    isComingSoonPreview() ? (
+                                                        <Link to={`/${point.path}`} className="trail-point-coming-soon">
+                                                            {comingSoonContent}
+                                                        </Link>
+                                                    ) : (
+                                                        <span
+                                                            className="trail-point-locked trail-point-coming-soon"
+                                                            aria-disabled="true"
+                                                            title={l(point.marker.title)}
+                                                        >
+                                                            {comingSoonContent}
+                                                        </span>
+                                                    )
+                                                ) : active ? (
                                                     <Link to={`/${point.path}`}>
                                                         {l(point.marker.title)}
                                                     </Link>
