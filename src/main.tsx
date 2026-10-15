@@ -8,9 +8,7 @@ import './style.css';
 
 const basename = import.meta.env.VITE_ROUTER_BASENAME || '/';
 
-if (import.meta.env.DEV) {
-    Object.assign(window, { setComingSoonPreview });
-}
+Object.assign(window, { setComingSoonPreview });
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
