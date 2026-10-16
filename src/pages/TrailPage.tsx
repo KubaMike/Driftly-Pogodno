@@ -92,12 +92,15 @@ function TrailContent({ trail }: { trail: TrailConfig }) {
 
     return (
         <main
-            className={`wrap trail-page${open ? ' trail-panel-open' : ''}${dragging ? ' trail-panel-dragging' : ''}${panelsFit ? ' fit-mode' : ''}`}
+            className={`wrap trail-page${panelsFit ? ' fit-mode' : ''}`}
         >
             <div className="trail-map">
                 <MapView trailId={trail.id} waypoints={trail.waypoints} />
             </div>
-            <aside className="trail-sheet" style={sheetStyle}>
+            <aside
+                className={`trail-sheet${open ? ' open' : ''}${dragging ? ' dragging' : ''}`}
+                style={sheetStyle}
+            >
                 <div className="sheet-handle" {...handleProps}>
                     <span className="sheet-grip" />
                 </div>
