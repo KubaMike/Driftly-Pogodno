@@ -19,10 +19,10 @@ export const dworzecPkp: PointSiteConfig = {
             ua: 'Вокзал Щецин Погодно'
         },
         lockedTitle: {
-            pl: 'Zeskanuj kod QR, aby dowiedzieć się więcej o stacji PKP Szczecin Pogodno i jej modernistycznej wiacie peronowej.',
-            de: 'Scannen Sie den QR-Code, um mehr über den Bahnhof Szczecin Pogodno und seine modernistische Bahnsteigüberdachung zu erfahren.',
-            en: 'Scan the QR code to learn more about the PKP station Szczecin Pogodno and its modernist platform canopy.',
-            ua: 'Скануйте QR-код, щоб дізнатися більше про вокзал Щецин Погодно та його модерністський навіс над пероном.'
+            pl: 'Zeskanuj kod QR, aby dowiedzieć się więcej o stacji PKP Szczecin Pogodno i jej zabytkowej, modernistycznej wiacie peronowej.',
+            de: 'Scannen Sie den QR-Code, um mehr über den Bahnhof Szczecin Pogodno und seine denkmalgeschützte, modernistische Bahnsteigüberdachung zu erfahren.',
+            en: 'Scan the QR code to learn more about the PKP station Szczecin Pogodno and its listed modernist platform shelter.',
+            ua: 'Скануйте QR-код, щоб дізнатися більше про вокзал Щецин Погодно та його пам\'ятковий модерністський навіс над пероном.'
         }
     },
     hero: {
@@ -34,10 +34,10 @@ export const dworzecPkp: PointSiteConfig = {
             ua: 'Вокзал Щецин Погодно'
         },
         intro: {
-            pl: 'Historia dawnej stacji kolejowej, jej betonowej wiaty peronowej i przyległych schronów.',
-            de: 'Die Geschichte des ehemaligen Bahnhofs, seiner Beton-Bahnsteigüberdachung und der angrenzenden Bunker.',
-            en: 'The history of the former railway station, its brutalist platform canopy, and the nearby shelters.',
-            ua: 'Історія колишнього залізничного вокзалу, його бетонного навісу над пероном та прилеглих укриттів.'
+            pl: 'Historia dawnej stacji kolejowej, jej zabytkowej betonowej wiaty peronowej i przyległych schronów.',
+            de: 'Die Geschichte des ehemaligen Bahnhofs, seiner denkmalgeschützten Beton-Bahnsteigüberdachung und der angrenzenden Bunker.',
+            en: 'The history of the former railway station, its listed concrete platform shelter, and the nearby shelters.',
+            ua: 'Історія колишнього залізничного вокзалу, його пам\'яткового бетонного навісу над пероном та прилеглих укриттів.'
         }
     },
     historyHeadline: {
@@ -139,20 +139,6 @@ export const dworzecPkp: PointSiteConfig = {
         },
         {
             heading: {
-                pl: 'Wiata peronowa — ikona brutalizmu',
-                de: 'Bahnsteigüberdachung – Ikone des Brutalismus',
-                en: 'The platform canopy — an icon of brutalism',
-                ua: 'Навіс над пероном — ікона бруталізму'
-            },
-            body: {
-                pl: 'Prawdziwym symbolem stacji Pogodno jest jej oryginalna, surowa betonowa wiata peronowa z lat 70. XX wieku. Zaprojektowana w modernistycznym nurcie brutalizmu, przez lata budziła skrajne emocje. Dla miłośników architektury XX wieku to prawdziwa perełka, często przywoływana w dyskusjach o unikalnym dziedzictwie kolejowym Szczecina. Podobne dachy stosowano na niektórych stacjach PKP (m.in. w Katowicach i Warszawie).',
-                de: 'Das wahre Symbol des Bahnhofs Pogodno ist seine originelle, rohe Betonüberdachung aus den 1970er Jahren. Als Ikone des modernistischen Brutalismus rief sie über die Jahre hinweg gemischte Gefühle hervor. Für Liebhaber der Architektur des 20. Jahrhunderts ist sie eine wahre Perle, die in Diskussionen über das einzigartige Eisenbahnerbe Stettins häufig erwähnt wird. Ähnliche Dächer gab es auch auf einigen anderen PKP-Bahnhöfen (u. a. in Kattowitz und Warschau).',
-                en: 'The true symbol of the Pogodno station is its original, raw concrete platform canopy from the 1970s. Designed in the modernist spirit of brutalism, it stirred strong emotions over the years. For lovers of 20th-century architecture it is a real gem, often cited in discussions about the unique railway heritage of Szczecin. Similar roofs were used at some other PKP stations (among others in Katowice and Warsaw).',
-                ua: 'Справжнім символом станції Погодно є її оригінальний, суворий бетонний навіс над пероном із 70-х років XX століття. Спроєктований у модерністському напрямі бруталізму, він роками викликав суперечливі емоції. Для поціновувачів архітектури XX століття це справжня перлина, яку часто згадують у дискусіях про унікальну залізничну спадщину Щецина. Подібні дахи використовувалися на деяких інших вокзалах PKP (зокрема в Катовіце та Варшаві).'
-            }
-        },
-        {
-            heading: {
                 pl: 'Pociągi kibiców, zielona enklawa i wojskowa logistyka',
                 de: 'Fan-Züge, grüne Enklave und Militärlogistik',
                 en: 'Fan trains, a green enclave, and military logistics',
@@ -163,6 +149,34 @@ export const dworzecPkp: PointSiteConfig = {
                 de: 'Der Bahnhof liegt in unmittelbarer Nähe des Städtischen Stadions im. Floriana Krygiera. In der Vergangenheit hielten an wichtigen Spieltagen Sonderzüge mit Fans auf den Nebengleisen. Anders als der industrialisierte Hauptbahnhof ist der Bahnhof Pogodno fest in die grüne, historische Villenkulisse eingebettet – alte Bäume umgeben die Gleise. Die durch Pogodno verlaufende Bahnstrecke (mit Abzweigungen in Richtung Police) hatte außerdem seit preußischer Zeit eine strategisch wichtige Rolle beim Transport von Armeenachschub.',
                 en: 'The station lies right next to the Florian Krygier Municipal Stadium. In the past, on important match days, special fan trains stopped on the sidings. Unlike the industrialized Main Station, the Pogodno station is firmly embedded in a green, historic, villa-lined setting — old trees surround the tracks. The railway line running through Pogodno (with branches towards Police) additionally had key strategic importance for army supply transport since Prussian times.',
                 ua: 'Станція розташована в безпосередній близькості від міського стадіону ім. Флоріана Кригера. У минулому, у дні важливих матчів, на бічних коліях зупинялися спеціальні потяги вболівальників. На відміну від індустріального головного вокзалу, станція Погодно щільно вписана в зелену, історичну віллову забудову — колії оточують старі дерева. Залізнична лінія, що проходить через Погодно (з відгалуженнями в напрямку Поліц), з прусських часів також мала ключове стратегічне значення для транспортування військового постачання.'
+            }
+        },
+        {
+            heading: {
+                pl: 'Wiata przystankowa uznana za zabytek',
+                de: 'Die denkmalgeschützte Bahnsteigüberdachung',
+                en: 'The listed platform shelter',
+                ua: 'Навіс над пероном, визнаний пам\'яткою'
+            },
+            body: {
+                pl: 'Decyzją ZWKZ w Szczecinie wiata przystankowa Szczecin Pogodno została wpisana do rejestru zabytków nieruchomych województwa zachodniopomorskiego pod nr A-1837. Wiata zlokalizowana jest na peronie przystanku kolejowego linii Szczecin Główny – Trzebież Szczecińska (między 4,890 a 4,960 km). Peron wyspowy usytuowany jest po południowej stronie wiaduktu (Most Akademicki) stojącego w ciągu ul. Mickiewicza.',
+                de: 'Mit Entscheidung des Woiwodschaftsdenkmalamtes (ZWKZ) in Stettin wurde die Bahnsteigüberdachung Szczecin Pogodno unter der Nr. A-1837 in die Denkmalliste der unbeweglichen Denkmäler der Woiwodschaft Westpommern eingetragen. Die Überdachung befindet sich auf dem Bahnsteig der Eisenbahnstrecke Szczecin Główny – Trzebież Szczecińska (zwischen 4,890 und 4,960 km). Der Mittelbahnsteig liegt auf der Südseite der Eisenbahnüberführung (Most Akademicki) im Verlauf der Mickiewicza-Straße.',
+                en: 'By decision of the Voivodeship Monument Protection Office (ZWKZ) in Szczecin, the platform shelter of Szczecin Pogodno was entered under no. A-1837 in the register of immovable monuments of the West Pomeranian Voivodeship. The shelter is located on the platform of the Szczecin Główny – Trzebież Szczecińska railway line (between 4.890 and 4.960 km). The island platform is situated on the southern side of the railway viaduct (Most Akademicki) standing along ul. Mickiewicza.',
+                ua: 'Рішенням Воєводського управління охорони пам\'яток (ZWKZ) у Щецині навіс над пероном станції Щецин Погодно було внесено під № A-1837 до реєстру нерухомих пам\'яток Західнопоморського воєводства. Навіс розташований на пероні залізничної лінії Щецин Головний – Тшебєж Щецинський (між 4,890 та 4,960 км). Острівний перон розміщено з південного боку залізничного шляхопроводу (Most Akademicki), що проходить уздовж вул. Міцкевича.'
+            }
+        },
+        {
+            heading: {
+                pl: 'Modernistyczne dziedzictwo',
+                de: 'Modernistisches Erbe',
+                en: 'Modernist heritage',
+                ua: 'Модерністська спадщина'
+            },
+            body: {
+                pl: 'Wiata jest świadkiem historii — zachowanym przykładem obiektu wybudowanego w nurcie architektury modernistycznej w latach 70. XX wieku. Stanowi przykład wybitnego dzieła architektury modernistycznej; jej zachowane wartości zabytkowe wynikają z zastosowania oryginalnego, unikalnego i nietypowego rozwiązania technologicznego i konstrukcyjnego oraz z modernistycznej, ekspresyjnej formy wiaty, a w szczególności jej zadaszenia. Dla miłośników architektury XX wieku to prawdziwa perełka, często przywoływana w dyskusjach o unikalnym dziedzictwie kolejowym Szczecina; podobne dachy stosowano na niektórych stacjach PKP (m.in. w Katowicach i Warszawie). Obiekt jest rozpoznawalnym akcentem architektonicznym znajdującym się na przystanku kolejowym Pogodno.',
+                de: 'Die Überdachung ist Zeuge der Geschichte – ein erhaltenes Beispiel eines im Strom der modernistischen Architektur in den 1970er Jahren errichteten Objekts. Sie ist ein Beispiel für ein herausragendes Werk der modernistischen Architektur; ihre erhaltenen Denkmalwerte resultieren aus der Anwendung einer originellen, einzigartigen und ungewöhnlichen technologischen und konstruktiven Lösung sowie aus der modernistischen, expressiven Form der Überdachung, insbesondere ihres Daches. Für Liebhaber der Architektur des 20. Jahrhunderts ist sie eine wahre Perle, die in Diskussionen über das einzigartige Eisenbahnerbe Stettins häufig erwähnt wird; ähnliche Dächer gab es auch auf einigen anderen PKP-Bahnhöfen (u. a. in Kattowitz und Warschau). Das Objekt ist ein wiedererkennbarer architektonischer Akzent des Bahnhofs Pogodno.',
+                en: 'The shelter is a witness to history — a preserved example of an object built in the current of modernist architecture in the 1970s. It is an example of an outstanding work of modernist architecture; its preserved heritage values result from the use of an original, unique, and unusual technological and structural solution, and from the modernist, expressive form of the shelter, in particular its roof. For lovers of 20th-century architecture it is a real gem, often cited in discussions about the unique railway heritage of Szczecin; similar roofs were used at some other PKP stations (among others in Katowice and Warsaw). The object is a recognisable architectural accent of the Pogodno railway stop.',
+                ua: 'Навіс є свідком історії — збереженим прикладом об\'єкта, зведеного в руслі модерністської архітектури у 1970-х роках XX століття. Він є прикладом визначної пам\'ятки модерністської архітектури; його збережені пам\'яткові цінності зумовлені застосуванням оригінального, унікального та нетипового технологічного й конструктивного рішення, а також модерністською, експресивною формою навісу, зокрема його покриття. Для поціновувачів архітектури XX століття це справжня перлина, яку часто згадують у дискусіях про унікальну залізничну спадщину Щецина; подібні дахи використовувалися на деяких інших вокзалах PKP (зокрема в Катовіце та Варшаві). Об\'єкт є впізнаваним архітектурним акцентом залізничної зупинки Погодно.'
             }
         }
     ],

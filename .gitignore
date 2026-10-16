@@ -6,6 +6,8 @@ dist-ssr
 .DS_Store
 # scratch data
 *.txt
+# prepared source texts (not part of the build)
+preparedTexts/
 # untouched source photos (web versions live in public/Photos)
 _originals/
 OdPoliny/
