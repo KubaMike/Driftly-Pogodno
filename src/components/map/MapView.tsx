@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import L from 'leaflet';
 import { MAP_CENTER, MAP_ZOOM } from '../../data/dropPoints';
 import { useScrollLock } from '../../hooks/useScrollLock';
+import { AllTrailLines } from './AllTrailLines';
 import { DropPointMarkers } from './DropPointMarkers';
 import { LocateControl } from './LocateControl';
 import { TrailLines } from './TrailLines';
@@ -16,6 +17,8 @@ const mapStyle: CSSProperties = {
 interface MapViewProps {
     trailId?: string;
     waypoints?: [number, number][];
+    showAllTrails?: boolean;
+    highlightTrailId?: string | null;
 }
 
 function FitBounds({ waypoints }: { waypoints: [number, number][] }) {
@@ -41,7 +44,12 @@ function HideLeafletAttribution() {
     return null;
 }
 
-export function MapView({ trailId, waypoints = [] }: MapViewProps) {
+export function MapView({
+    trailId,
+    waypoints = [],
+    showAllTrails = false,
+    highlightTrailId = null
+}: MapViewProps) {
     useScrollLock();
 
     return (
@@ -58,7 +66,11 @@ export function MapView({ trailId, waypoints = [] }: MapViewProps) {
             />
             <HideLeafletAttribution />
             <ZoomControl position="bottomright" />
-            {trailId && <TrailLines trailId={trailId} />}
+            {showAllTrails ? (
+                <AllTrailLines highlightTrailId={highlightTrailId} />
+            ) : (
+                trailId && <TrailLines trailId={trailId} />
+            )}
             {waypoints.length > 0 && <FitBounds waypoints={waypoints} />}
             <DropPointMarkers />
             <LocateControl />

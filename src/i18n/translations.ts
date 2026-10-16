@@ -53,6 +53,30 @@ const translations = {
         en: 'Back to trails',
         ua: 'Назад до списку стежок'
     },
+    btn_trails: {
+        pl: 'Zobacz szlaki',
+        de: 'Wege ansehen',
+        en: 'View trails',
+        ua: 'Переглянути стежки'
+    },
+    nav_trails: {
+        pl: 'Szlaki',
+        de: 'Wege',
+        en: 'Trails',
+        ua: 'Стежки'
+    },
+    trails_legend_title: {
+        pl: 'Wszystkie szlaki',
+        de: 'Alle Wege',
+        en: 'All trails',
+        ua: 'Усі стежки'
+    },
+    trails_legend_info: {
+        pl: 'Wybierz szlak, aby zobaczyć szczegóły.',
+        de: 'Wählen Sie einen Weg, um Details zu sehen.',
+        en: 'Choose a trail to see details.',
+        ua: 'Виберіть стежку, щоб переглянути деталі.'
+    },
     nav_gallery: {
         pl: 'Galeria',
         de: 'Galerie',

@@ -15,7 +15,7 @@ export function TrailPage() {
     const trail = trailId ? getTrailById(trailId) : undefined;
 
     if (!trail) {
-        return <Navigate to="/" replace />;
+        return <Navigate to="/trails" replace />;
     }
 
     return <TrailContent trail={trail} />;
@@ -107,7 +107,7 @@ function TrailContent({ trail }: { trail: TrailConfig }) {
                     className={`trail-panel trail-panel-info${infoExpanded ? '' : ' collapsed'}`}
                 >
                     <div className="trail-panel-head">
-                        <Link to="/" className="trail-back" aria-label={t('trail_back')}>
+                        <Link to="/trails" className="trail-back" aria-label={t('trail_back')}>
                             ←
                         </Link>
                         <button

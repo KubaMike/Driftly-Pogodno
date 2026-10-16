@@ -25,6 +25,7 @@ npm run preview   # podgląd zbudowanej aplikacji
 | `/`                 | Strona główna                       |
 | `/gallery`          | Galeria                             |
 | `/map`              | Mapa z punktami                     |
+| `/trails`           | Wszystkie szlaki na mapie           |
 | `/225e41a4ad.html`  | Strona Basenów Pogoni (odblokowywana kodem QR) |
 
 ## Wdrożenie (ważne)

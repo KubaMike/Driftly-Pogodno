@@ -29,6 +29,9 @@ export function Sidebar({ open, onClose, innerRef }: SidebarProps) {
                 <Link to="/map" onClick={onClose}>
                     <i className="fas fa-map-marker-alt"></i> <span>{t('nav_map')}</span>
                 </Link>
+                <Link to="/trails" onClick={onClose}>
+                    <i className="fas fa-route"></i> {t('nav_trails')}
+                </Link>
             </div>
             <LanguageSelect />
             <DebugUnlockToggle />

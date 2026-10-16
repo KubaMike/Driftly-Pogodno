@@ -20,6 +20,9 @@ export function HomePage() {
                         <Link className="btn primary" to="/gallery">
                             {t('btn_explore')}
                         </Link>
+                        <Link className="btn" to="/trails">
+                            {t('btn_trails')}
+                        </Link>
                     </div>
                 </div>
             </section>
