@@ -46,7 +46,7 @@ const trailGeometries: TrailGeometry[] = [
       [53.4408008437172, 14.51352610405272]
     ],
     pathOptions: {
-      color: '#fbc02d',
+      color: '#EDFE00',
       weight: 4,
       opacity: 0.9
     },
@@ -117,7 +117,7 @@ const trailGeometries: TrailGeometry[] = [
       [53.43676487676694, 14.52028366690906]
     ],
     pathOptions: {
-      color: '#fbc02d',
+      color: '#FF6A00',
       weight: 4,
       opacity: 0.9
     },
@@ -424,7 +424,7 @@ const trailGeometries: TrailGeometry[] = [
       [53.44460971375343, 14.4975423450034]
     ],
     pathOptions: {
-      color: '#fbc02d',
+      color: '#008deb',
       weight: 4,
       opacity: 0.9
     }
