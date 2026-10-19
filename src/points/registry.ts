@@ -42,7 +42,7 @@ import { somosierryLukasinskiego } from './SomosierryLukasinskiego';
 import { sp3Reymonta } from './SP3Reymonta';
 import { sp48Czorsztynska } from './SP48Czorsztynska';
 import { terenJednostkiRadzieckiej } from './TerenJednostkiRadzieckiej';
-import { wieniawskiegoZoltyDom } from './WieniawskiegoZoltyDom';
+import { wieniawskiegoZeitler } from './WieniawskiegoZeitler';
 import { wieniawskiegoZameczek } from './WieniawskiegoZameczek';
 import { wiezaSpadochronowa } from './WiezaSpadochronowa';
 import { zdobieniaKonopnickiej27 } from './ZdobieniaKonopnickiej27';
@@ -92,7 +92,7 @@ export const pointSites: PointSiteConfig[] = [
     sp3Reymonta,
     sp48Czorsztynska,
     terenJednostkiRadzieckiej,
-    wieniawskiegoZoltyDom,
+    wieniawskiegoZeitler,
     wieniawskiegoZameczek,
     wiezaSpadochronowa,
     zdobieniaKonopnickiej27,

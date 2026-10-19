@@ -1,9 +1,15 @@
 import type { PointSiteConfig } from './types';
 
+/**
+ * Willa Zeitlera (Żółty Dom) przy ul. Wieniawskiego 28. Historyczne id 43
+ * i ścieżka QR (c3bef7e932.html) są zachowane, żeby istniejące kody QR
+ * nadal działały; stara ścieżka b8aa2a9f4c.html jest dodatkowo mapowana
+ * w `pathAliases` w registry.ts.
+ */
 export const wieniawskiegoZeitler: PointSiteConfig = {
-    id: 48,
-    path: 'b8aa2a9f4c.html',
-    coords: [53.4391663, 14.5105832],
+    id: 43,
+    path: 'c3bef7e932.html',
+    coords: [53.4392552, 14.5105634],
     pageTitle: { pl: 'Willa Zeitlera (Żółty Dom) – Wieniawskiego 28', de: 'Villa Zeitler (Gelbes Haus) – Wieniawskiego 28', en: 'Villa Zeitler (Yellow House) – Wieniawskiego 28', ua: 'Вілла Цайтлера (Жовтий будинок) – Венявського 28' },
     marker: {
         color: '#a6761d',
