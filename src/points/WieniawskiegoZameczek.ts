@@ -7,7 +7,6 @@ export const wieniawskiegoZameczek: PointSiteConfig = {
     pageTitle: { pl: 'Zameczek przy Wieniawskiego', de: '„Zameczek“ an der Wieniawskiego', en: 'Zameczek at Wieniawskiego', ua: '«Замочок» на Венявського' },
     marker: {
         color: '#a6761d',
-        comingSoon: true,
         title: { pl: 'Zameczek przy Wieniawskiego', de: '„Zameczek“ an der Wieniawskiego', en: 'Zameczek at Wieniawskiego', ua: '«Замочок» на Венявського' },
         lockedTitle: {
             pl: 'Skanuj kod QR, aby dowiedzieć się więcej o: Zameczek przy Wieniawskiego.',
@@ -20,53 +19,73 @@ export const wieniawskiegoZameczek: PointSiteConfig = {
         image: 'Photos/wieniawskiego-zameczek/P1830786.webp',
         title: { pl: 'Zameczek przy Wieniawskiego', de: '„Zameczek“ an der Wieniawskiego', en: 'Zameczek at Wieniawskiego', ua: '«Замочок» на Венявського' },
         intro: {
-            pl: 'Treść w przygotowaniu — Zameczek przy Wieniawskiego to jeden z punktów Pogodna, którego historia czeka na opowiedzenie.',
-            de: 'Inhalt wird vorbereitet – „Zameczek“ an der Wieniawskiego ist einer der Orte in Pogodno, dessen Geschichte noch erzählt werden soll.',
-            en: 'Content in preparation — Zameczek at Wieniawskiego is one of Pogodno\'s spots whose story is yet to be told.',
-            ua: 'Вміст готується — «Замочок» на Венявського — один із пунктів Погодно, чия історія ще чекає на розповідь.'
+            pl: 'Willa przy ul. Wieniawskiego 22 — rezydencja z przełomu XIX i XX wieku, wzniesiona w czasach, gdy Pogodno kształtowało się jako luksusowe osiedle ogrodowe Westend. Jej surowa, monumentalna bryła od razu przyciąga wzrok i z daleka przypomina małą basztę.',
+            de: 'Die Villa unter der Nr. 22 – eine Residenz aus der Wende vom 19. zum 20. Jahrhundert, errichtet in der Zeit, als Pogodno als luxuriöse Gartenstadt Westend entstand. Ihr strenger, monumentaler Baukörper zieht sofort den Blick auf sich und wirkt aus der Ferne wie ein kleiner Wehrturm.',
+            en: 'The residence at ul. Wieniawskiego 22 — a mansion from the turn of the 19th and 20th centuries, built when today’s Pogodno was taking shape as a luxurious garden estate (Westend). Its stark, monumental mass catches the eye at once and, seen from afar, resembles a small bastion tower.',
+            ua: 'Резиденція під номером 22 — особняк кінця XIX — початку XX століття, зведений у ті часи, коли сьогоднішнє Погодно формувалося як розкішний садовий містечко Westend. Його сувора, монументальна маса одразу привертає погляд і здалеку нагадує малу башту.'
         }
     },
     historyHeadline: {
-        pl: 'Treść w przygotowaniu',
-        de: 'Inhalt wird vorbereitet',
-        en: 'Content in preparation',
-        ua: 'Вміст готується'
+        pl: 'Willa przy ul. Wieniawskiego 22 – romantyzm szczecińskiego Westendu',
+        de: 'Villa an der Wieniawskiego 22 – Romantik des Stettiner Westend',
+        en: 'The villa at ul. Wieniawskiego 22 — the romance of Szczecin’s Westend',
+        ua: 'Вілла на Венявського, 22 — романтизм щецинського Westend'
+    },
+    note: {
+        pl: 'ul. Henryka Wieniawskiego 22, Szczecin (Pogodno / dawne Westend)',
+        de: 'ul. Henryka Wieniawskiego 22, Stettin (Pogodno / früheres Westend)',
+        en: 'ul. Henryka Wieniawskiego 22, Szczecin (Pogodno / former Westend)',
+        ua: 'вул. Генріка Венявського, 22, Щецин (Погодно / колишнє Westend)'
     },
     sections: [
         {
             heading: {
-                pl: 'Miejsce na Pogodnie',
-                de: 'Ein Ort in Pogodno',
-                en: 'A place in Pogodno',
-                ua: 'Місце в Погодно'
+                pl: 'Rezydencja w ogrodowym Westendzie',
+                de: 'Eine Residenz in der Gartenstadt Westend',
+                en: 'A residence in the garden district of Westend',
+                ua: 'Резиденція в садовому Westend'
             },
             body: {
-                pl: 'Treść w przygotowaniu — Zameczek przy Wieniawskiego czeka na opowieść o swojej historii, znaczeniu dla Pogodna i wspomnień mieszkańców.',
-                de: 'Inhalt wird vorbereitet – „Zameczek“ an der Wieniawskiego wartet auf die Geschichte über seine Vergangenheit, seine Bedeutung für Pogodno und die Erinnerungen der Bewohner.',
-                en: 'Content in preparation — Zameczek at Wieniawskiego awaits the story of its history, its meaning for Pogodno and residents\' memories.',
-                ua: 'Вміст готується — «Замочок» на Венявського чекає на історію про своє минуле, значення для Погодно та спогади мешканців.'
+                pl: 'Znajdująca się pod numerem 22 rezydencja stanowi fascynujący przykład malowniczej i reprezentacyjnej architektury przełomu XIX i XX wieku. Wzniesiona w czasach, gdy dzisiejsze Pogodno kształtowało się jako luksusowe osiedle ogrodowe (Westend), budynek od razu przyciąga wzrok swoją nietypową, surową formą.',
+                de: 'Die Residenz unter der Nummer 22 ist ein faszinierendes Beispiel malerischer und repräsentativer Architektur aus der Wende vom 19. zum 20. Jahrhundert. Errichtet in der Zeit, als das heutige Pogodno als luxuriöse Gartenstadt Westend entstand, zieht das Gebäude mit seiner ungewöhnlichen, strengen Form sofort den Blick auf sich.',
+                en: 'The residence at number 22 is a fascinating example of picturesque and representative architecture from the turn of the 19th and 20th century. Built at a time when today’s Pogodno was taking shape as a luxurious garden estate (Westend), the building immediately draws the eye with its unusual, austere form.',
+                ua: 'Резиденція під номером 22 — цікавий приклад мальовничої та представницької архітектури кінця XIX — початку XX століття. Її звели в ті часи, коли сьогоднішнє Погодно формувалося як розкішний садовий містечко (Westend), і будівля одразу привертає погляд незвичною, суворою формою.'
             }
         },
         {
             heading: {
-                pl: 'Sąsiedztwo i codzienność',
-                de: 'Nachbarschaft und Alltag',
-                en: 'Neighbourhood and everyday life',
-                ua: 'Сусідство та буденне життя'
+                pl: 'Surowa forma w duchu historyzmu',
+                de: 'Strenge Form im Geiste des Historismus',
+                en: 'Austere form in the spirit of historicism',
+                ua: 'Сувора форма в дусі історизму'
             },
             body: {
-                pl: 'Treść w przygotowaniu — wokół tego punktu rozwijała się pogodniańska codzienność, której ślady wciąż widać w okolicznej zabudowie i sąsiedztwie Zameczek przy Wieniawskiego.',
-                de: 'Inhalt wird vorbereitet – um diesen Ort herum entstand der pogodnoer Alltag, dessen Spuren man in der umliegenden Bebauung und Nachbarschaft von „Zameczek“ an der Wieniawskiego noch immer sehen kann.',
-                en: 'Content in preparation — everyday Pogodno life developed around this spot, traces of which are still visible in the surrounding buildings near Zameczek at Wieniawskiego.',
-                ua: 'Вміст готується — навколо цього місця розвивалося буденне життя Погодно, сліди якого досі видно в навколишній забудові біля «Замочок» на Венявського.'
+                pl: 'Wysokie, pionowe akcenty architektoniczne, narożne ryzality oraz masywna bryła sprawiają, że willa z daleka przypomina małą basztę lub wieżę obronną. Taki efekt to celowy zabieg architektów z tamtej epoki, którzy projektując podmiejskie rezydencje w modnym wówczas stylu historyzmu i neogotyku, chętnie nawiązywali do motywów zamkowych oraz pałacowych. Solidna podstawa i monumentalny charakter miały sprawiać, że dom wyglądał niczym miniaturowa siedziba feudała.',
+                de: 'Hohe, vertikale Architekturakzente, Eckrisalite und der massive Baukörper lassen die Villa aus der Ferne wie einen kleinen Befestigungsturm erscheinen. Dies war eine bewusste Absicht der Architekten jener Epoche, die bei ihren Vorstadtresidenzen im damals modischen Stil des Historismus und der Neogotik gern auf Motive von Burgen und Palästen zurückgriffen. Solide Basis und monumentaler Charakter sollten das Haus wie den Sitz eines Kleinherrn aussehen lassen.',
+                en: 'The tall vertical architectural accents, corner risalits and massive volume make the villa resemble a small bastion or defensive tower from a distance. This effect was a deliberate device of the architects of the era, who — designing suburban residences in the then-fashionable styles of historicism and neo-Gothic — gladly reached for castle and palace motifs. A solid base and monumental character were meant to make the house look like the miniature seat of a feudal lord.',
+                ua: 'Високі вертикальні акценти, кутові ризаліти та масивна маса роблять віллу здалеку схожою на малу бастію або оборонну вежу. Такий ефект був навмисним прийомом архітекторів тієї епохи, які, проєктуючи приміські резиденції в тоді модному стилі історизму та неоготики, охоче зверталися до замкових і палацових мотивів. Міцна основа та монументальний характер мали зробити так, щоб будинок виглядав як мініатюрна резиденція феодала.'
+            }
+        },
+        {
+            heading: {
+                pl: 'Szkocki zameczek nad przepaścią',
+                de: 'Ein schottisches Schlösschen am Abgrund',
+                en: 'A Scottish little castle above the abyss',
+                ua: 'Шотландський замочок над прірвою'
+            },
+            body: {
+                pl: 'Wydaje się, że swoim wyglądem willa przypomina zameczek gdzieś na brzegu w Szkocji, stający nad przepaścią. Podobnych budynków są tylko dwa. Właścicielem był dyrektor więzienia.',
+                de: 'Die Villa erinnert mit ihrem Aussehen an ein Schlösschen irgendwo an der schottischen Küste, das über einem Abgrund thront. Ähnliche Gebäude gibt es nur zwei. Eigentümer war ein Gefängnisdirektor.',
+                en: 'In appearance the villa seems to recall a little castle somewhere on the Scottish coast, standing above an abyss. There are only two buildings like it. Its owner was a prison governor.',
+                ua: 'Зовні вілла нагадує замочок десь на шотландському березі, що стоїть над прірвою. Подібних будинків лише два. Власником був директор в\'язниці.'
             }
         }
     ],
     conclusion: {
-        pl: 'Treść w przygotowaniu — Zameczek przy Wieniawskiego to jeden z tych punktów Pogodna, które warto poznać bliżej.',
-        de: 'Inhalt wird vorbereitet – „Zameczek“ an der Wieniawskiego ist einer dieser Orte in Pogodno, die es näher zu entdecken lohnt.',
-        en: 'Content in preparation — Zameczek at Wieniawskiego is one of those Pogodno spots worth a closer look.',
-        ua: 'Вміст готується — «Замочок» на Венявського — один із тих пунктів Погодно, які варто пізнати ближче.'
+        pl: 'Willa przy Wieniawskiego 22 to jeden z tylko dwóch podobnych budynków na Pogodnie — romantyczny zameczek nad przepaścią, którego surowy, monumentalny charakter od ponad stu lat wygląda jak miniaturowa siedziba feudała.',
+        de: 'Die Villa an der Wieniawskiego 22 ist eines von nur zwei ähnlichen Gebäuden in Pogodno – ein romantisches Schlösschen über dem Abgrund, dessen strenger, monumentaler Charakter seit über hundert Jahren wie der Sitz eines Kleinherrn wirkt.',
+        en: 'The villa at Wieniawskiego 22 is one of only two buildings of its kind in Pogodno — a romantic little castle above the abyss, whose austere, monumental character has looked like the miniature seat of a feudal lord for over a hundred years.',
+        ua: 'Вілла на Венявського, 22 — один із лише двох подібних будинків у Погодно: романтичний замочок над прірвою, чий суворий монументальний характер понад сто років виглядає як мініатюрна резиденція феодала.'
     },
     gallery: [
         {

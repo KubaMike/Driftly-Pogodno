@@ -11,17 +11,23 @@ export function PointSitePage() {
     const { pointPath } = useParams<{ pointPath: string }>();
     const config = pointPath ? getPointSiteByPath(pointPath) : undefined;
 
-    if (!config) {
+    if (!pointPath || !config) {
         return <Navigate to="/" replace />;
     }
 
-    return <PointSiteContent config={config} />;
+    return <PointSiteContent config={config} visitedPath={pointPath} />;
 }
 
-function PointSiteContent({ config }: { config: PointSiteConfig }) {
+function PointSiteContent({
+    config,
+    visitedPath
+}: {
+    config: PointSiteConfig;
+    visitedPath: string;
+}) {
     const { t, l } = useLanguage();
     usePageTitle(`${l(config.pageTitle)} - Driftly-Pogodno`);
-    usePointUnlock(config.id, config.path);
+    usePointUnlock(config.id, visitedPath);
 
     const galleryHeadline = config.galleryHeadline ? l(config.galleryHeadline) : t('gallery_title');
     const memoriesHeadline = config.memoriesHeadline

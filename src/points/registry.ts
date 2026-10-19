@@ -99,8 +99,14 @@ export const pointSites: PointSiteConfig[] = [
     tygodniowyZlobek
 ];
 
+// Dodatkowe ścieżki QR prowadzące do punktów o innej kanonicznej ścieżce.
+const pathAliases: Record<string, string> = {
+    'b8aa2a9f4c.html': 'c3bef7e932.html'
+};
+
 export function getPointSiteByPath(path: string): PointSiteConfig | undefined {
-    return pointSites.find((point) => point.path === path);
+    const resolved = pathAliases[path] ?? path;
+    return pointSites.find((point) => point.path === resolved);
 }
 
 export function getPointSiteById(id: number): PointSiteConfig | undefined {
