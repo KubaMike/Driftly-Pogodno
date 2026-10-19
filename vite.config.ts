@@ -3,13 +3,14 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  // Must agree with the router basename in src/main.tsx. A relative base
-  // resolves assets against the current URL, so on a nested route such as
-  // /trail/<id> (which is served through the 404.html SPA fallback) it would
-  // request /trail/assets/... and 404. Deriving the base from the same
-  // variable keeps the two in step while still defaulting to './' for local
-  // builds, so nothing changes unless the basename is explicitly set.
-  base: process.env.VITE_ROUTER_BASENAME || './',
+  // Must agree with the router basename in src/main.tsx. The base has to be
+  // absolute: a relative base ('./') resolves assets against the current URL,
+  // so opening a nested route directly (e.g. /trail/<id> from a shared link or
+  // QR code, served through the server's SPA fallback) would request
+  // /trail/assets/... and 404 — leaving a blank white page, while in-app
+  // navigation still worked. Default to '/' (domain root) and let
+  // VITE_ROUTER_BASENAME override it for subpath deploys such as GitHub Pages.
+  base: process.env.VITE_ROUTER_BASENAME || '/',
   build: {
     outDir: 'dist'
   }
