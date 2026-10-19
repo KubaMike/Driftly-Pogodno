@@ -34,10 +34,10 @@ export const gieldaSamochodowa: PointSiteConfig = {
             ua: 'Легендарний автомобільний ринок у Погодно'
         },
         intro: {
-            pl: 'Kultowe miejsce lat transformacji — mekka szczecińskich kierowców z epoki gospodarki niedoboru.',
-            de: 'Ein Kultort der Transformationsjahre – die Mekka der Stettiner Autofahrer aus der Ära der Mangelwirtschaft.',
-            en: 'An iconic place of the transformation era — the mecca of Szczecin drivers from the era of shortage economy.',
-            ua: 'Культове місце часів трансформації — мекка щецинських водіїв доби дефіцитної економіки.'
+            pl: 'W latach transformacji ustrojowej korona oraz błonia stadionu Pogoni Szczecin co niedzielę zamieniały się w tętniące życiem centrum handlowe pod gołym niebem.',
+            de: 'In den Jahren des Systemwechsels verwandelten sich Krone und Rasen des Stettiner Pogoń-Stadions sonntäglich in ein lebhaftes Freiluft-Handelszentrum.',
+            en: 'In the years of the political transformation, the terraces and the pitch of Pogoń Szczecin stadium turned every Sunday into a lively open-air trading centre.',
+            ua: 'У роки трансформації трибуни та газон стадіону Погоні Щецин щонеділі перетворювалися на жвавий торговий центр під відкритим небом.'
         }
     },
     historyHeadline: {
@@ -47,60 +47,60 @@ export const gieldaSamochodowa: PointSiteConfig = {
         ua: 'Історія автомобільного ринку'
     },
     note: {
-        pl: 'Zanim giełda samochodowa na dobre przeniosła się na obrzeża miasta (w rejon Płoni), jej pierwotne, niezwykle popularne edycje w latach 80. i 90. kojarzyły się m.in. z rejonem Pogodna i przyległych terenów zachodnich osiedli.',
-        de: 'Bevor der Automarkt endgültig an den Stadtrand (in die Gegend von Płonia) zog, waren seine ursprünglichen, äußerst beliebten Ausgaben in den 80er und 90er Jahren u. a. mit der Gegend von Pogodno und den angrenzenden Gebieten der westlichen Siedlungen verbunden.',
-        en: 'Before the car market finally moved to the outskirts of the city (to the Płonia area), its original, extremely popular editions of the 1980s and 90s were associated, among others, with the Pogodno area and the adjacent territories of the western neighbourhoods.',
-        ua: 'Перш ніж автомобільний ринок остаточно переїхав на околиці міста (в район Плоні), його первинні, надзвичайно популярні випуски у 80-х і 90-х роках асоціювалися, зокрема, із районом Погодно та прилеглими територіями західних селищ.'
-    },
-    lead: {
-        headline: {
-            pl: 'Symbole epoki',
-            de: 'Symbole einer Epoche',
-            en: 'Symbols of an era',
-            ua: 'Символи епохи'
-        },
-        body: {
-            pl: 'Dla tysięcy szczecinian spragnionych „czterech kółek" po latach gospodarki niedoboru giełda była prawdziwą mekką. Handlowano tam nie tylko używanymi autami sprowadzanymi z Zachodu, ale przede wszystkim trudno dostępnymi częściami zamiennymi, akcesoriami, sprzętem elektronicznym i odzieżą.',
-            de: 'Für Tausende von Stettinern, die nach Jahren der Mangelwirtschaft nach „vier Rädern" dürsteten, war der Markt eine wahre Mekka. Gehandelt wurden dort nicht nur Gebrauchtwagen aus dem Westen, sondern vor allem schwer erhältliche Ersatzteile, Zubehör, Elektronik und Kleidung.',
-            en: 'For thousands of Szczeciners thirsting for "four wheels" after years of shortage economy, the market was a true mecca. Traded there were not only used cars imported from the West, but above all hard-to-find spare parts, accessories, electronics, and clothing.',
-            ua: 'Для тисяч щецинців, які після років дефіцитної економіки прагнули «чотирьох коліс», ринок був справжньою меккою. Там торгували не лише вживаними автомобілями, привезеними із Заходу, а передусім важкодоступними запчастинами, аксесуарами, електронікою та одягом.'
-        }
+        pl: 'Oficjalnie była to giełda samochodowa, ale dla mieszkańców Szczecina i całego regionu miejsce to stało się symbolem wczesnego polskiego kapitału, wolnego handlu i klimatu tamtej epoki.',
+        de: 'Offiziell war es ein Automarkt, doch für die Bewohner Stettins und der ganzen Region wurde dieser Ort zu einem Symbol des frühen polnischen Kapitals, des freien Handels und der Atmosphäre jener Zeit.',
+        en: 'Officially it was a car market, but for the residents of Szczecin and the whole region the place became a symbol of early Polish capitalism, free trade and the spirit of that era.',
+        ua: 'Офіційно це був автомобільний ринок, але для мешканців Щецина та всього регіону це місце стало символом раннього польського капіталу, вільної торгівлі та атмосфери тої доби.'
     },
     sections: [
         {
             heading: {
-                pl: 'Kultowe miejsce lat transformacji',
-                de: 'Kultort der Transformationsjahre',
-                en: 'An iconic place of the transformation era',
-                ua: 'Культове місце років трансформації'
+                pl: 'Legendarne motoryzacyjne klasyki',
+                de: 'Legendäre Automobil-Klassiker',
+                en: 'Legendary automotive classics',
+                ua: 'Легендарні автомобільні класики'
             },
             body: {
-                pl: 'Pierwotne, niezwykle popularne edycje giełdy w latach 80. i 90. kojarzyły się z rejonem Pogodna i przyległych terenów zachodnich osiedli. Zanim zawitała na stałe na obrzeża miasta, w tym miejscu tysiące ludzi szukało wymarzonego auta.',
-                de: 'Die ursprünglichen, äußerst beliebten Ausgaben des Markts in den 80er und 90er Jahren waren mit der Gegend von Pogodno und den angrenzenden Gebieten der westlichen Siedlungen verbunden. Bevor er endgültig an den Stadtrand zog, suchten hier Tausende Menschen nach ihrem Traumauto.',
-                en: 'The original, extremely popular editions of the market in the 1980s and 90s were associated with the Pogodno area and the adjacent territories of the western neighbourhoods. Before it permanently moved to the outskirts, thousands of people came here looking for their dream car.',
-                ua: 'Первинні, надзвичайно популярні випуски ринку у 80-х і 90-х роках асоціювалися з районом Погодно та прилеглими територіями західних селищ. Перш ніж остаточно переїхати на околиці міста, сюди приходили тисячі людей у пошуках автомобіля своєї мрії.'
+                pl: 'Na koronie stadionu królowały polskie szosowe klasyki: Fiaty 126p („Maluchy”), Duże Fiaty 125p oraz Polonezy. Obok nich gościły marzenia Polaków tamtych lat — sprowadzane zza zachodniej granicy używane Volkswageny, Audi czy Ople. Na miejscu można było kupić dosłownie wszystko do auta: od używanych opon, przez części zamienne, po szczyt ówczesnego luksusu — odtwarzacze i głośniki car-audio.',
+                de: 'Auf der Stadionkrone dominierten polnische Straßenklassiker: Fiat 126p („Maluch“), der große Fiat 125p und Polonezy. Daneben standen die Träume jener Jahre – gebrauchte Volkswagen, Audi und Opel aus dem Westen. Vor Ort konnte man buchstäblich alles fürs Auto kaufen: von gebrauchten Reifen über Ersatzteile bis zum Inbegriff des Luxuses damals – Autoradios und Lautsprecher.',
+                en: 'The terraces were ruled by Polish road classics: the Fiat 126p ("Maluch"), the big Fiat 125p and the Polonez. Alongside them sat the dreams of the era — used Volkswagens, Audis and Opels imported from the West. Literally everything for a car could be bought on site: from used tyres through spare parts to the height of luxury at the time — car stereos and speakers.',
+                ua: 'На трибунах домінували польські дорожні класики: Fiat 126p («Малух»), великий Fiat 125p та Polonezy. Поруч із ними — мрії тих років: вживані Volkswagen, Audi й Opel, привезені із Заходу. На місці можна було купити буквально все для авта: від вживаних шин і запчастин до втілення розкоші того часу — магнітол і динаміків car-audio.'
             }
         },
         {
             heading: {
-                pl: 'Symbole epoki — handel i towarzyski rytuał',
-                de: 'Symbole der Epoche – Handel und soziales Ritual',
-                en: 'Symbols of the era — trade and a social ritual',
-                ua: 'Символи епохи — торгівля та соціальний ритуал'
+                pl: 'Pchli targ i „Szmyd-Myd”',
+                de: 'Flohmarkt und „Szmyd-Myd”',
+                en: 'The flea market and "Szmyd-Myd"',
+                ua: 'Секонд-хенд і «Шмид-Мид»'
             },
             body: {
-                pl: 'Handlowano używanymi autami sprowadzanymi głównie z Niemiec oraz trudno dostępnymi częściami zamiennymi, akcesoriami, sprzętem elektronicznym i odzieżą. Niedzielne wyprawy na giełdę miały charakter niemal towarzyski i rytualny — dla wielu było to wyjście „na miasto", spotkanie ze znajomymi i okazja do porozmawiania o samochodach.',
-                de: 'Gehandelt wurden vor allem aus Deutschland importierte Gebrauchtwagen sowie schwer erhältliche Ersatzteile, Zubehör, Elektronik und Kleidung. Die sonntäglichen Ausflüge zum Markt hatten einen nahezu gesellschaftlichen und rituellen Charakter – für viele war es ein „Stadtbummel", ein Treffen mit Bekannten und eine Gelegenheit, über Autos zu sprechen.',
-                en: 'The trade involved used cars imported mainly from Germany, plus hard-to-find spare parts, accessories, electronics, and clothing. Sunday trips to the market had an almost social and ritual character — for many it was a day out, a meeting with acquaintances, and a chance to talk about cars.',
-                ua: 'Торгівля охоплювала вживані автомобілі, імпортовані переважно з Німеччини, а також важкодоступні запчастини, аксесуари, електроніку та одяг. Недільні поїздки на ринок мали майже соціальний і ритуальний характер — для багатьох це було вихід у «місто», зустріч із знайомими та нагода поговорити про автомобілі.'
+                pl: 'Giełda szybko przerosła swoje motoryzacyjne przeznaczenie, stając się gigantycznym pchlim targiem. Co niedzielę ciągnęły tu tłumy w poszukiwaniu zachodniej chemii gospodarczej, sprowadzanej odzieży, kaset magnetofonowych i wideo, sprzętu RTV czy elektroniki. Można tu było znaleźć absolutnie wszystko — od firanek po używane rowery.',
+                de: 'Der Markt wuchs schnell über sein automobilistisches Ziel hinaus und wurde zu einem riesigen Flohmarkt. Sonntägliche Massen suchten hier westliche Haushaltschemie, importierte Kleidung, Audio- und Videokassetten, RTV-Geräte oder Elektronik. Man konnte hier buchstäblich alles finden – von Vorhängen bis zu gebrauchten Fahrrädern.',
+                en: 'The market soon outgrew its automotive purpose and became a huge flea market. Every Sunday crowds came here in search of Western household chemicals, imported clothing, audio and video cassettes, consumer electronics and gadgets. Absolutely everything could be found here — from curtains to second-hand bicycles.',
+                ua: 'Ринок швидко вийшов за межі автомобільної тематики й перетворився на гігантський секонд-хенд. Щонеділі сюди стікалися натовпи в пошуках західної побутової хімії, імпортного одягу, аудіо- та відеокасет, побутової техніки й електроніки. Тут можна було знайти буквально все — від фіранок до вживаних велосипедів.'
+            }
+        },
+        {
+            heading: {
+                pl: 'Koniec niedzielnej giełdy',
+                de: 'Das Ende des Sonntagsmarkts',
+                en: 'The end of the Sunday market',
+                ua: 'Кінець недільного ринку'
+            },
+            body: {
+                pl: 'Niedzielny handel na stadionie zakończył się w 2000 roku. W związku z planami modernizacji infrastruktury sportowej i potrzebą uporządkowania terenu wokół stadionu giełdę przeniesiono na obrzeża miasta — do dzielnicy Płonia, na teren dawnego zakładu „Gryfbet”.',
+                de: 'Der Sonntagshandel auf dem Stadion endete im Jahr 2000. Im Zusammenhang mit Modernisierungsplänen für die Sportinfrastruktur und der Notwendigkeit, das Gelände um das Stadion herum zu ordnen, wurde der Markt an den Stadtrand verlegt – in den Stadtteil Płonia, auf das Gelände des früheren Betriebs „Gryfbet”.',
+                en: 'Sunday trading at the stadium ended in 2000. In connection with plans to modernise the sports infrastructure and the need to tidy up the area around the stadium, the market was moved to the outskirts of the city — to the Płonia district, on the site of the former "Gryfbet" plant.',
+                ua: 'Недільна торгівля на стадіоні припинилася 2000 року. У зв\'язку з планами модернізації спортивної інфраструктури та потребою навести лад на території навколо стадіону ринок перенесли на околиці міста — у район Плоня, на територію колишнього заводу «Gryfbet».'
             }
         }
     ],
     conclusion: {
-        pl: 'Dziś giełda kojarzy się z Płonią, ale pamięć o jej kultowych, niezwykle popularnych edycjach na terenach Pogodna pozostała żywa wśród tysięcy szczecinian.',
-        de: 'Heute verbindet man den Automarkt mit Płonia, aber die Erinnerung an seine kultigen, äußerst beliebten Ausgaben im Gebiet von Pogodno ist unter Tausenden Stettinern lebendig geblieben.',
-        en: 'Today the car market is associated with Płonia, but the memory of its iconic, extremely popular editions in the Pogodno area has remained alive among thousands of Szczeciners.',
-        ua: 'Сьогодні автомобільний ринок асоціюється з Плоню, але пам\'ять про його культові, надзвичайно популярні випуски на територіях Погодно залишилася живою серед тисяч щецинців.'
+        pl: 'Choć dziś giełda kojarzy się z Płonią, to właśnie na koronie stadionu Pogoni narodził się jej legendarny, niedzielny rytm — symbol wczesnego polskiego kapitału, wolnego handlu i klimatu tamtej epoki.',
+        de: 'Auch wenn der Markt heute mit Płonia verbunden wird, wurde sein legendärer Sonntagsrhythmus genau auf der Stadionkrone der Pogoń geboren – ein Symbol des frühen polnischen Kapitals, des freien Handels und der Atmosphäre jener Zeit.',
+        en: 'Though the market is associated with Płonia today, its legendary Sunday rhythm was born on the terraces of the Pogoń stadium — a symbol of early Polish capitalism, free trade and the spirit of that era.',
+        ua: 'Хоча сьогодні ринок асоціюється з Плонею, його легендарний недільний ритм народився на трибунах стадіону Погоні — символі раннього польського капіталу, вільної торгівлі та атмосфери тої доби.'
     },
     gallery: [
         {

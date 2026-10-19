@@ -12,7 +12,6 @@ export const szkolaSiemiradzkiego: PointSiteConfig = {
     },
     marker: {
         color: '#a6761d',
-        comingSoon: true,
         title: {
             pl: 'Szkoła przy ul. Henryka Siemiradzkiego',
             de: 'Schule an der Henryka-Siemiradzkiego-Straße',
@@ -35,53 +34,67 @@ export const szkolaSiemiradzkiego: PointSiteConfig = {
             ua: 'Школа на Семирадзького'
         },
         intro: {
-            pl: 'Treść w przygotowaniu — szkolny budynek na Pogodnie, przez którego korytarze przeszły pokolenia dzieci z okolicy.',
-            de: 'Inhalt wird vorbereitet – ein Schulgebäude in Pogodno, durch dessen Flure Generationen von Kindern aus der Umgebung gingen.',
-            en: 'Content in preparation — a school building in Pogodno whose corridors have seen generations of local children pass through.',
-            ua: 'Вміст готується — шкільна будівля в Погодно, коридорами якої пройшли покоління дітей із сусідства.'
+            pl: 'Neogotycki gmach przy ul. Siemiradzkiego 2, wzniesiony w 1904 roku jako zakład dla dzieci głuchoniemych — dziś siedziba Szkoły Podstawowej nr 53 im. Fryderyka Chopina.',
+            de: 'Neogotisches Gebäude an der Siemiradzkiego-Straße 2, 1904 als Anstalt für Gehörlose errichtet – heute Sitz der Grundschule Nr. 53 „Frédéric Chopin”.',
+            en: 'A neo-Gothic building at ul. Siemiradzkiego 2, erected in 1904 as an institute for deaf children — today the seat of Primary School No. 53 named after Fryderyk Chopin.',
+            ua: 'Неоготична будівля на вул. Семирадзького, 2, зведена 1904 року як заклад для глухонімих дітей — сьогодні тут розташована Школа № 53 імені Фридерика Шопена.'
         }
     },
     historyHeadline: {
-        pl: 'Szkoła na Pogodnie',
-        de: 'Die Schule in Pogodno',
-        en: 'The school in Pogodno',
-        ua: 'Школа в Погодно'
+        pl: 'Neogotycki budynek dawnego zakładu dla głuchoniemych',
+        de: 'Das neogotische Gebäude der früheren Anstalt für Gehörlose',
+        en: 'The neo-Gothic building of the former institute for deaf children',
+        ua: 'Неоготична будівля колишнього закладу для глухонімих'
     },
     sections: [
         {
             heading: {
-                pl: 'Codzienność szkolna',
-                de: 'Schulalltag',
-                en: 'School days',
-                ua: 'Шкільні будні'
+                pl: 'Fundator i pierwotne przeznaczenie',
+                de: 'Gründer und ursprüngliche Bestimmung',
+                en: 'The founder and the original purpose',
+                ua: 'Засновник та первісне призначення'
             },
             body: {
-                pl: 'Treść w przygotowaniu. Miejsce czeka na opowieść o szkole, jej nauczycielach i uczniach oraz o roli, jaką placówka odegrała w wychowaniu kolejnych pokoleń pogodnian.',
-                de: 'Inhalt wird vorbereitet. Der Ort wartet auf die Geschichte über die Schule, ihre Lehrer und Schüler und ihre Rolle bei der Erziehung der nächsten Generationen von Pogodno-Bewohnern.',
-                en: 'Content in preparation. The place awaits the story of the school, its teachers and pupils, and the role it played in raising generations of Pogodno residents.',
-                ua: 'Вміст готується. Місце чекає на історію про школу, її вчителів та учнів і про роль закладу у вихованні поколінь мешканців Погодно.'
+                pl: 'Imponujący, neogotycki budynek przy ul. Siemiradzkiego 2 wzniesiono w 1904 roku jako nowoczesną placówkę edukacyjno-opiekuńczą dla dzieci głuchoniemych. Fundatorem obiektu był jeden z najsłynniejszych szczecińskich przemysłowców i filantropów tamtego okresu — Martin Quistorp. Gmach od początku zaprojektowano z myślą o specjalistycznym kształceniu i wsparciu podopiecznych, łącząc funkcje edukacyjne z mieszkalnymi.',
+                de: 'Das eindrucksvolle neogotische Gebäude an der Siemiradzkiego-Straße 2 wurde 1904 als moderne Bildungs- und Betreuungseinrichtung für Gehörlose errichtet. Gründer des Objekts war einer der bekanntesten Stettiner Industriellen und Mäzene jener Zeit, Martin Quistorp. Der Bau war von Anfang an für die spezialisierte Ausbildung und Betreuung der Zöglinge konzipiert und verband Bildungsfunktionen mit Wohnmöglichkeiten.',
+                en: 'The imposing neo-Gothic building at ul. Siemiradzkiego 2 was erected in 1904 as a modern educational and care institution for deaf children. Its benefactor was one of the best-known Szczecin industrialists and philanthropers of the time, Martin Quistorp. The building was designed from the outset for specialised teaching and support, combining educational functions with accommodation.',
+                ua: 'Вражаючу неоготичну будівлю на вул. Семирадзького, 2 звели 1904 року як сучасний освітньо-опікунський заклад для глухонімих дітей. Засновником об\'єкта був один із найвідоміших щецинських промисловців і меценатів тієї доби — Мартін Квісторп. Будівлю від початку проєктували для спеціалізованого навчання та підтримки вихованців, поєднуючи освітні функції з житловими.'
             }
         },
         {
             heading: {
-                pl: 'Budynek i okolica',
-                de: 'Gebäude und Umgebung',
-                en: 'The building and its surroundings',
-                ua: 'Будівля та околиці'
+                pl: 'Architektura i detal',
+                de: 'Architektur und Detail',
+                en: 'Architecture and detail',
+                ua: 'Архітектура та деталі'
             },
             body: {
-                pl: 'Treść w przygotowaniu. Szkoła wtopiona jest w willowy charakter północnego Pogodna — z zielonym podwórzem, typową dla tej części miasta architekturą i bliskością pól oraz kolejowego wykopu.',
-                de: 'Inhalt wird vorbereitet. Die Schule fügt sich in den Villencharakter des nördlichen Pogodnos ein – mit grünem Hof, für diesen Stadtteil typischer Architektur und Nähe zu Feldern und dem Bahnlauf.',
-                en: 'Content in preparation. The school blends into the villa character of northern Pogodno — with a green courtyard, architecture typical of the area and proximity to open fields and the railway cutting.',
-                ua: 'Вміст готується. Школа вписується у вілловий характер північного Погодно — із зеленим подвір\'ям, типовою для цієї частини міста архітектурою та близькістю полів і залізничної виїмки.'
+                pl: 'Budynek stanowi wybitny przykład neogotyckiej architektury użyteczności publicznej z początku XX wieku. To dwukondygnacyjna budowla z użytkowym poddaszem, nakryta stromym dachem dwuspadowym z ozdobnymi lukarnami, a w fasadzie frontowej dominuje reprezentacyjny ryzalit. Bogato dekorowany portal wejściowy zdobi kolumna podtrzymująca niewielki balkon; okna pierwszej kondygnacji wieńczą łagodne łuki, natomiast wyższą kondygnację oraz szczyty zdobią okna ostrołukowe. Na poziomie pierwszego piętra do dziś zachował się historyczny niemiecki napis „Zakład dla Głuchoniemych” (Provinzial-Taubstummen-Anstalt).',
+                de: 'Das Gebäude ist ein herausragendes Beispiel neogotischer öffentlicher Architektur aus dem frühen 20. Jahrhundert. Es handelt sich um einen zweigeschossigen Bau mit ausgebautem Dachgeschoss und steilem Satteldach mit dekorativen Dachluken, in dessen Frontfassade ein repräsentativer Risalit dominiert. Das Eingangsportalgewände ziert eine Säule, die einen kleinen Balkon trägt; die Fenster der ersten Etage schließen sanfte Bögen, während die obere Etage und die Giebel Spitzbogenfenster aufweisen. Im ersten Obergeschoss hat sich bis heute die historische deutsche Inschrift „Provinzial-Taubstummen-Anstalt” erhalten.',
+                en: 'The building is an outstanding example of early-20th-century neo-Gothic public architecture. It is a two-storey structure with an attic floor, covered by a steep gable roof with decorative dormers, its front façade dominated by a representative risalit. The entrance portal is adorned with a column carrying a small balcony; the windows of the first floor are crowned by gentle arches, while the upper floor and gables feature traditional pointed-arch windows. On the first-floor level, the historic German inscription „Provinzial-Taubstummen-Anstalt” (Provincial Institute for the Deaf) has survived to this day.',
+                ua: 'Будівля — видатний приклад неоготичної громадської архітектури початку XX століття. Це двоповерхова споруда з мансардою, вкрита стрімким двосхилим дахом з декоративними лукернами, а фасад домінує представницький ризаліт. Вхідний портал прикрашає колона, що тримає невеликий балкон; вікна першого поверху завершуються м\'якими арками, тоді як верхній поверх та щипці прикрашають стрілчасті вікна. На рівні першого поверху до нашого часу зберігся історичний німецький напис „Provinzial-Taubstummen-Anstalt” (Провінційний заклад для глухонімих).'
+            }
+        },
+        {
+            heading: {
+                pl: 'Po II wojnie światowej',
+                de: 'Nach dem Zweiten Weltkrieg',
+                en: 'After the Second World War',
+                ua: 'Після Другої світової війни'
+            },
+            body: {
+                pl: 'Po II wojnie światowej gmach powrócił do swojej pierwotnej misji edukacyjnej, służąc polskiemu szkolnictwu. Przez lata mieściły się tu kolejne placówki oświatowe — m.in. szkoła podstawowa oraz Gimnazjum nr 10 — a obecnie obiekt jest siedzibą Szkoły Podstawowej nr 53 im. Fryderyka Chopina. Budynek figuruje w gminnej oraz wojewódzkiej ewidencji zabytków jako cenny element historycznej zabudowy dawnego Pogodna.',
+                de: 'Nach dem Zweiten Weltkrieg kehrte der Bau zu seiner ursprünglichen Bildungsaufgabe zurück und diente dem polnischen Schulwesen. Über die Jahre befanden sich hier nachfolgende Bildungseinrichtungen – darunter eine Grundschule und das Gymnasium Nr. 10 –, heute ist das Objekt Sitz der Grundschule Nr. 53 „Frédéric Chopin”. Das Gebäude ist in der kommunalen und der woiwodschaftlichen Denkmalliste als wertvolles Element der historischen Bebauung des früheren Pogodno eingetragen.',
+                en: 'After the Second World War the building returned to its original educational mission, serving Polish schooling. Over the years it housed successive educational institutions — including a primary school and Gymnasium No. 10 — and today it is the seat of Primary School No. 53 named after Fryderyk Chopin. The building is listed in the municipal and voivodeship records of monuments as a valuable element of the historic fabric of former Pogodno.',
+                ua: 'Після Другої світової війни будівля повернулася до своєї первісної освітньої місії, служачи польській школі. Роками тут розташовувалися різні освітні заклади — зокрема початкова школа та гімназія № 10 —, а нині будівля є місцем розташування Школи № 53 імені Фридерика Шопена. Будівля внесена до міського та воєводського реєстрів пам\'яток як цінний елемент історичної забудови колишнього Погодно.'
             }
         }
     ],
     conclusion: {
-        pl: 'Treść w przygotowaniu — szkoła przy Siemiradzkiego to codzienny punkt na mapie Pogodna, który dla wielu mieszkańców jest wspomnieniem dzieciństwa.',
-        de: 'Inhalt wird vorbereitet – die Schule an der Siemiradzkiego ist ein täglicher Punkt auf der Karte von Pogodno, der für viele Bewohner mit der Kindheit verbunden ist.',
-        en: 'Content in preparation — the school on Siemiradzkiego is an everyday point on Pogodno\'s map that for many residents is a childhood memory.',
-        ua: 'Вміст готується — школа на Семирадзького — щоденна точка на мапі Погодно, яка для багатьох мешканців є спогадом дитинства.'
+        pl: 'Gmach przy ul. Siemiradzkiego 2 pozostaje jednym z najlepiej zachowanych neogotyckich budynków użyteczności publicznej na Pogodnie — zabytkiem, który wciąż pełni swoją pierwotną, edukacyjną misję.',
+        de: 'Das Gebäude an der Siemiradzkiego-Straße 2 bleibt eines der am besten erhaltenen neogotischen öffentlichen Bauten von Pogodno – ein Denkmal, das noch immer seinen ursprünglichen Bildungsauftrag erfüllt.',
+        en: 'The building at ul. Siemiradzkiego 2 remains one of the best-preserved neo-Gothic public buildings in Pogodno — a monument that still fulfils its original educational mission.',
+        ua: 'Будівля на вул. Семирадзького, 2 — одна з найкраще збережених неоготичних громадських споруд Погодно: пам\'ятка, яка досі виконує свою первісну освітню місію.'
     },
     gallery: [
         {
