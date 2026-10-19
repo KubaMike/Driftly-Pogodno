@@ -29,7 +29,7 @@ import { domGalczynskiego } from './DomGalczynskiego';
 import { domHugoLemcke } from './DomHugoLemcke';
 import { domWologoska } from './DomWologoska';
 import { dyrekcjaBibliotek } from './DyrekcjaBibliotek';
-import { dziuraSzpital } from './DziuraSzpital';
+import { stadionHitlerjugend } from './StadionHitlerjugend';
 import { fryzjerWieniawskiego } from './FryzjerWieniawskiego';
 import { gazowniaMickiewicza } from './GazowniaMickiewicza';
 import { kosciolSwietegoKrzyza } from './KosciolSwietegoKrzyza';
@@ -78,7 +78,7 @@ export const pointSites: PointSiteConfig[] = [
     domHugoLemcke,
     domWologoska,
     dyrekcjaBibliotek,
-    dziuraSzpital,
+    stadionHitlerjugend,
     fryzjerWieniawskiego,
     gazowniaMickiewicza,
     kosciolSwietegoKrzyza,
