@@ -46,6 +46,7 @@ import { wieniawskiegoZoltyDom } from './WieniawskiegoZoltyDom';
 import { wieniawskiegoZameczek } from './WieniawskiegoZameczek';
 import { wiezaSpadochronowa } from './WiezaSpadochronowa';
 import { zdobieniaKonopnickiej27 } from './ZdobieniaKonopnickiej27';
+import { tygodniowyZlobek } from './TygodniowyZlobek';
 
 export const pointSites: PointSiteConfig[] = [
     basenyPogoni,
@@ -94,7 +95,8 @@ export const pointSites: PointSiteConfig[] = [
     wieniawskiegoZoltyDom,
     wieniawskiegoZameczek,
     wiezaSpadochronowa,
-    zdobieniaKonopnickiej27
+    zdobieniaKonopnickiej27,
+    tygodniowyZlobek
 ];
 
 export function getPointSiteByPath(path: string): PointSiteConfig | undefined {
