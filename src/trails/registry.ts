@@ -12,15 +12,15 @@ const trailGeometries: TrailGeometry[] = [
     },
     description: {
       pl: 'Trasa wzdłuż Wzgórza Ackermana prowadzi przez spokojne, urokliwe uliczki, które zostały harmonijnie wpasowane w naturalne, pofałdowane ukształtowanie terenu.',
-      de: 'to be translated',
-      en: 'to be translated',
-      ua: 'to be translated'
+      de: 'Die Route entlang des Ackerman-Hügels führt durch ruhige, malerische Gassen, die harmonisch in die natürliche, hügelige Geländeform eingefügt wurden.',
+      en: 'The trail along Ackerman Hill leads through quiet, charming streets that have been harmoniously integrated into the natural, rolling terrain.',
+      ua: 'Маршрут уздовж пагорба Акермана проходить через тихі, мальовничі вулички, які гармонійно вписані в природний горбистий рельєф.'
     },
     longDescription: {
       pl: 'Trasa wzdłuż Wzgórza Ackermana prowadzi przez spokojne, urokliwe uliczki, które zostały harmonijnie wpasowane w naturalne, pofałdowane ukształtowanie terenu. Dominująca tu kameralna zabudowa z malowniczymi, spadzistymi dachami i drewnianymi akcentami przywodzi na myśl przytulną, szwajcarską architekturę alpejską, choć tuż obok – m.in. wzdłuż ulicy Sienkiewicza – można natrafić na niezwykle ciekawą zabudowę modernistyczną. Jako jedna z pierwszych zamieszkanych części Pogodna, rejon ten zachwyca bogactwem form i unikalnym klimatem. Wzniesienie to zawdzięcza swoją nazwę zasłużonemu nadburmistrzowi Szczecina, Friedrichowi Ackermannowi. To z jego inicjatywy miasto przyłączyło te tereny, dając początek nowej, prestiżowej dzielnicy rezydencjonalnej.',
-      de: 'TO BE ADDED',
-      en: 'TO BE ADDED',
-      ua: 'TO BE ADDED'
+      de: 'Die Route entlang des Ackerman-Hügels führt durch ruhige, malerische Gassen, die harmonisch in die natürliche, hügelige Geländeform eingefügt wurden. Die hier vorherrschende beschauliche Bebauung mit malerischen, steilen Dächern und hölzernen Akzenten erinnert an die gemütliche alpine Schweizer Architektur, doch gleich daneben – vor allem entlang der Sienkiewicz-Straße – lässt sich auch sehr interessante modernistische Architektur finden. Als einer der ersten besiedelten Teile von Pogodno begeistert dieser Bereich mit Formenreichtum und einzigartigem Charakter. Der Hügel verdankt seinen Namen dem verdienten Oberbürgermeister von Stettin, Friedrich Ackermann. Auf seine Initiative hin gliederte die Stadt diese Gebiete ein und gab damit den Auftakt für eine neue, repräsentative Wohngegend.',
+      en: 'The trail along Ackerman Hill leads through quiet, charming streets that have been harmoniously integrated into the natural, rolling terrain. The predominantly intimate architecture here, with picturesque steep roofs and wooden accents, brings to mind cozy Swiss Alpine architecture, though just around the corner – especially along Sienkiewicza Street – one can encounter fascinating modernist buildings. As one of the first inhabited parts of Pogodno, this area delights with its rich variety of forms and unique atmosphere. The hill owes its name to the distinguished Mayor of Szczecin, Friedrich Ackermann. It was on his initiative that the city annexed these areas, giving rise to a new prestigious residential district.',
+      ua: 'Маршрут уздовж пагорба Акермана проходить через тихі, мальовничі вулички, які гармонійно вписані в природний горбистий рельєф. Тут переважає камерна забудова з мальовничими стрімкими дахами та дерев’яними акцентами, що нагадує затишну швейцарську альпійську архітектуру, хоча неподалік – зокрема вздовж вулиці Сєнкевича – можна зустріти надзвичайно цікаву модерністську забудову. Як одна з перших заселених частин Погодна, цей район зачаровує багатством форм та унікальною атмосферою. Пагорб названий на честь заслуженого обер-бургомістра Щецина Фрідріха Акермана. Саме за його ініціативи місто приєднало ці землі, поклавши початок новому престижному житловому району.'
     },
     waypoints: [
       [53.43781962048088, 14.52325504189928],
@@ -62,15 +62,15 @@ const trailGeometries: TrailGeometry[] = [
     },
     description: {
       pl: 'Trasa prowadzi przez tereny sportowo-rekreacyjne, które utworzono na obszarze dawnej żwirowni.',
-      de: '',
-      en: '',
-      ua: ''
+      de: 'Die Route führt durch Sport- und Freizeitgelände, das auf dem Areal einer ehemaligen Kiesgrube entstanden ist.',
+      en: 'The trail leads through sports and recreational areas created on the site of a former gravel pit.',
+      ua: 'Маршрут проходить через спортивно-рекреаційні території, створені на місці колишнього кар’єру.'
     },
     longDescription: {
       pl: 'Trasa prowadzi przez tereny sportowo-rekreacyjne, które utworzono na obszarze dawnej żwirowni. To właśnie tutaj powstał Stadion Miejski im. Floriana Krygiera, a w jego sąsiedztwie przez lata funkcjonowały kultowe miejsca – dawne otwarte kąpielisko Pogoni Szczecin oraz znana w całym regionie giełda samochodowa. W bliskim sąsiedztwie mieścił się także przedwojenny Instytut dla Dzieci Głuchoniemych, którego budynek po 1945 roku przeszedł pod władanie Uniwersytetu Szczecińskiego. Miejsce to niesie ze sobą również trudniejsze karty historii – po zakończeniu II wojny światowej znajdował się tu jeden z punktów przesiedleńczych dla ludności niemieckiej.',
-      de: 'TO BE ADDED',
-      en: 'TO BE ADDED',
-      ua: 'TO BE ADDED'
+      de: 'Die Route führt durch Sport- und Freizeitgelände, das auf dem Areal einer ehemaligen Kiesgrube entstanden ist. Hier wurde das städtische Stadion im. Floriana Krygiera errichtet. In der Nachbarschaft befanden sich über viele Jahre beliebte Orte – das ehemalige Freibad von Pogoń Stettin sowie der in der ganzen Region bekannte Automarkt. In unmittelbarer Nähe lag auch das Vorkriegsinstitut für taubstumme Kinder, dessen Gebäude nach 1945 an die Universität Stettin überging. Dieser Ort trägt auch schwerere Seiten der Geschichte – nach dem Ende des Zweiten Weltkriegs befand sich hier einer der Umsiedlungspunkte für die deutsche Bevölkerung.',
+      en: 'The trail leads through sports and recreational areas created on the site of a former gravel pit. This is where the Municipal Stadium named after Florian Krygier was built. For many years, the area was home to iconic places – the former open-air swimming pool of Pogoń Szczecin and a well-known car market in the region. The pre-war Institute for Deaf and Mute Children was also located nearby; its building was taken over by the University of Szczecin after 1945. The site also bears darker pages of history – after World War II, one of the resettlement points for the German population was located here.',
+      ua: 'Маршрут проходить через спортивно-рекреаційні території, створені на місці колишнього кар’єру. Саме тут був побудований міський стадіон імені Флоріана Кригієра, а в околицях протягом багатьох років діяли культові місця – колишній відкритий басейн «Погоні» Щецин та відомий у всьому регіоні авторинок. Поблизу також розташовувався довоєнний інститут для глухонімих дітей, будівлю якого після 1945 року передали Щецинському університету. Це місце пов’язане й з трагічнішими сторінками історії – після закінчення Другої світової війни тут був один із пунктів переселення німецького населення.'
     },
     waypoints: [
       [53.43676487676694, 14.52028366690906],
@@ -133,15 +133,15 @@ const trailGeometries: TrailGeometry[] = [
     },
     description: {
       pl: 'Neu Westend (Nowy Westend) to rozwijana w latach 20. i 30. XX wieku część Pogodna, wyróżniająca się stonowaną, funkcjonalną architekturą modernistyczną.',
-      de: '',
-      en: '',
-      ua: ''
+      de: 'Neu Westend (Neuer Westen) ist ein Teil von Pogodno, der in den 1920er und 1930er Jahren bebaut wurde und sich durch eine zurückhaltende, funktionale modernistische Architektur auszeichnet.',
+      en: 'Neu Westend (New West End) is a part of Pogodno developed in the 1920s and 1930s, distinguished by its restrained, functional modernist architecture.',
+      ua: 'Neu Westend (Новий Вестенд) – частина Погодна, що розвивалася у 1920-х–1930-х роках і відрізняється стриманою функціональною модерністською архітектурою.'
     },
     longDescription: {
       pl: 'Neu Westend (Nowy Westend) to rozwijana w latach 20. i 30. XX wieku część Pogodna, wyróżniająca się stonowaną, funkcjonalną architekturą modernistyczną. Krajobraz osiedla tworzą eleganckie domy, urokliwe bliźniaki i kameralne kamieniczki z przydomowymi ogródkami. Sercem tej urbanistycznej kompozycji jest zielony, kolisty Plac Jakuba Wujka, od którego promieniście odchodzi pięć urokliwych uliczek. Całość zachwyca spójną zabudową, dojrzałą zielenią i spokojem, idealnie dopełniając koncepcję miasta-ogrodu.',
-      de: 'TO BE ADDED',
-      en: 'TO BE ADDED',
-      ua: 'TO BE ADDED'
+      de: 'Neu Westend (Neuer Westen) ist ein Teil von Pogodno, der in den 1920er und 1930er Jahren bebaut wurde und sich durch eine zurückhaltende, funktionale modernistische Architektur auszeichnet. Das Viertel prägen elegante Einfamilienhäuser, reizvolle Doppelhäuser und beschauliche Mietshäuser mit Vorgärten. Das Herz dieser städtebaulichen Komposition bildet der grüne, runde Jakub-Wujek-Platz, von dem strahlenförmig fünf malerische Straßen ausgehen. Das Ensemble besticht durch geschlossene Bebauung, ausgereifte Bepflanzung und Ruhe und fügt sich ideal in das Konzept der Gartenstadt ein.',
+      en: 'Neu Westend (New West End) is a part of Pogodno developed in the 1920s and 1930s, distinguished by its restrained, functional modernist architecture. The neighborhood is made up of elegant houses, charming semi-detached homes, and intimate tenement buildings with front gardens. The heart of this urban composition is the green, circular Plac Jakuba Wujka, from which five charming streets radiate. The whole area impresses with its cohesive development, mature greenery, and tranquility, perfectly complementing the garden city concept.',
+      ua: 'Neu Westend (Новий Вестенд) – частина Погодна, що розвивалася у 1920-х–1930-х роках і відрізняється стриманою функціональною модерністською архітектурою. Район сформований елегантними будинками, чарівними напівособняками та камерними кам’яницями з прибудинковими садочками. Серцем цієї урбаністичної композиції є зелений круглий майдан Якоба Вуйка, від якого променями розходяться п’ять мальовничих вулиць. Усе це вражає цілісною забудовою, зрілою зеленню та спокоєм, ідеально доповнюючи концепцію міста-саду.'
     },
     waypoints: [
       [53.4415820496903, 14.51146922125177],
@@ -263,15 +263,15 @@ const trailGeometries: TrailGeometry[] = [
     },
     description: {
       pl: 'Tereny dawnego osiedla Braunsfelde („Pole Brauna”) stanowią historyczny rdzeń dzisiejszego Pogodna, obejmujący obszar między obecnymi ulicami Czorsztyńską a Poniatowskiego, skupiony wokół osi ulicy Mickiewicza.',
-      de: '',
-      en: '',
-      ua: ''
+      de: 'Die Gebiete der ehemaligen Siedlung Braunsfelde („Brauns Feld“) bilden den historischen Kern des heutigen Pogodno. Sie erstrecken sich zwischen den heutigen Straßen Czorsztyńska und Poniatowskiego, konzentriert um die Mickiewicz-Straße.',
+      en: 'The areas of the former Braunsfelde estate ("Braun\'s Field") form the historical core of today\'s Pogodno, covering the area between the present-day Czorsztyńska and Poniatowskiego streets, centered around Mickiewicza Street.',
+      ua: 'Території колишнього поселення Браунсфельде («Поле Брауна») є історичним ядром сучасного Погодна, що охоплює район між сучасними вулицями Чорштинською та Понятовського, зосереджений навколо вулиці Міцкевича.'
     },
     longDescription: {
       pl: 'Tereny dawnego osiedla Braunsfelde („Pole Brauna”) stanowią historyczny rdzeń dzisiejszego Pogodna, obejmujący obszar między obecnymi ulicami Czorsztyńską a Poniatowskiego, skupiony wokół osi ulicy Mickiewicza. Pierwsze domy powstawały tu na przełomie XIX i XX wieku – wzdłuż dzisiejszych ulic Mickiewicza, Wieniawskiego, Konopnickiej, Brodzińskiego, Świętej Kostki czy Syrokomli. Zamieszkiwane niegdyś głównie przez szczecińską inteligencję, urzędników i reprezentantów wolnych zawodów, osiedle do dziś zachwyca elegancką, kameralną zabudową willową. Spacerując tutejszymi urokliwymi uliczkami, usianymi sędziwym starodrzewem, można na każdym kroku odkrywać prawdziwe architektoniczne perełki dawnego Szczecina.',
-      de: 'TO BE ADDED',
-      en: 'TO BE ADDED',
-      ua: 'TO BE ADDED'
+      de: 'Die Gebiete der ehemaligen Siedlung Braunsfelde („Brauns Feld“) bilden den historischen Kern des heutigen Pogodno. Sie erstrecken sich zwischen den heutigen Straßen Czorsztyńska und Poniatowskiego, konzentriert um die Mickiewicz-Straße. Die ersten Häuser entstanden hier an der Wende vom 19. zum 20. Jahrhundert – entlang der heutigen Straßen Mickiewicza, Wieniawskiego, Konopnickiej, Brodzińskiego, Świętej Kostki und Syrokomli. Einst vor allem von Stettiner Intellektuellen, Beamten und Vertretern freier Berufe bewohnt, besticht das Viertel bis heute durch elegante, beschauliche Villenbebauung. Ein Spaziergang durch die malerischen, von altem Baumbestand gesäumten Gassen lässt an jeder Ecke wahre architektonische Juwelen des alten Stettins entdecken.',
+      en: 'The areas of the former Braunsfelde estate ("Braun\'s Field") form the historical core of today\'s Pogodno, covering the area between the present-day Czorsztyńska and Poniatowskiego streets, centered around Mickiewicza Street. The first houses were built here at the turn of the 19th and 20th centuries – along today\'s Mickiewicza, Wieniawskiego, Konopnickiej, Brodzińskiego, Świętej Kostki, and Syrokomli streets. Once inhabited mainly by Szczecin\'s intelligentsia, officials, and representatives of the liberal professions, the district still delights with its elegant, intimate villa architecture. Strolling through its charming streets lined with old trees, one can discover true architectural gems of pre-war Szczecin at every turn.',
+      ua: 'Території колишнього поселення Браунсфельде («Поле Брауна») є історичним ядром сучасного Погодна, що охоплює район між сучасними вулицями Чорштинською та Понятовського, зосереджений навколо вулиці Міцкевича. Перші будинки тут з’явилися на межі XIX–XX століть – вздовж сучасних вулиць Міцкевича, Венявського, Конопницької, Бродзінського, Святої Костки та Сирокомлі. Колись заселений переважно щецинською інтелігенцією, чиновниками та представниками вільних професій, район і досі зачаровує елегантною камерною вілловою забудовою. Прогулюючись мальовничими вуличками під сивим віковим деревами, можна на кожному кроці відкрити справжні архітектурні перлини довоєнного Щецина.'
     },
     waypoints: [
       [53.44158388040689, 14.51147485539087],
@@ -344,15 +344,15 @@ const trailGeometries: TrailGeometry[] = [
     },
     description: {
       pl: 'Tereny w kwartale ulic Mickiewicza, Klonowica, Janickiego i Żołnierskiej stanowią ważny, militarny akcent w historii Pogodna.',
-      de: '',
-      en: '',
-      ua: ''
+      de: 'Das Gebiet im Viertel der Straßen Mickiewicza, Klonowica, Janickiego und Żołnierska bildet einen wichtigen militärischen Akzent in der Geschichte von Pogodno.',
+      en: 'The area in the block formed by Mickiewicza, Klonowica, Janickiego and Żołnierska streets is an important military element in Pogodno\'s history.',
+      ua: 'Територія в кварталі вулиць Міцкевича, Клоновіца, Яніцького та Жолнірської є важливим військовим елементом історії Погодна.'
     },
     longDescription: {
       pl: 'Tereny w kwartale ulic Mickiewicza, Klonowica, Janickiego i Żołnierskiej stanowią ważny, militarny akcent w historii Pogodna. Około 1930 roku zbudowano tu kompleks koszarowy z czerwonej cegły, do którego przylegał rozległy poligon ciągnący się aż pod lasy Głębokiego. Po II wojnie światowej część obszaru zajęła Armia Radziecka, a później Wojsko Polskie. Dziś ten dawniej zamknięty garnizon jest tętniącą życiem przestrzenią miejską, mieszczącą instytucje publiczne, uczelnie i nowoczesne osiedla.',
-      de: 'TO BE ADDED',
-      en: 'TO BE ADDED',
-      ua: 'TO BE ADDED'
+      de: 'Das Gebiet im Viertel der Straßen Mickiewicza, Klonowica, Janickiego und Żołnierska bildet einen wichtigen militärischen Akzent in der Geschichte von Pogodno. Um 1930 wurde hier ein Kasernenkomplex aus rotem Backstein errichtet, an den sich ein weitläufiger Übungsplatz anschloss, der bis an die Wälder von Głębokie reichte. Nach dem Zweiten Weltkrieg wurde ein Teil des Geländes von der Roten Armee, später von der Polnischen Armee genutzt. Heute ist dieser einst geschlossene Garnisonsbereich ein lebendiger städtischer Raum mit öffentlichen Einrichtungen, Hochschulen und modernen Wohnsiedlungen.',
+      en: 'The area in the block formed by Mickiewicza, Klonowica, Janickiego and Żołnierska streets is an important military element in Pogodno\'s history. Around 1930, a red brick barracks complex was built here, adjacent to a large training ground extending all the way to the Głębokie forests. After World War II, part of the area was occupied by the Soviet Army, and later by the Polish Army. Today, this formerly closed garrison is a bustling urban space housing public institutions, universities, and modern housing estates.',
+      ua: 'Територія в кварталі вулиць Міцкевича, Клоновіца, Яніцького та Жолнірської є важливим військовим елементом історії Погодна. Близько 1930 року тут було збудовано комплекс казарм з червоної цегли, до якого примикав великий військовий полігон, що простягався аж до лісів Глембокого. Після Другої світової війни частину території зайняла Радянська армія, а пізніше – Військо Польське. Сьогодні цей колись закритий гарнізон перетворився на жваву міську територію з громадськими установами, вищими навчальними закладами та сучасними житловими комплексами.'
     },
     waypoints: [
       [53.44458493015041, 14.49760669744093],
