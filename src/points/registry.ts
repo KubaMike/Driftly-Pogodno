@@ -8,7 +8,8 @@ import { glediczjaKarlowicza } from './GlediczjaKarlowicza';
 import { korfantegoBoiska } from './KorfantegoBoiska';
 import { korfantegoMalarz } from './KorfantegoMalarz';
 import { koziejowskiego } from './Koziejowskiego';
-import { lodyMickiewicza } from './LodyMickiewicza';
+import { lodyTraugutta } from './LodyTraugutta';
+import { magnetLelewela } from './MagnetLelewela';
 import { mickiewicza69 } from './Mickiewicza69';
 import { mostAkademicki } from './MostAkademicki';
 import { osMickiewicza } from './OsMickiewicza';
@@ -59,7 +60,8 @@ export const pointSites: PointSiteConfig[] = [
     abramowskiego4,
     koziejowskiego,
     osMickiewicza,
-    lodyMickiewicza,
+    lodyTraugutta,
+    magnetLelewela,
     szewc,
     domyMickiewicza,
     mickiewicza69,

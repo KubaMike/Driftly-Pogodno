@@ -61,10 +61,10 @@ export const osMickiewicza: PointSiteConfig = {
                 ua: 'Жвава артерія торгівлі та послуг'
             },
             body: {
-                pl: 'Lody na Mickiewicza to kultowe budki i kioski, które w ciepłe dni ściągały tłumy dzieciaków i młodzieży z całej okolicy. Obok nich działały zakłady rzemieślnicze — ostatni bastion tradycyjnego rzemiosła, gdzie naprawiano buty „na poczekanie" i prowadzono długie rozmowy o życiu dzielnicy.',
-                de: 'Das Eis an der Mickiewicza-Straße bestand aus kultigen Ständen und Kiosken, die an warmen Tagen Scharen von Kindern und Jugendlichen aus der ganzen Gegend anzogen. Daneben arbeiteten Handwerksbetriebe – die letzte Bastion des traditionellen Handwerks, wo Schuhe „auf Abruf" repariert und lange Gespräche über das Leben im Stadtteil geführt wurden.',
-                en: 'The ice cream on ul. Mickiewicza was a set of iconic stands and kiosks that drew crowds of children and teenagers from the whole area on warm days. Beside them operated craft workshops — the last bastion of traditional craftsmanship, where shoes were repaired "on the spot" and long conversations about the life of the district were held.',
-                ua: 'Морозиво на Міцкевича — це культові кіоски та ятки, які в теплі дні приваблювали юрби дітей і молоді з усієї округи. Поруч працювали ремісничі майстерні — останній бастіон традиційного ремесла, де лагодили взуття «на місці» та вели довгі розмови про життя району.'
+                pl: 'Lody na Traugutta to kultowe budki i kioski, które w ciepłe dni ściągały tłumy dzieciaków i młodzieży z całej okolicy. Obok nich działały zakłady rzemieślnicze — ostatni bastion tradycyjnego rzemiosła, gdzie naprawiano buty „na poczekanie" i prowadzono długie rozmowy o życiu dzielnicy.',
+                de: 'Das Eis an der Traugutta-Straße bestand aus kultigen Ständen und Kiosken, die an warmen Tagen Scharen von Kindern und Jugendlichen aus der ganzen Gegend anzogen. Daneben arbeiteten Handwerksbetriebe – die letzte Bastion des traditionellen Handwerks, wo Schuhe „auf Abruf" repariert und lange Gespräche über das Leben im Stadtteil geführt wurden.',
+                en: 'The ice cream on ul. Traugutta was a set of iconic stands and kiosks that drew crowds of children and teenagers from the whole area on warm days. Beside them operated craft workshops — the last bastion of traditional craftsmanship, where shoes were repaired "on the spot" and long conversations about the life of the district were held.',
+                ua: 'Морозиво на Траугута — це культові кіоски та ятки, які в теплі дні приваблювали юрби дітей і молоді з усієї округи. Поруч працювали ремісничі майстерні — останній бастіон традиційного ремесла, де лагодили взуття «на місці» та вели довгі розмови про життя району.'
             }
         },
         {
